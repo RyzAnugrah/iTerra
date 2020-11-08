@@ -1,7 +1,7 @@
 # :octocat: Projek RPL
 ## :earth_asia: iTerra (Web Based)
 
-<img src="https://github.com/alvin2105/iTerra/blob/master/assets/iterra-01.png" alt="Logo iTerra">
+<img src="https://github.com/alvin2105/iTerra/blob/master/assets/logo/iterra-01.png" alt="Logo iTerra">
 
 ### :notebook: Nama Kelompok:
 * :smile: Alvin (140810180013)
