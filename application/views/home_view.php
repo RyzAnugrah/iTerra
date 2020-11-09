@@ -7,25 +7,27 @@
 	<title>iTerra</title>
 	<link rel="icon" type="image/logo_title" href="assets\images\logo\iterra_bulet-01.png">
 
-	<!-- Font Awesome icons (free version)-->
-	<script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
-
-	<!-- Fonts-->
+	<!--Fonts-->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
-	<link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" type="text/css">
 
-	<!-- Third party plugin CSS-->
+	<!-- CSS BUNDLE -->
+
+	<!--Third party plugin CSS-->
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" rel="stylesheet" />
 
-	<!--CSS (includes Bootstrap)-->
+	<!-- Core theme JS-->
 	<link rel="stylesheet" href="css/styles.css" />
-	<link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
-	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+	<!--CSS (includes Bootstrap)-->
+	<link rel="stylesheet" href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css'>
+	<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
 	<style>
+		/* Back to the Top */
 		html {
 			scroll-behavior: smooth;
 		}
@@ -44,7 +46,7 @@
 						<li class="nav-item"><a style="font-size:large;" class="nav-link js-scroll-trigger" href="#kampanye">KAMPANYE</a></li>
 						<li class="nav-item"><a style="font-size:large;" class="nav-link js-scroll-trigger" href="#about">TENTANG KAMI</a></li>
 						<li class="nav-item"><a style="font-size:large;" class="nav-link js-scroll-trigger" href="#donasi">DONASI</a></li>
-						<li class="nav-item"><a style="font-size:large;" class="nav-link js-scroll-trigger" href="#masuk">MASUK</a></li>
+						<li class="nav-item"><a style="font-size:large;" class="nav-link js-scroll-trigger" href="login">MASUK</a></li>
 					</ul>
 				</div>
 		</div>
@@ -60,6 +62,7 @@
 				<li data-target="#demo" data-slide-to="2"></li>
 			</ul>
 			<div class="carousel-inner w3-animate-opacity">
+				<!-- Carousel 0 -->
 				<div class="carousel-item active">
 					<img style="width:100%; height: 100vh; -webkit-filter:brightness(50%)" src=" assets/images/home/home.jpg" alt="0">
 					<div class="carousel-caption" data-aos="zoom-in">
@@ -76,6 +79,8 @@
 						</div>
 					</div>
 				</div>
+
+				<!-- Carousel 1 -->
 				<div class="carousel-item">
 					<img style="width:100%; height: 100vh; -webkit-filter:brightness(50%)" src="assets/images/home/home2.jpg" alt="1" width="2100" height="500">
 					<div class="carousel-caption">
@@ -92,6 +97,8 @@
 						</div>
 					</div>
 				</div>
+
+				<!-- Carousel 2 -->
 				<div class="carousel-item">
 					<img style="width:100%; height: 100vh; -webkit-filter:brightness(50%)" src="assets/images/home/home3.jpg" alt="2" width="2100" height="500">
 					<div class="carousel-caption">
@@ -122,10 +129,12 @@
 	<section class="page-section bg-light" id="highlight">
 		<div class="container">
 			<div class="text-center section-title" data-aos="fade-down">
-				<h2 class="section-heading text-uppercase">highlight</h2>
+				<h2 class="section-heading text-uppercase">populer</h2>
 			</div>
 
+			<!-- Contents -->
 			<div class="row">
+				<!-- Contents 1 -->
 				<div class="col-lg-4 col-sm-6 mb-4" data-aos="zoom-in">
 					<div class="highlight-item">
 						<a class="highlight-link" data-toggle="modal" href="#highlightModal1">
@@ -141,6 +150,8 @@
 						</a>
 					</div>
 				</div>
+
+				<!-- Contents 2 -->
 				<div class="col-lg-4 col-sm-6 mb-4" data-aos="zoom-in">
 					<div class="highlight-item">
 						<a class="highlight-link" data-toggle="modal" href="#highlightModal1">
@@ -156,6 +167,8 @@
 						</a>
 					</div>
 				</div>
+
+				<!-- Contents 3 -->
 				<div class="col-lg-4 col-sm-6 mb-4" data-aos="zoom-in">
 					<div class="highlight-item">
 						<a class="highlight-link" data-toggle="modal" href="#highlightModal1">
@@ -171,6 +184,8 @@
 						</a>
 					</div>
 				</div>
+
+				<!-- Contents 4 -->
 				<div class="col-lg-4 col-sm-6 mb-4 mb-lg-0" data-aos="zoom-in">
 					<div class="highlight-item">
 						<a class="highlight-link" data-toggle="modal" href="#highlightModal1">
@@ -186,6 +201,8 @@
 						</a>
 					</div>
 				</div>
+
+				<!-- Contents 5 -->
 				<div class="col-lg-4 col-sm-6 mb-4 mb-sm-0" data-aos="zoom-in">
 					<div class="highlight-item">
 						<a class="highlight-link" data-toggle="modal" href="#highlightModal1">
@@ -201,6 +218,8 @@
 						</a>
 					</div>
 				</div>
+
+				<!-- Contents 6 -->
 				<div class="col-lg-4 col-sm-6" data-aos="zoom-in">
 					<div class="highlight-item">
 						<a class="highlight-link" data-toggle="modal" href="#highlightModal1">
@@ -242,10 +261,10 @@
 									Vaksin Virus Korona Telah Ditemukan
 								</h3>
 							</a>
-
 						</div>
 					</div>
 
+					<!-- Mini -->
 					<div class="col-lg-6 pt-4 pt-lg-0 artikel-item">
 						<div class="artikel-item">
 							<div class="section-title" data-aos="fade-in">
@@ -255,7 +274,6 @@
 
 							</div>
 						</div>
-
 						<div class="row content">
 							<!-- mini 1 -->
 							<div class="col-lg-6 artikel-item artikel-hover-zoom-mini" data-aos="fade-in">
@@ -330,7 +348,7 @@
 						<b>20%</b>
 						dari total masyarakat Indonesia peduli terhadap kebersihan dan kesehatan. Ini berarti, dari 262 juta jiwa di Indonesia, hanya sekitar <b>52 juta orang</b> yang memiliki kepedulian terhadap kebersihan lingkungan sekitar dan dampaknya terhadap kesehatan.
 					</p>
-					<a class="button button-light button-xl js-scroll-trigger" href="#services">Baca Selengkapnya</a>
+					<a class="button button-light button-xl js-scroll-trigger" href="">Baca Selengkapnya</a>
 				</div>
 			</div>
 		</div>
@@ -399,6 +417,8 @@
 		</footer><!-- End Footer -->
 	</section>
 
+	<!-- JAVASCRIPT BUNDLE -->
+
 	<!-- Bootstrap core JS-->
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -409,17 +429,18 @@
 
 	<!-- Core theme JS-->
 	<script src="js/scripts.js"></script>
-
-	<!-- JS (includes Bootstrap)-->
 	<script src="js/main.js"></script>
 	<script src="js/jquery-3.4.1.min.js"></script>
+
+	<!-- JS (includes Bootstrap)-->
+	<script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
 	<script src="https://unpkg.com/boxicons@latest/dist/boxicons.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 	<!-- Animate on Screen -->
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 	<script>
 		AOS.init();
@@ -434,7 +455,5 @@
 		</script>
 	</div>
 
-
 </body>
-
 </html>
