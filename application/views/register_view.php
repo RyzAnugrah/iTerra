@@ -19,7 +19,7 @@
 
 	<!-- Core theme JS-->
 	<link rel="stylesheet" href="css/util.css">
-	<link rel="stylesheet" href="css/login.css">
+	<link rel="stylesheet" href="css/register.css">
 	<link rel="stylesheet" href="css/styles.css">
 
 	<!--CSS (includes Bootstrap)-->
@@ -49,54 +49,123 @@
 		<div class="limiter">
 			<div class="container-login100">
 				<div class="wrap-login100">
-					<div class="login100-pic">
-						<img src="assets/images/logo/iterra-01.png">
-						<h2>SELAMAT DATANG <br>DI iTERRA</h2>
-						<h5>Gabung bersama Kami untuk melakukan hal-hal yang sederhana, namun bermanfaat bagi sesama.</h5>
-					</div>
-
 					<form class="login100-form validate-form">
 						<!-- Title -->
-						<h2 class="login100-form-title">
-							Member Login <br>
-							<p>_______</p>
-						</h2>
+						<div class="login100-pic">
+							<img src="assets/images/logo/iterra-01.png">
+							<h2 class="login100-form-title">
+								Register <br>
+								<p>____</p>
+							</h2>
+						</div>
 
 						<!-- Form -->
+						<div class="wrap-input100 validate-input" data-validate="Gunakan Nama yang Valid">
+							<input class="input100" type="text" name="nama" placeholder="Nama Lengkap" required>
+							<span class="focus-input100"></span>
+							<span class="symbol-input100">
+								<i class="fa fa-address-book" aria-hidden="true"></i>
+							</span>
+						</div>
+
+						<div class="wrap-input100 validate-input" data-validate="Gunakan Tanggal Lahir yang Valid">
+							<input class="input100" type="date" name="date" placeholder="Tanggal Lahir" required>
+							<span class="focus-input100"></span>
+							<span class="symbol-input100">
+								<i class="fa fa-calendar" aria-hidden="true"></i>
+							</span>
+						</div>
+
+						<div class="wrap-input100 validate-input" data-validate="Pilih Jenis Kelamin">
+							<select class="input100 required" name="jk" required>
+								<option value="" disabled selected>Pilih Jenis Kelamin</option>
+								<option value="saab">Pria</option>
+								<option value="fiat">Wanita</option>
+							</select>
+							<span class="focus-input100"></span>
+							<span class="symbol-input100">
+								<i class="fa fa-user" aria-hidden="true"></i>
+							</span>
+						</div>
+
+						<div class="wrap-input100 validate-input" data-validate="Gunakan Nomor Telepon yang Valid">
+							<input class="input100" type="no_tlp" name="no_tlp" placeholder="Nomor Telepon" required>
+							<span class="focus-input100"></span>
+							<span class="symbol-input100">
+								<i class="fa fa-phone" aria-hidden="true"></i>
+							</span>
+						</div>
+
+						<div class="wrap-input100 validate-input" data-validate="Gunakan NIK yang Valid">
+							<input class="input100" type="nik" name="nik" placeholder="Nomor Induk Kependudukan" required>
+							<span class="focus-input100"></span>
+							<span class="symbol-input100">
+								<i class="fa fa-address-card" aria-hidden="true"></i>
+							</span>
+						</div>
+
 						<div class="wrap-input100 validate-input" data-validate="Gunakan Email yang Valid: ez@abc.xyz">
-							<input class="input100" type="text" name="email" placeholder="Email">
+							<input class="input100" type="text" name="email" placeholder="Email" required>
 							<span class="focus-input100"></span>
 							<span class="symbol-input100">
 								<i class="fa fa-envelope" aria-hidden="true"></i>
 							</span>
 						</div>
+
 						<div class="wrap-input100 validate-input" data-validate="Kata Sandi Diperlukan">
-							<input class="input100" type="password" name="password" placeholder="Kata Sandi">
+							<input class="input100" type="password" name="password" placeholder="Kata Sandi" required>
 							<span class="focus-input100"></span>
 							<span class="symbol-input100">
 								<i class="fa fa-lock" aria-hidden="true"></i>
 							</span>
 						</div>
+
+						<div class="wrap-input100 validate-input" data-validate="Kata Sandi Tidak Cocok">
+							<input class="input100" type="password" name="password" placeholder="Konfirmasi Kata Sandi" required>
+							<span class="focus-input100"></span>
+							<span class="symbol-input100">
+								<i class="fa fa-lock" aria-hidden="true"></i>
+							</span>
+						</div>
+
+
+						<div class="text-left p-t-12">
+							<a style="color: #757575;">
+								Dengan mendaftar, Saya menyutujui
+							</a>
+							<a class="txt2" href="">
+								Syarat & Ketentuan
+							</a>
+						</div>
+
 						<div class="container-login100-form-btn">
 							<button class="login100-form-btn">
-								Login
+								Register
 							</button>
 						</div>
 
-						<!-- Lupa Password -->
-						<div class="text-center p-t-12">
-							<a class="txt2" href="#">
-								Lupa Password?
-							</a>
-						</div>
+
 
 						<!-- Buat akun -->
 						<div class="text-center p-t-136">
 							<a style="color: #757575;">
-								Belum menjadi Member?
+								Sudah menjadi Member?
 							</a>
-							<a class="txt2" href="<?php echo base_url('register') ?>">
-								Daftar Sekarang!
+							<a class="txt2" href="<?php echo base_url('login') ?>">
+								Masuk
+							</a>
+						</div>
+
+
+						<div class="text-center p-t-136">
+							<a style="color: #757575;">
+								TEMP
+							</a>
+							<a class="txt2" href="<?php echo base_url('dashboard_admin') ?>">
+								dashboard admin
+							</a>
+							<a class="txt2" href="<?php echo base_url('dashboard_member') ?>">
+								dashboard member
 							</a>
 						</div>
 					</form>
@@ -104,6 +173,25 @@
 			</div>
 		</div>
 	</div>
+
+	<!-- <form action="<?php echo base_url('login') ?>" method="post">
+			<p>
+				<label for="username">Username</label>
+				<input type="text" name="username" id="username" placeholder="Please Input Your Username" required>
+			</p>
+			<p>
+				<label for="password">Password</label>
+				<input type="password" name="password" id="password" placeholder="Please Input Your Password" required>
+			</p>
+			<p>
+				<input type="submit" name="submit" id="submit" value="Submit" class="full">
+			</p>
+			<p>
+				<center><label for="register">Need an account? <a href="<?php echo base_url('register') ?>"> Register Now </a></center>
+			</p>
+		</form> -->
+
+
 
 	<!-- JAVASCRIPT BUNDLE -->
 
@@ -144,7 +232,7 @@
 	</div>
 
 	<!-- Validasi -->
-	<script>
+	<!-- <script>
 		var input = $('.validate-input .input100');
 
 		$('.validate-form').on('submit', function() {
@@ -171,6 +259,26 @@
 				if ($(input).val().trim().match(/^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{1,5}|[0-9]{1,3})(\]?)$/) == null) {
 					return false;
 				}
+			} else if ($(input).attr('type') == 'password' || $(input).attr('name') == 'password') {
+				if ($(input).val().trim().match(/^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{1,5}|[0-9]{1,3})(\]?)$/) == null) {
+					return false;
+				}
+			} else if ($(input).attr('type') == 'nama' || $(input).attr('name') == 'nama') {
+				if ($(input).val().trim().match(/^[A-Za-z]+$/) == null) {
+					return false;
+				}
+			} else if ($(input).attr('type') == 'password' || $(input).attr('name') == 'password') {
+				if ($(input).val().trim().match(/^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{1,5}|[0-9]{1,3})(\]?)$/) == null) {
+					return false;
+				}
+			} else if ($(input).attr('type') == 'no_tlp' || $(input).attr('name') == 'no_tlp') {
+				if ($(input).val().trim().match(/^[0-9]+$/) == null) {
+					return false;
+				}
+			} else if ($(input).attr('type') == 'nik' || $(input).attr('name') == 'nik') {
+				if ($(input).val().trim().match(/^[0-9]+$/) == null) {
+					return false;
+				}
 			} else {
 				if ($(input).val().trim() == '') {
 					return false;
@@ -189,7 +297,7 @@
 
 			$(thisAlert).removeClass('alert-validate');
 		}
-	</script>
+	</script> -->
 
 </body>
 
