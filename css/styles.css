@@ -12171,14 +12171,13 @@ section {
   letter-spacing: 1px;
   display: inline-block;
   padding: 12px 32px;
-  border-radius: 50px;
+  border-radius: 10px;
   transition: 0.3s;
   line-height: 1;
   color: #FFF;
   background-color: #757575;
   -webkit-animation-delay: 0.8s;
   animation-delay: 0.8s;
-  margin-top: 6px;
   border: 2px solid #757575;
 }
 
@@ -12188,6 +12187,98 @@ section {
   text-decoration: none;
 }
 
+/*--------------------------------------------------------------
+# Donasi
+--------------------------------------------------------------*/
+
+#donasi .donasi-title {
+  margin-top: 100px;
+}
+
+#donasi .donasi-item {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#donasi .donasi-item a {
+  color:#fff;
+  background-color: #84C44E;
+  text-decoration: none;
+}
+
+#donasi .donasi-item a:hover {
+  color: #84C44E;
+	background-color: #757575;
+	text-decoration: none;
+}
+
+#donasi .donasi-item .img-hover-zoom {
+  border-radius: 10px;
+}
+
+#donasi .donasi-item .donasi-caption {
+	padding: 2.0rem;
+  text-align: center;
+  color: #fff;
+  background-color: #84C44E;
+  border-radius: 10px;
+}
+
+#donasi .donasi-item .donasi-caption:hover {
+	padding: 2.0rem;
+	text-align: center;
+	color: #84C44E;
+	background-color: #757575;
+}
+
+#donasi .donasi-item .donasi-caption .donasi-caption-heading {
+	font-size: 1.5rem;
+	font-family: Helvetica;
+	font-weight: 700;
+	margin-bottom: 0;
+}
+
+#donasi .donasi-item .donasi-caption .donasi-caption-subheading {
+	font-family: Helvetica;
+}
+
+#donasi .donasi-item .donasi-caption .donasi-value {
+  display: inline-block;
+  float: left;
+  color: #000;
+  padding-top: 10px;
+}
+
+#donasi .donasi-item .donasi-caption .donasi-day {
+  display: inline-block;
+  float: right;
+  color: #000;
+  padding-top: 10px;
+}
+
+#donasi .donasi-item .donasi-caption .btn-detail {
+  position: relative;
+  margin-bottom: -70px;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 12px 32px;
+  border-radius: 10px;
+  transition: 0.3s;
+  line-height: 1;
+  color: #FFF;
+  background-color: #757575;
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+  border: 2px solid #757575;
+}
+
+#donasi .donasi-item .donasi-caption .btn-detail:hover {
+  color: #FFF;
+  background-color: #84C44E;
+  text-decoration: none;
+}
 
 /*--------------------------------------------------------------
 # Login
