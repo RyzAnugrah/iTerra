@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-	<title>iTerra</title>
+	<title>iTerra - Login</title>
 	<link rel="icon" type="image/logo_title" href="assets\images\logo\iterra_bulet-01.png">
 
 	<!--Fonts-->

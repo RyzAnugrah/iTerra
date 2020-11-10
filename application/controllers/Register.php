@@ -6,7 +6,7 @@ class Register extends CI_Controller
 	function __construct()
 	{
 		parent::__construct();
-		$this->load->model('r_data');
+		$this->load->model('register_data');
 		$this->load->helper('url');
 		$this->load->library('form_validation');
 	}
@@ -15,7 +15,7 @@ class Register extends CI_Controller
 	{
 		$data = array(	'title'	=> 'Halaman Register');
 
-		$data['iTerra'] = $this->r_data->show_data()->result();
+		$data['iTerra'] = $this->register_data->show_data()->result();
 		$this->load->view('register_view', $data);
 	}
 	

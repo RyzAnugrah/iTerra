@@ -38,14 +38,14 @@
 	<!-- Navigation-->
 	<nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
 		<div class="containers">
-			<a class="navbar-brand js-scroll-trigger" href="#page-top"><img src="assets\images\logo\iterra-01.png" style="width: 100px;" </a> <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+			<a class="navbar-brand js-scroll-trigger" href="home"><img src="assets\images\logo\iterra-01.png" style="width: 100px;" </a> <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
 				<div class="collapse navbar-collapse" id="navbarResponsive">
 					<ul class="navbar-nav ml-auto my-2 my-lg-0">
 						<li class="nav-item"><a class="nav-link js-scroll-trigger"></a></li>
 						<li class="nav-item"><a style="font-size:large;" class="nav-link js-scroll-trigger" href="#artikel">ARTIKEL</a></li>
-						<li class="nav-item"><a style="font-size:large;" class="nav-link js-scroll-trigger" href="#kampanye">KAMPANYE</a></li>
+						<li class="nav-item"><a style="font-size:large;" class="nav-link js-scroll-trigger" href="kampanye">KAMPANYE</a></li>
 						<li class="nav-item"><a style="font-size:large;" class="nav-link js-scroll-trigger" href="#about">TENTANG KAMI</a></li>
-						<li class="nav-item"><a style="font-size:large;" class="nav-link js-scroll-trigger" href="#donasi">DONASI</a></li>
+						<li class="nav-item"><a style="font-size:large;" class="nav-link js-scroll-trigger" href="donasi">DONASI</a></li>
 						<li class="nav-item"><a style="font-size:large;" class="nav-link js-scroll-trigger" href="login">MASUK</a></li>
 					</ul>
 				</div>
@@ -69,15 +69,15 @@
 								<img src="assets/images/home/artikel1.jpg" alt="" />
 							</div>
 						</a>
-						<a href="#donasiModal1">
+						<a>
 							<div class="donasi-caption">
-								<div class="donasi-caption-heading">Donasi 1</div>
+								<a href="#donasiModal1" class="donasi-caption-heading">Donasi 1</a>
 								<div class="progress mt-4 mb-2">
 									<div class="progress-bar bg-secondary" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
 								</div>
-								<p class="donasi-value">Rp. 50.000.000</p> 
+								<p class="donasi-value">Rp. 50.000.000</p>
 								<p class="donasi-day">60 hari lagi</p>
-								<a href="#donasiModal1" class="btn btn-detail">Detail ➔</a>
+								<a href="#donasiModal1" class="btn btn-detail ">Detail ➔</a>
 							</div>
 						</a>
 					</div>
@@ -91,13 +91,13 @@
 								<img src="assets/images/home/artikel2.jpg" alt="" />
 							</div>
 						</a>
-						<a href="#donasiModal1">
+						<a>
 							<div class="donasi-caption">
-								<div class="donasi-caption-heading">Donasi 2</div>
+								<a href="#donasiModal1" class="donasi-caption-heading">Donasi 2</a>
 								<div class="progress mt-4 mb-2">
 									<div class="progress-bar bg-secondary" role="progressbar" style="width: 35%" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"></div>
 								</div>
-								<p class="donasi-value">Rp. 150.000.000</p> 
+								<p class="donasi-value">Rp. 150.000.000</p>
 								<p class="donasi-day">60 hari lagi</p>
 								<a href="#donasiModal1" class="btn btn-detail">Detail ➔</a>
 							</div>
@@ -113,16 +113,15 @@
 								<img src="assets/images/home/artikel3.jpg" alt="" />
 							</div>
 						</a>
-						<a href="#donasiModal1">
+						<a>
 							<div class="donasi-caption">
-								<div class="donasi-caption-heading">Donasi 3</div>
+								<a href="#donasiModal1" class="donasi-caption-heading">Donasi 3</a>
 								<div class="progress mt-4 mb-2">
 									<div class="progress-bar bg-secondary" role="progressbar" style="width: 45%" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
 								</div>
-								<p class="donasi-value">Rp. 10.000.000</p> 
+								<p class="donasi-value">Rp. 10.000.000</p>
 								<p class="donasi-day">60 hari lagi</p>
 								<a href="#donasiModal1" class="btn btn-detail">Detail ➔</a>
-
 							</div>
 						</a>
 					</div>
@@ -136,13 +135,13 @@
 								<img src="assets/images/home/artikel4.jpg" alt="" />
 							</div>
 						</a>
-						<a href="#donasiModal1">
+						<a>
 							<div class="donasi-caption">
-								<div class="donasi-caption-heading">Donasi 4</div>
+								<a href="#donasiModal1" class="donasi-caption-heading">Donasi 4</a>
 								<div class="progress mt-4 mb-2">
 									<div class="progress-bar bg-secondary" role="progressbar" style="width: 55%" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
 								</div>
-								<p class="donasi-value">Rp. 50.000.000</p> 
+								<p class="donasi-value">Rp. 50.000.000</p>
 								<p class="donasi-day">60 hari lagi</p>
 								<a href="#donasiModal1" class="btn btn-detail">Detail ➔</a>
 							</div>
@@ -158,13 +157,13 @@
 								<img style="width: 200%;" src="assets/images/home/artikel5.jpg" alt="" />
 							</div>
 						</a>
-						<a href="#donasiModal1">
+						<a>
 							<div class="donasi-caption">
-								<div class="donasi-caption-heading">Donasi 5</div>
+								<a href="#donasiModal1" class="donasi-caption-heading">Donasi 5</a>
 								<div class="progress mt-4 mb-2">
 									<div class="progress-bar bg-secondary" role="progressbar" style="width: 65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
 								</div>
-								<p class="donasi-value">Rp. 150.000.000</p> 
+								<p class="donasi-value">Rp. 150.000.000</p>
 								<p class="donasi-day">60 hari lagi</p>
 								<a href="#donasiModal1" class="btn btn-detail">Detail ➔</a>
 							</div>
@@ -180,13 +179,13 @@
 								<img src="assets/images/home/artikel6.jpg" alt="" />
 							</div>
 						</a>
-						<a href="#donasiModal1">
+						<a>
 							<div class="donasi-caption">
-								<div class="donasi-caption-heading">Donasi 6</div>
+								<a href="#donasiModal1" class="donasi-caption-heading">Donasi 6</a>
 								<div class="progress mt-4 mb-2">
 									<div class="progress-bar bg-secondary" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
 								</div>
-								<p class="donasi-value">Rp. 10.000.000</p> 
+								<p class="donasi-value">Rp. 10.000.000</p>
 								<p class="donasi-day">60 hari lagi</p>
 								<a href="#donasiModal1" class="btn btn-detail">Detail ➔</a>
 							</div>
@@ -299,4 +298,5 @@
 	</div>
 
 </body>
+
 </html>

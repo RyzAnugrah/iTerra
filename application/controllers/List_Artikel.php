@@ -1,17 +1,18 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Dasbor extends CI_Controller {
+class List_Artikel extends CI_Controller {
 	
 	// Index login
 	public function index() 
-		
-		$this->load->view('dashboard',$data);
+		{
+		$data = array('title'	=> 'Halaman Dashboard');
+		$this->load->view('list_artikel_view',$data);
 	}
 	function __construct()
 	{
 		parent::__construct();
-		$this->load->model('m_data');
+		$this->load->model('list_artikel_data');
 		$this->load->helper('url');
 		$this->load->library('form_validation');
 	}

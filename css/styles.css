@@ -12148,8 +12148,7 @@ section {
 #kampanye .kampanye-item .kampanye-caption:hover {
 	padding: 1.5rem;
 	text-align: center;
-	color: #84C44E;
-	background-color: #757575;
+
 }
 
 #kampanye .kampanye-item .kampanye-caption .kampanye-caption-heading {
@@ -12157,6 +12156,11 @@ section {
 	font-family: Helvetica;
 	font-weight: 700;
 	margin-bottom: 0;
+	color: #fff;
+}
+
+#kampanye .kampanye-item .kampanye-caption .kampanye-caption-heading:hover {
+	text-decoration: underline;
 }
 
 #kampanye .kampanye-item .kampanye-caption .kampanye-caption-subheading {
@@ -12187,6 +12191,19 @@ section {
   text-decoration: none;
 }
 
+#kampanye .kampanye-item .kampanye-caption .btn-detail:active {
+	color: #FFF;
+	background-color: #5b8f30;
+	text-decoration: none;
+	outline: none;
+	border: none;
+}
+
+#kampanye .kampanye-item .kampanye-caption .btn-detail:focus {
+	box-shadow: 0 0 0 0.2rem #757575;
+}
+
+
 /*--------------------------------------------------------------
 # Donasi
 --------------------------------------------------------------*/
@@ -12206,10 +12223,8 @@ section {
   text-decoration: none;
 }
 
-#donasi .donasi-item a:hover {
-  color: #84C44E;
-	background-color: #757575;
-	text-decoration: none;
+#donasi .donasi-item .donasi-caption a:hover {
+	text-decoration: underline;
 }
 
 #donasi .donasi-item .img-hover-zoom {
@@ -12227,8 +12242,6 @@ section {
 #donasi .donasi-item .donasi-caption:hover {
 	padding: 2.0rem;
 	text-align: center;
-	color: #84C44E;
-	background-color: #757575;
 }
 
 #donasi .donasi-item .donasi-caption .donasi-caption-heading {
@@ -12278,6 +12291,18 @@ section {
   color: #FFF;
   background-color: #84C44E;
   text-decoration: none;
+}
+
+#donasi .donasi-item .donasi-caption .btn-detail:active {
+	color: #FFF;
+	background-color: #5b8f30;
+	text-decoration: none;
+	outline: none;
+	border: none;
+}
+
+#donasi .donasi-item .donasi-caption .btn-detail:focus {
+	box-shadow: 0 0 0 0.2rem #757575;
 }
 
 /*--------------------------------------------------------------
