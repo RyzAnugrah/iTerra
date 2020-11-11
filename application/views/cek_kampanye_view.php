@@ -17,7 +17,7 @@ The above copyright notice and this permission notice shall be included in all c
 	<link rel="apple-touch-icon" sizes="76x76" href="assets/assets_admin/img/iterra_bulet-01.png">
 	<link rel="icon" type="image/png" href="assets/assets_admin/img/iterra_bulet-01.png">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-	<title>iTerra - Buat Artikel</title>
+	<title>iTerra - Cek Kampanye</title>
 	<meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
 
 	<!--     Fonts and icons     -->
@@ -54,7 +54,7 @@ The above copyright notice and this permission notice shall be included in all c
 				</ul>
 			</div>
 		</div>
-		<div class="main-panel" style="background: url(assets/assets_admin/img/background-artikel.png) fixed center; background-size: cover">
+		<div class="main-panel" style="background: url(assets/assets_admin/img/backgorund.png) fixed center; background-size: cover">
 			<!-- Navbar -->
 			<nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top ">
 				<div class="container-fluid">
@@ -110,70 +110,41 @@ The above copyright notice and this permission notice shall be included in all c
 			<!-- End Navbar -->
 			<div class="content">
 				<div class="container-fluid">
-					<div class="content">
-						<div class="container-fluid">
-							<div class="row">
-								<div class="col-md-8">
-									<div class="card">
-										<div class="card-header card-header-success kartu">
-											<h4 class="card-title">Buat Artikel</h4>
-											<p class="card-category">Artikel mengenai lingkungan </p>
-										</div>
-										<div class="card-body">
-											<form>
-												<div class="row">
-													<div class="col-md-12">
-														<div class="form-group">
-															<label class="bmd-label-floating">Judul Artikel</label>
-															<input type="text" class="form-control">
-														</div>
-													</div>
-												</div>
-												<div class="row">
-													<div class="col-md-12">
-														<div class="form-group">
-															<label class="bmd-label-floating">Penulis</label>
-															<input type="text" class="form-control">
-														</div>
-													</div>
-												</div>
-												<div class="row">
-													<div class="col-md-12">
-														<div class="form-group">
-														<label>Tanggal Publikasi</label>
-															<label class="bmd-label-floating"></label>
-															<input type="date" class="form-control">
-														</div>
-													</div>
-												</div>
-												<div class="row">
-												<div class="col-md-12">
-												<div class="form-group">
-												<label> Upload Gambar</label>
-													<div class="custom-file">
-														<input type="file" class="custom-file-input" id="customFile">
-														<label class="custom-file-label" for="customFile">Choose file</label>
-													</div>
-												</form>
-												</div>
-												</div>
-												</div>
-												<div class="row">
-													<div class="col-md-12">
-														<div class="form-group">
-															<label>Deskripsi</label>
-															<div class="form-group">
-																<label class="bmd-label-floating"> Tulis deskripsi disini</label>
-																<textarea class="form-control" rows="5"></textarea>
-															</div>
-														</div>
-													</div>
-												</div>
-												<button type="submit" class="btn btn-primary pull-right">Submit</button>
-												<div class="clearfix"></div>
-											</form>
-										</div>
-									</div>
+					<div class="row">
+						<div class="col-md-12">
+							<div class="card">
+								<div class="card-header card-header-success kartu">
+									<h4 class="card-title">Cek Kampanye</h4>
+									<p class="card-category">Cek validasi kampanye</p>
+								</div>
+								<div class="card-body table-responsive">
+									<table class="table table-hover">
+										<thead style="color:#84C44E; font-weight:bolder">
+											<th>No.</th>
+											<th>Nama</th>
+											<th>Member Id</th>
+											<th>Waktu Pengajuan</th>
+											<th>Deskripsi Kampanye</th>
+											<th>Aksi</th>
+										</thead>
+										<tbody>
+											<tr>
+												<td>1</td>
+												<td>Budi</td>
+												<td>123</td>
+												<td>11-21-2020</td>
+												<td>Kampanye ini merupakan bentuk dari kepedulian masyrakat di jatinangor terhadap kebersihan lingkungan, kampanye ini mempunyai tujuan untuk mewujudkan 1000 tong sampah yang diharapkan dapat menumbuhkan kesadaran masyarakat dalam menjaga kebersihan</td>
+												<td class="td-actions ">
+													<button type="button" rel="tooltip" title="Setujui" class="btn btn-primary btn-link btn-sm">
+														<i class="material-icons">done_outline</i>
+													</button>
+													<button type="button" rel="tooltip" title="Tolak" class="btn btn-danger btn-link btn-sm">
+														<i class="material-icons">close</i>
+													</button>
+												</td>
+											</tr>
+										</tbody>
+									</table>
 								</div>
 							</div>
 						</div>

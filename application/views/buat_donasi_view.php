@@ -17,7 +17,7 @@ The above copyright notice and this permission notice shall be included in all c
 	<link rel="apple-touch-icon" sizes="76x76" href="assets/assets_admin/img/iterra_bulet-01.png">
 	<link rel="icon" type="image/png" href="assets/assets_admin/img/iterra_bulet-01.png">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-	<title>iTerra - Buat Artikel</title>
+	<title>iTerra - Buat Donasi</title>
 	<meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
 
 	<!--     Fonts and icons     -->
@@ -54,7 +54,7 @@ The above copyright notice and this permission notice shall be included in all c
 				</ul>
 			</div>
 		</div>
-		<div class="main-panel" style="background: url(assets/assets_admin/img/background-artikel.png) fixed center; background-size: cover">
+		<div class="main-panel" style="background: url(assets/assets_admin/img/background-donasi.png) fixed center; background-size: cover">
 			<!-- Navbar -->
 			<nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top ">
 				<div class="container-fluid">
@@ -116,15 +116,15 @@ The above copyright notice and this permission notice shall be included in all c
 								<div class="col-md-8">
 									<div class="card">
 										<div class="card-header card-header-success kartu">
-											<h4 class="card-title">Buat Artikel</h4>
-											<p class="card-category">Artikel mengenai lingkungan </p>
+											<h4 class="card-title">Buat Donasi</h4>
+											<p class="card-category">Donasi Kegiatan lingkungan </p>
 										</div>
 										<div class="card-body">
 											<form>
 												<div class="row">
 													<div class="col-md-12">
 														<div class="form-group">
-															<label class="bmd-label-floating">Judul Artikel</label>
+															<label class="bmd-label-floating">Nama Event</label>
 															<input type="text" class="form-control">
 														</div>
 													</div>
@@ -132,7 +132,7 @@ The above copyright notice and this permission notice shall be included in all c
 												<div class="row">
 													<div class="col-md-12">
 														<div class="form-group">
-															<label class="bmd-label-floating">Penulis</label>
+															<label class="bmd-label-floating">Pelaksana</label>
 															<input type="text" class="form-control">
 														</div>
 													</div>
@@ -140,7 +140,7 @@ The above copyright notice and this permission notice shall be included in all c
 												<div class="row">
 													<div class="col-md-12">
 														<div class="form-group">
-														<label>Tanggal Publikasi</label>
+														<label>Tenggat Waktu</label>
 															<label class="bmd-label-floating"></label>
 															<input type="date" class="form-control">
 														</div>
@@ -161,7 +161,7 @@ The above copyright notice and this permission notice shall be included in all c
 												<div class="row">
 													<div class="col-md-12">
 														<div class="form-group">
-															<label>Deskripsi</label>
+															<label>Deskripsi Event</label>
 															<div class="form-group">
 																<label class="bmd-label-floating"> Tulis deskripsi disini</label>
 																<textarea class="form-control" rows="5"></textarea>

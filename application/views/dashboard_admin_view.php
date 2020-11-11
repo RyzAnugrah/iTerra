@@ -47,7 +47,7 @@ The above copyright notice and this permission notice shall be included in all c
 				<ul class="nav">
 					<li class="nav-item active kartu ">
 						<a class="nav-link">
-							<i class="material-icons">dashboard</i>
+							<i class="material-icons">eco</i>
 							<p>Dashboard</p>
 						</a>
 					</li>
@@ -144,7 +144,7 @@ The above copyright notice and this permission notice shall be included in all c
 									<div class="card-icon">
 										<i class="material-icons">account_balance_wallet</i>
 									</div>
-									<a class="nav-link" href="./user.html">
+									<a class="nav-link" href="buat_donasi">
 										<p class="card-category">Donasi</p>
 										<h5 class="card-title">Buat Donasi</h5>
 								</div>
@@ -162,7 +162,7 @@ The above copyright notice and this permission notice shall be included in all c
 									<div class="card-icon">
 										<i class="material-icons">add_task</i>
 									</div>
-									<a class="nav-link" href="./user.html">
+									<a class="nav-link" href="cek_verifikasi">
 										<p class="card-category">verifikasi</p>
 										<h5 class="card-title">Cek Verifikasi</h5>
 								</div>
@@ -180,7 +180,7 @@ The above copyright notice and this permission notice shall be included in all c
 									<div class="card-icon">
 										<i class="material-icons">tour</i>
 									</div>
-									<a class="nav-link" href="./user.html">
+									<a class="nav-link" href="cek_kampanye">
 										<p class="card-category">Kampanye</p>
 										<h5 class="card-title">Cek Kampanye</h5>
 								</div>
