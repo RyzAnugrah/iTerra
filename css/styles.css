@@ -10847,6 +10847,28 @@ section {
 	left: calc(47.5% - 20px);
 }
 
+.section-title-artikel h2 {
+	font-size: 32px;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	padding-bottom: 20px;
+	position: relative;
+	color: #84C44E;
+}
+
+.section-title-artikel h2::after {
+	content: '';
+	position: absolute;
+	display: block;
+	width: 100px;
+	height: 3px;
+	background: #84C44E;
+	bottom: 0;
+	left: calc(47.5% - 20px);
+}
+
 .section-title h3 {
 	text-align: left;
 	font-weight: bold;
@@ -10868,6 +10890,36 @@ section {
 }
 
 .section-title h3::after {
+	content: '';
+	position: absolute;
+	display: block;
+	width: 100px;
+	height: 3px;
+	background: #5b8f30;
+	bottom: 0;
+	left: calc(8% - 20px);
+}
+
+.section-title-artikel h3 {
+	text-align: left;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	position: relative;
+}
+
+.section-title-artikel h3:hover {
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	position: relative;
+}
+
+.section-title-artikel h3::after {
 	content: '';
 	position: absolute;
 	display: block;
@@ -11312,7 +11364,7 @@ section {
 }
 
 .artikel {
-	background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)), url("../assets/images/home/artikel.jpg") fixed center center;
+	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url("../assets/images/home/artikel4.jpg") fixed center center;
 	background-size: cover;
 	padding: 50px 0;
 }
@@ -11399,6 +11451,139 @@ section {
 
 .artikel-hover-zoom-mini:hover img {
 	filter: brightness(50%);
+}
+
+#artikel .artikel-item .artikel-link .artikel-hover-zoom {
+	display: flex;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+	position: absolute;
+	width: 600px;
+	height: 400px;
+	background: rgba(0, 0, 0, 0.6);
+	align-items: center;
+	justify-content: center;
+	transition: opacity ease-in-out 0.25s;
+}
+
+#artikel-list .artikel-item .artikel-link .artikel-hover .artikel-hover-content {
+	font-size: 1.25rem;
+	color: #fff;
+	font-family: HelveticaNeue;
+}
+
+#artikel-list .artikel-item .artikel-link:hover .artikel-hover {
+	opacity: 1;
+}
+
+#artikel-list .artikel-caption a {
+	padding-left: 1rem;
+	padding-right: 3rem;
+	padding-top: 1rem;
+	text-align: left;
+	color: #757575;
+}
+
+#artikel-list .artikel-caption a h3 {
+	font-size: 2rem;
+
+	padding-top: 50px;
+}
+
+#artikel-list .artikel-caption a h3:hover {
+	text-decoration: underline;
+}
+
+#artikel-list .artikel-caption a h4 {
+	font-size: 25px;
+}
+
+#artikel-list .artikel-caption a h4:hover {
+	text-decoration: underline;
+}
+
+#artikel-list .artikel-item a {
+	color: #fff;
+	text-decoration: none;
+}
+
+#artikel-list .highlight-item .highlight-caption {
+	padding-top: 3rem;
+	text-align: left;
+	background-color: #fff;
+	color: #757575;
+}
+
+#artikel-list .artikel-item .artikel-caption h5 {
+	text-align: left;
+	color: #757575;
+	font-size: 1rem;
+}
+
+#artikel-list .artikel-item .artikel-caption .artikel-caption-heading {
+	font-size: 1.5rem;
+	font-family: Helvetica;
+	font-weight: 700;
+	margin-bottom: 0;
+	
+}
+
+#artikel-list .artikel-item .artikel-caption .artikel-caption-subheading {
+	font-family: Helvetica;
+	font-size: 1.5rem;
+}
+
+#artikel-list .artikel-item .artikel-caption .artikel-caption-subheading:hover {
+	text-decoration: underline;
+}
+
+#artikel-list .artikel-item a {
+	color: #757575;
+	text-decoration: none;
+}
+
+#artikel-list .artikel-hover-zoom {
+	overflow: hidden;
+	width: 450px;
+	height: 300px;
+	margin: 0 auto;
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+#artikel-list .artikel-hover-zoom img {
+	width: 450px;
+	height: 300px;
+	transition: transform .5s,
+		filter .5s ease-in-out;
+	transform-origin: center center;
+}
+
+#artikel-list .artikel-hover-zoom:hover img {
+	transform: scale(1.2);
+}
+
+#artikel-list .artikel-item .section-title-artikel-list h3 {
+	text-align: left;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+	padding-left: 20px;
+	position: relative;
+	color: #757575;
+}
+
+#artikel-list .artikel-item .section-title-artikel-list h3::after {
+	content: '';
+	position: absolute;
+	display: block;
+	width: 100px;
+	height: 3px;
+	background: #84C44E;
+	bottom: 0;
+	left: calc(8% - 20px);
 }
 
 /*--------------------------------------------------------------

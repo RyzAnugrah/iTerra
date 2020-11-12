@@ -42,9 +42,9 @@
 				<div class="collapse navbar-collapse" id="navbarResponsive">
 					<ul class="navbar-nav ml-auto my-2 my-lg-0">
 						<li class="nav-item"><a class="nav-link js-scroll-trigger"></a></li>
-						<li class="nav-item"><a style="font-size:large;" class="nav-link js-scroll-trigger" href="#artikel">ARTIKEL</a></li>
+						<li class="nav-item"><a style="font-size:large;" class="nav-link js-scroll-trigger" href="artikel">ARTIKEL</a></li>
 						<li class="nav-item"><a style="font-size:large;" class="nav-link js-scroll-trigger" href="kampanye">KAMPANYE</a></li>
-						<li class="nav-item"><a style="font-size:large;" class="nav-link js-scroll-trigger" href="#about">TENTANG KAMI</a></li>
+						<li class="nav-item"><a style="font-size:large;" class="nav-link js-scroll-trigger" href="about">TENTANG KAMI</a></li>
 						<li class="nav-item"><a style="font-size:large;" class="nav-link js-scroll-trigger" href="donasi">DONASI</a></li>
 						<li class="nav-item"><a style="font-size:large;" class="nav-link js-scroll-trigger" href="login">MASUK</a></li>
 					</ul>
@@ -233,99 +233,6 @@
 								<div class="highlight-caption-subheading text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eget pellentesque tortor. Nullam imperdiet sodales ipsum vel consectetur. Etiam non sodales justo, non volutpat lacus.</div>
 							</div>
 						</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<!-- Artikel -->
-	<section id="artikel" class="artikel">
-		<div class="container">
-			<div class="text-center section-title" data-aos="fade-in">
-				<h2 style="color: #fff;">artikel</h2>
-			</div>
-			<div>
-				<div class="row content">
-					<!-- big -->
-					<div class="col-lg-6" data-aos="fade-in">
-						<div class="artikel-item artikel-hover-zoom">
-							<a href="#">
-								<img src="assets\images\home\artikel1.jpg">
-							</a>
-						</div>
-						<div data-aos="fade-in" class="artikel-item artikel-caption">
-							<a href="">
-								<h5>1 Januari 2021</h5>
-								<h3>
-									Vaksin Virus Korona Telah Ditemukan
-								</h3>
-							</a>
-						</div>
-					</div>
-
-					<!-- Mini -->
-					<div class="col-lg-6 pt-4 pt-lg-0 artikel-item">
-						<div class="artikel-item">
-							<div class="section-title" data-aos="fade-in">
-								<a href="">
-									<h3 style="font-size:x-large;">terbaru</h3>
-								</a>
-
-							</div>
-						</div>
-						<div class="row content">
-							<!-- mini 1 -->
-							<div class="col-lg-6 artikel-item artikel-hover-zoom-mini" data-aos="fade-in">
-								<a href="#">
-									<img src="assets\images\home\artikel2.jpg" style="width: 280px; padding:1rem">
-								</a>
-							</div>
-							<div class="col-lg-6 artikel-item" data-aos="fade-in">
-								<div class="artikel-caption">
-									<a href="">
-										<h5>1 Januari 2021</h5>
-										<h4>
-											Vaksin Virus Korona Telah Ditemukan
-										</h4>
-									</a>
-								</div>
-							</div>
-
-							<!-- mini 2 -->
-							<div class="col-lg-6 artikel-item artikel-hover-zoom-mini">
-								<a href="#">
-									<img src="assets\images\home\artikel2.jpg" style="width: 280px; padding:1rem">
-								</a>
-							</div>
-							<div class="col-lg-6 artikel-item" data-aos="fade-in">
-								<div class="artikel-caption">
-									<a href="">
-										<h5>1 Januari 2021</h5>
-										<h4>
-											Vaksin Virus Korona Telah Ditemukan
-										</h4>
-									</a>
-								</div>
-							</div>
-
-							<!-- mini 3 -->
-							<div class="col-lg-6 artikel-item artikel-hover-zoom-mini" data-aos="fade-in">
-								<a href="#">
-									<img src="assets\images\home\artikel2.jpg" style="width: 280px; padding:1rem">
-								</a>
-							</div>
-							<div class="col-lg-6 artikel-item" data-aos="fade-in">
-								<div class="artikel-caption">
-									<a href="">
-										<h5>1 Januari 2021</h5>
-										<h4>
-											Vaksin Virus Korona Telah Ditemukan
-										</h4>
-									</a>
-								</div>
-							</div>
-						</div>
 					</div>
 				</div>
 			</div>
