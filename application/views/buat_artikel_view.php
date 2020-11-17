@@ -164,7 +164,7 @@ The above copyright notice and this permission notice shall be included in all c
 															<label>Deskripsi</label>
 															<div class="form-group">
 																<label class="bmd-label-floating"> Tulis deskripsi disini</label>
-																<textarea class="form-control" rows="5"></textarea>
+																<textarea class="form-control" id="editor" rows="5"></textarea>
 															</div>
 														</div>
 													</div>
@@ -292,6 +292,15 @@ The above copyright notice and this permission notice shall be included in all c
 	<script src="assets/assets_admin/js/material-dashboard.js?v=2.1.2" type="text/javascript"></script>
 	<!-- Material Dashboard DEMO methods, don't include it in your project! -->
 	<script src="assets/assets_admin/demo/demo.js"></script>
+	
+	<script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+
+	<script>
+		tinymce.init({
+		selector: 'textarea#editor',
+		menubar: false
+});
+</script>
 
 	<script>
 		$(document).ready(function() {
