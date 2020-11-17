@@ -78,7 +78,9 @@ The above copyright notice and this permission notice shall be included in all c
 			<nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top ">
 				<div class="container-fluid">
 					<div class="navbar-wrapper">
-						<a class="navbar-brand" style="color: black;" href="javascript:;"><h3>Selamat Datang !<i class="material-icons" style="color:green;">eco</i></h3></a>
+						<a class="navbar-brand" style="color: black;" href="javascript:;">
+							<h3>Selamat Datang !<i class="material-icons" style="color:green;">eco</i></h3>
+						</a>
 					</div>
 					<button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="sr-only">Toggle navigation</span>
@@ -161,7 +163,7 @@ The above copyright notice and this permission notice shall be included in all c
 								</a>
 							</div>
 						</div>
-						<div class="col-lg-3 col-md-6 col-sm-6" >
+						<div class="col-lg-3 col-md-6 col-sm-6">
 							<div class="card card-stats" data-toggle="modal" data-target="#myModal">
 								<div class="card-header card-header-success card-header-icon kartu">
 									<div class="card-icon">
@@ -179,27 +181,27 @@ The above copyright notice and this permission notice shall be included in all c
 								<!-- Modal -->
 								<div class="modal fade" id="myModal" role="dialog">
 									<div class="modal-dialog">
-    
-								<!-- Modal content-->
+
+										<!-- Modal content-->
 										<div class="modal-content">
 											<div class="modal-header">
 												<h4 class="modal-title" style="text-align: center;">Ajukan Verifikasi</h4>
 											</div>
-										<div class="modal-body">
-											<p>Verifikasi akun anda dengan mengirimkan foto selfie anda dengan Kartu Identitas, tulisan pada kartu identitas harus terlihat jelas</p>
+											<div class="modal-body">
+												<p>Verifikasi akun anda dengan mengirimkan foto selfie anda dengan Kartu Identitas, tulisan pada kartu identitas harus terlihat jelas</p>
 												<div class="custom-file">
-														<input type="file" class="custom-file-input" id="customFile">
-														<label class="custom-file-label" for="customFile">Choose file</label>
+													<input type="file" class="custom-file-input" id="customFile">
+													<label class="custom-file-label" for="customFile">Choose file</label>
 												</div>
+											</div>
+											<div class="modal-footer">
+												<button type="button" class="btn btn-default" data-dismiss="modal">Batal</button>
+												<button type="button" class="btn btn-default" data-dismiss="modal" style="background-color:#84C44E;">Simpan</button>
+											</div>
 										</div>
-										<div class="modal-footer">
-											<button type="button" class="btn btn-default" data-dismiss="modal">Batal</button>
-											<button type="button" class="btn btn-default" data-dismiss="modal" style="background-color:#84C44E;">Simpan</button>
-										</div>
-										</div>
-      
-							</div>
-						</div>
+
+									</div>
+								</div>
 								</a>
 							</div>
 						</div>
@@ -233,7 +235,7 @@ The above copyright notice and this permission notice shall be included in all c
 							<div class="row">
 								<div class="col-lg-4 col-md-6">
 									<div class="footer-info">
-										<img src="assets/assets_admin/img/iterra-01.png" style="width: 100px;">
+										<img src="assets\images\logo\iterra-01.png" style="width: 100px;">
 										<h3>Tentang Kami</h3>
 										<p>
 											<strong>Alamat:</strong> Jalan Raya Bandung-Sumedang <br>
@@ -250,11 +252,11 @@ The above copyright notice and this permission notice shall be included in all c
 								<div class="col-lg-2 col-md-6 footer-links">
 									<h4>Kategori</h4>
 									<ul>
-										<li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-										<li><i class="bx bx-chevron-right"></i> <a href="#">Tentang Kami</a></li>
-										<li><i class="bx bx-chevron-right"></i> <a href="#">Artikel</a></li>
-										<li><i class="bx bx-chevron-right"></i> <a href="#">Kampanye</a></li>
-										<li><i class="bx bx-chevron-right"></i> <a href="#">Donasi</a></li>
+										<li><i class="bx bx-chevron-right"></i> <a href="home">Home</a></li>
+										<li><i class="bx bx-chevron-right"></i> <a href="about">Tentang Kami</a></li>
+										<li><i class="bx bx-chevron-right"></i> <a href="artikel">Artikel</a></li>
+										<li><i class="bx bx-chevron-right"></i> <a href="kampanye">Kampanye</a></li>
+										<li><i class="bx bx-chevron-right"></i> <a href="donasi">Donasi</a></li>
 									</ul>
 								</div>
 								<div class="col-lg-2 col-md-6 footer-links">
@@ -282,7 +284,7 @@ The above copyright notice and this permission notice shall be included in all c
 							&copy; 2020 Copyright. All Rights Reserved
 						</div>
 						<div class="credits">
-							Developed and Designed by <a href="#about">iTerra</a>
+							Developed and Designed by <a href="about">iTerra</a>
 						</div>
 					</div>
 				</footer>

@@ -204,7 +204,7 @@ The above copyright notice and this permission notice shall be included in all c
 							<div class="row">
 								<div class="col-lg-4 col-md-6">
 									<div class="footer-info">
-										<img src="assets/assets_admin/img/iterra-01.png" style="width: 100px;">
+										<img src="assets\images\logo\iterra-01.png" style="width: 100px;">
 										<h3>Tentang Kami</h3>
 										<p>
 											<strong>Alamat:</strong> Jalan Raya Bandung-Sumedang <br>
@@ -221,11 +221,11 @@ The above copyright notice and this permission notice shall be included in all c
 								<div class="col-lg-2 col-md-6 footer-links">
 									<h4>Kategori</h4>
 									<ul>
-										<li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-										<li><i class="bx bx-chevron-right"></i> <a href="#">Tentang Kami</a></li>
-										<li><i class="bx bx-chevron-right"></i> <a href="#">Artikel</a></li>
-										<li><i class="bx bx-chevron-right"></i> <a href="#">Kampanye</a></li>
-										<li><i class="bx bx-chevron-right"></i> <a href="#">Donasi</a></li>
+										<li><i class="bx bx-chevron-right"></i> <a href="home">Home</a></li>
+										<li><i class="bx bx-chevron-right"></i> <a href="about">Tentang Kami</a></li>
+										<li><i class="bx bx-chevron-right"></i> <a href="artikel">Artikel</a></li>
+										<li><i class="bx bx-chevron-right"></i> <a href="kampanye">Kampanye</a></li>
+										<li><i class="bx bx-chevron-right"></i> <a href="donasi">Donasi</a></li>
 									</ul>
 								</div>
 								<div class="col-lg-2 col-md-6 footer-links">
@@ -253,7 +253,7 @@ The above copyright notice and this permission notice shall be included in all c
 							&copy; 2020 Copyright. All Rights Reserved
 						</div>
 						<div class="credits">
-							Developed and Designed by <a href="#about">iTerra</a>
+							Developed and Designed by <a href="about">iTerra</a>
 						</div>
 					</div>
 				</footer>

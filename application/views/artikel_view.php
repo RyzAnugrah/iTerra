@@ -44,7 +44,7 @@
 						<li class="nav-item"><a class="nav-link js-scroll-trigger"></a></li>
 						<li class="nav-item"><a style="font-size:large;" class="nav-link js-scroll-trigger" href="artikel">ARTIKEL</a></li>
 						<li class="nav-item"><a style="font-size:large;" class="nav-link js-scroll-trigger" href="kampanye">KAMPANYE</a></li>
-						<li class="nav-item"><a style="font-size:large;" class="nav-link js-scroll-trigger" href="#about">TENTANG KAMI</a></li>
+						<li class="nav-item"><a style="font-size:large;" class="nav-link js-scroll-trigger" href="about">TENTANG KAMI</a></li>
 						<li class="nav-item"><a style="font-size:large;" class="nav-link js-scroll-trigger" href="donasi">DONASI</a></li>
 						<li class="nav-item"><a style="font-size:large;" class="nav-link js-scroll-trigger" href="login">MASUK</a></li>
 					</ul>
@@ -86,7 +86,7 @@
 						</div>
 						<div class="row content">
 							<!-- mini 1 -->
-							<div class="col-lg-6 artikel-item artikel-hover-zoom-mini" >
+							<div class="col-lg-6 artikel-item artikel-hover-zoom-mini">
 								<a href="#">
 									<img src="assets\images\home\artikel2.jpg" style="width: 280px; padding:1rem">
 								</a>
@@ -250,11 +250,11 @@
 						<div class="col-lg-2 col-md-6 footer-links">
 							<h4>Kategori</h4>
 							<ul>
-								<li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-								<li><i class="bx bx-chevron-right"></i> <a href="#">Tentang Kami</a></li>
-								<li><i class="bx bx-chevron-right"></i> <a href="#">Artikel</a></li>
-								<li><i class="bx bx-chevron-right"></i> <a href="#">Kampanye</a></li>
-								<li><i class="bx bx-chevron-right"></i> <a href="#">Donasi</a></li>
+								<li><i class="bx bx-chevron-right"></i> <a href="home">Home</a></li>
+								<li><i class="bx bx-chevron-right"></i> <a href="about">Tentang Kami</a></li>
+								<li><i class="bx bx-chevron-right"></i> <a href="artikel">Artikel</a></li>
+								<li><i class="bx bx-chevron-right"></i> <a href="kampanye">Kampanye</a></li>
+								<li><i class="bx bx-chevron-right"></i> <a href="donasi">Donasi</a></li>
 							</ul>
 						</div>
 						<div class="col-lg-2 col-md-6 footer-links">
@@ -282,10 +282,10 @@
 					&copy; 2020 Copyright. All Rights Reserved
 				</div>
 				<div class="credits">
-					Developed and Designed by <a href="#about">iTerra</a>
+					Developed and Designed by <a href="about">iTerra</a>
 				</div>
 			</div>
-		</footer><!-- End Footer -->
+		</footer>
 	</section>
 
 	<!-- JAVASCRIPT BUNDLE -->

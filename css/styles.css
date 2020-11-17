@@ -9986,9 +9986,10 @@ html {
 }
 
 hr.divider {
-  max-width: 3.25rem;
+  max-width: 5rem;
   border-width: 0.2rem;
-  border-color: #84C44E;
+	border-color: #84C44E;
+	margin-left: 28rem;
 }
 
 hr.light {
@@ -10107,6 +10108,43 @@ header.masthead h1 {
   header.masthead h1 {
     font-size: 3.5rem;
   }
+}
+
+header.masthead-about {
+  padding-top: 10rem;
+  padding-bottom: calc(10rem - 4.5rem);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.8) 100%),  url("../assets/images/about/about.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+header.masthead-about h1 {
+	font-size: 2.25rem;
+}
+
+@media (min-width: 992px) {
+	header.masthead-about {
+		height: 100vh;
+		min-height: 40rem;
+		padding-top: 0rem;
+		padding-bottom: 0;
+	}
+
+	header.masthead-about p {
+		font-size: 1.15rem;
+	}
+
+	header.masthead-about h1 {
+		font-size: 3rem;
+	}
+}
+
+@media (min-width: 1200px) {
+	header.masthead-about h1 {
+		font-size: 3.5rem;
+	}
 }
 
 #news-home .containers-fluid, #news-home .containers-sm, #news-home .containers-md, #news-home .containers-lg, #news-home .containers-xl {
@@ -10266,6 +10304,12 @@ header.masthead h1 {
 
 .text-white-75 {
   color: rgba(255, 255, 255, 0.75);
+}
+
+.text-white-about {
+	color: rgba(255, 255, 255, 0.75);
+	font-weight: 700;
+	font-style: italic;
 }
 
 /*--------------------------------------------------------------
@@ -10934,16 +10978,6 @@ section {
 	margin-bottom: 0;
 }
 
-.section-title h4 {
-	font-size: 22px;
-	font-weight: bold;
-	text-transform: uppercase;
-	margin-bottom: 20px;
-	padding-bottom: 20px;
-	position: relative;
-	color: #84C44E;
-}
-
 /*--------------------------------------------------------------
 # Cliens
 --------------------------------------------------------------*/
@@ -11045,7 +11079,7 @@ section {
 .why-us .content h3 {
 	font-weight: 400;
 	font-size: 34px;
-	color: #37517e;
+	color: #84C44E;
 }
 
 .why-us .content h4 {
@@ -11056,7 +11090,7 @@ section {
 
 .why-us .content p {
 	font-size: 15px;
-	color: #848484;
+	color: #757575;
 }
 
 .why-us .img {
@@ -11087,16 +11121,17 @@ section {
 .why-us .accordion-list a {
 	display: block;
 	position: relative;
-	font-family: "Poppins", sans-serif;
+	font-family: Helvetica;
 	font-size: 16px;
 	line-height: 24px;
-	font-weight: 500;
+		font-weight: bold;
 	padding-right: 30px;
 	outline: none;
+	color: #5b8f30;
 }
 
 .why-us .accordion-list span {
-	color: #47b2e4;
+	color: #84C44E;
 	font-weight: 600;
 	font-size: 18px;
 	padding-right: 10px;
@@ -11112,6 +11147,8 @@ section {
 .why-us .accordion-list p {
 	margin-bottom: 0;
 	padding: 10px 0 0 0;
+	color: #757575;
+
 }
 
 .why-us .accordion-list .icon-show {
@@ -11119,11 +11156,11 @@ section {
 }
 
 .why-us .accordion-list a.collapsed {
-	color: #343a40;
+	color: #84C44E;
 }
 
 .why-us .accordion-list a.collapsed:hover {
-	color: #47b2e4;
+	color:#5b8f30;
 }
 
 .why-us .accordion-list a.collapsed .icon-show {
@@ -11251,7 +11288,7 @@ section {
 }
 
 .services .icon-box h4 a {
-	color: #37517e;
+	color: #84C44E;
 	transition: ease-in-out 0.3s;
 }
 
@@ -11266,7 +11303,7 @@ section {
 }
 
 .services .icon-box:hover h4 a {
-	color: #47b2e4;
+	color: #5b8f30;
 }
 
 /*--------------------------------------------------------------
@@ -11599,98 +11636,22 @@ section {
 /*--------------------------------------------------------------
 # Team
 --------------------------------------------------------------*/
-.team .member {
-	position: relative;
-	box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-	padding: 30px;
-	border-radius: 5px;
-	background: #fff;
-	transition: 0.5s;
+.team-member {
+	margin-bottom: 3rem;
+	text-align: center;
+	background-color: #fff;
 }
 
-.team .member .pic {
-	overflow: hidden;
-	width: 180px;
-	border-radius: 50%;
+.team-member img {
+	width: 20rem;
+	height: 20rem;
+	border: 0.5rem solid;
+	color: #84C44E;
 }
 
-.team .member .pic img {
-	transition: ease-in-out 0.3s;
-}
-
-.team .member:hover {
-	transform: translateY(-10px);
-}
-
-.team .member .member-info {
-	padding-left: 30px;
-}
-
-.team .member h4 {
-	font-weight: 700;
-	margin-bottom: 5px;
-	font-size: 20px;
-	color: #37517e;
-}
-
-.team .member span {
-	display: block;
-	font-size: 15px;
-	padding-bottom: 10px;
-	position: relative;
-	font-weight: 500;
-}
-
-.team .member span::after {
-	content: '';
-	position: absolute;
-	display: block;
-	width: 50px;
-	height: 1px;
-	background: #cbd6e9;
-	bottom: 0;
-	left: 0;
-}
-
-.team .member p {
-	margin: 10px 0 0 0;
-	font-size: 14px;
-}
-
-.team .member .social {
-	margin-top: 12px;
-	display: flex;
-	align-items: center;
-	justify-content: flex-start;
-}
-
-.team .member .social a {
-	transition: ease-in-out 0.3s;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	border-radius: 50px;
-	width: 32px;
-	height: 32px;
-	background: #eff2f8;
-}
-
-.team .member .social a i {
-	color: #37517e;
-	font-size: 16px;
-	margin: 0 2px;
-}
-
-.team .member .social a:hover {
-	background: #47b2e4;
-}
-
-.team .member .social a:hover i {
-	color: #fff;
-}
-
-.team .member .social a+a {
-	margin-left: 8px;
+.team-member h4 {
+	margin-top: 1.5rem;
+	margin-bottom: 0;
 }
 
 /*--------------------------------------------------------------
@@ -12343,6 +12304,7 @@ section {
 #kampanye .kampanye-item .kampanye-caption:hover {
 	padding: 1.5rem;
 	text-align: center;
+
 }
 
 #kampanye .kampanye-item .kampanye-caption .kampanye-caption-heading {
@@ -12397,205 +12359,6 @@ section {
 	box-shadow: 0 0 0 0.2rem #757575;
 }
 
-/*--------------------------------------------------------------
-# Detail Kampanye
---------------------------------------------------------------*/
-
-.img-detail {
-	overflow: hidden;
-  margin: 0 auto;
-  border-radius: 10px;
-}
-
-.img-detail img {
-	display: flex;
-	align-items: center;
-	text-align: center;
-	justify-content: center;
-	transition: transform .5s,
-	filter .5s ease-in-out;
-	filter: grayscale(100%);
-	transform-origin: center center center center;
-  width: 100%;
-}
-
-.img-detail:hover img {
-  filter: grayscale(0);
-  transform: scale(1.2);
-}
-
-#kampanye .kampanye-item .kampanye-caption .kampanye-caption-detail {
-	font-size: 2.0rem;
-	font-family: Helvetica;
-	font-weight: 700;
-	margin-bottom: 0;
-  color: #000;
-  margin: 20px auto;
-}
-
-#kampanye .kampanye-item .kampanye-caption .kampanye-caption-detail-left {
-	font-size: 2.0rem;
-	font-family: Helvetica;
-	font-weight: 700;
-	margin-bottom: 0;
-  color: #000;
-  margin: 20px;
-  text-align: left;
-}
-
-#kampanye .kampanye-item .kampanye-caption .kampanye-caption-sub-detail {
-	font-size: 1.2rem;
-	font-family: Helvetica;
-	font-weight: 700;
-	margin-bottom: 0;
-  color: #000;
-  text-align: left;
-  margin: 20px;
-}
-
-#kampanye .kampanye-item .kampanye-caption .btn-aksi {
-  position: relative;
-  margin: 20px 40px;
-  font-weight: 600;
-  font-size: 14px;
-  letter-spacing: 1px;
-  display: inline-block;
-  padding: 12px 32px;
-  border-radius: 10px;
-  transition: 0.3s;
-  line-height: 1;
-  color: #FFF;
-  background-color: #3498DB;
-  -webkit-animation-delay: 0.8s;
-  animation-delay: 0.8s;
-  border: 2px solid #3498DB;
-}
-
-#kampanye .kampanye-item .kampanye-caption .btn-aksi:hover {
-  color: #FFF;
-  background-color: #757575;
-  text-decoration: none;
-}
-
-#kampanye .kampanye-item .kampanye-caption .btn-aksi:active {
-	color: #FFF;
-	background-color: #5B8F30;
-	text-decoration: none;
-	outline: none;
-	border: none;
-}
-
-#kampanye .kampanye-item .kampanye-caption .btn-aksi:focus {
-	box-shadow: 0 0 0 0.2rem #757575;
-}
-
-#kampanye .kampanye-item .kampanye-caption .btn-donasi {
-  position: relative;
-  margin: 20px 60px;
-  font-weight: 600;
-  font-size: 14px;
-  letter-spacing: 1px;
-  display: inline-block;
-  padding: 12px 32px;
-  border-radius: 10px;
-  transition: 0.3s;
-  line-height: 1;
-  color: #FFF;
-  background-color: #E06666;
-  -webkit-animation-delay: 0.8s;
-  animation-delay: 0.8s;
-  border: 2px solid #E06666;
-}
-
-#kampanye .kampanye-item .kampanye-caption .btn-donasi:hover {
-  color: #FFF;
-  background-color: #757575;
-  text-decoration: none;
-}
-
-#kampanye .kampanye-item .kampanye-caption .btn-donasi:active {
-	color: #FFF;
-	background-color: #5b8f30;
-	text-decoration: none;
-	outline: none;
-	border: none;
-}
-
-#kampanye .kampanye-item .kampanye-caption .btn-donasi:focus {
-	box-shadow: 0 0 0 0.2rem #757575;
-}
-
-#kampanye .kampanye-item .kampanye-caption .btn-whatsapp {
-  position: relative;
-  margin: 20px 40px;
-  font-weight: 600;
-  font-size: 14px;
-  letter-spacing: 1px;
-  display: inline-block;
-  padding: 12px 32px;
-  border-radius: 10px;
-  transition: 0.3s;
-  line-height: 1;
-  color: #FFF;
-  background-color: #109956;
-  -webkit-animation-delay: 0.8s;
-  animation-delay: 0.8s;
-  border: 2px solid #109956;
-}
-
-#kampanye .kampanye-item .kampanye-caption .btn-whatsapp:hover {
-  color: #FFF;
-  background-color: #757575;
-  text-decoration: none;
-}
-
-#kampanye .kampanye-item .kampanye-caption .btn-whatsapp:active {
-	color: #FFF;
-	background-color: #5B8F30;
-	text-decoration: none;
-	outline: none;
-	border: none;
-}
-
-#kampanye .kampanye-item .kampanye-caption .btn-whatsapp:focus {
-	box-shadow: 0 0 0 0.2rem #757575;
-}
-
-#kampanye .kampanye-item .kampanye-caption .btn-facebook {
-  position: relative;
-  margin: 20px 40px;
-  font-weight: 600;
-  font-size: 14px;
-  letter-spacing: 1px;
-  display: inline-block;
-  padding: 12px 32px;
-  border-radius: 10px;
-  transition: 0.3s;
-  line-height: 1;
-  color: #FFF;
-  background-color: #3B5998;
-  -webkit-animation-delay: 0.8s;
-  animation-delay: 0.8s;
-  border: 2px solid #3B5998;
-}
-
-#kampanye .kampanye-item .kampanye-caption .btn-facebook:hover {
-  color: #FFF;
-  background-color: #757575;
-  text-decoration: none;
-}
-
-#kampanye .kampanye-item .kampanye-caption .btn-facebook:active {
-	color: #FFF;
-	background-color: #5B8F30;
-	text-decoration: none;
-	outline: none;
-	border: none;
-}
-
-#kampanye .kampanye-item .kampanye-caption .btn-facebook:focus {
-	box-shadow: 0 0 0 0.2rem #757575;
-}
 
 /*--------------------------------------------------------------
 # Donasi
@@ -12696,180 +12459,6 @@ section {
 
 #donasi .donasi-item .donasi-caption .btn-detail:focus {
 	box-shadow: 0 0 0 0.2rem #757575;
-}
-
-/*--------------------------------------------------------------
-# Detail Donasi
---------------------------------------------------------------*/
-
-.img-detail {
-	overflow: hidden;
-  margin: 0 auto;
-  border-radius: 10px;
-}
-
-.img-detail img {
-	display: flex;
-	align-items: center;
-	text-align: center;
-	justify-content: center;
-	transition: transform .5s,
-	filter .5s ease-in-out;
-	filter: grayscale(100%);
-	transform-origin: center center center center;
-  width: 100%;
-}
-
-.img-detail:hover img {
-  filter: grayscale(0);
-  transform: scale(1.2);
-}
-
-#donasi .donasi-item .donasi-caption .donasi-caption-detail {
-	font-size: 2.0rem;
-	font-family: Helvetica;
-	font-weight: 700;
-	margin-bottom: 0;
-  color: #000;
-  margin: 20px auto;
-}
-
-#donasi .donasi-item .donasi-caption .donasi-caption-detail-left {
-	font-size: 2.0rem;
-	font-family: Helvetica;
-	font-weight: 700;
-	margin-bottom: 0;
-  color: #000;
-  margin: 20px;
-  text-align: left;
-}
-
-#donasi .donasi-item .donasi-caption .donasi-caption-sub-detail {
-	font-size: 1.2rem;
-	font-family: Helvetica;
-	font-weight: 700;
-	margin-bottom: 0;
-  color: #000;
-  text-align: left;
-  margin: 20px;
-}
-
-#donasi .donasi-item .donasi-caption .donasi-caption-sub-detail-nama {
-	font-size: 1.2rem;
-	font-family: Helvetica;
-	font-weight: 700;
-	margin-bottom: 0;
-  color: #FFF;
-  text-align: left;
-  margin: 20px;
-}
-
-#donasi .donasi-item .donasi-caption .donasi-value-detail {
-  display: inline-block;
-  float: left;
-  color: #000;
-  padding-top: 10px;
-  margin: 20px;
-}
-
-#donasi .donasi-item .donasi-caption .donasi-day-detail {
-  display: inline-block;
-  float: right;
-  color: #000;
-  padding-top: 10px;
-  margin: 20px;
-}
-
-.img-sub-detail {
-  margin: 20px;
-}
-
-.img-sub-detail{
-  float: left;
-  width: 100%;
-}
-
-#donasi .donasi-item .donasi-caption .btn-donasi-detail {
-  position: relative;
-  margin: 80px auto 0px auto;
-  font-weight: 600;
-  font-size: 14px;
-  letter-spacing: 1px;
-  display: inline-block;
-  padding: 22px 82px;
-  border-radius: 10px;
-  transition: 0.3s;
-  line-height: 1;
-  color: #FFF;
-  background-color: #E06666;
-  -webkit-animation-delay: 0.8s;
-  animation-delay: 0.8s;
-  border: 2px solid #E06666;
-}
-
-#donasi .donasi-item .donasi-caption .btn-donasi-page-detail:hover {
-  color: #FFF;
-  background-color: #757575;
-  text-decoration: none;
-}
-
-#donasi .donasi-item .donasi-caption .btn-donasi-detail:active {
-	color: #FFF;
-	background-color: #5b8f30;
-	text-decoration: none;
-	outline: none;
-	border: none;
-}
-
-#donasi .donasi-item .donasi-caption .btn-donasi-detail:focus {
-	box-shadow: 0 0 0 0.2rem #757575;
-}
-
-/*--------------------------------------------------------------
-# About Us
---------------------------------------------------------------*/
-
-#about .about-title {
-  margin-top: 100px;
-}
-
-#about .about-item {
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-#about .about-item .img-hover-zoom img {
-  border-radius: 10px;
-  width: 100%;
-}
-
-#about .about-item .about-caption {
-	padding: 1.5rem;
-  text-align: center;
-  color: #fff;
-  background-color: #84C44E;
-  border-radius: 10px;
-}
-
-#about .about-item .about-caption:hover {
-	padding: 1.5rem;
-	text-align: center;
-}
-
-#about .about-item .about-caption .about-caption-heading {
-	font-size: 1.5rem;
-	font-family: Helvetica;
-	font-weight: 700;
-	margin-bottom: 0;
-	color: #fff;
-}
-
-#about .about-item .about-caption .about-caption-subheading {
-	font-size: 1rem;
-	font-family: Helvetica;
-	font-weight: 700;
-	margin-bottom: 0;
-	color: #000;
 }
 
 /*--------------------------------------------------------------

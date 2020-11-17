@@ -28,7 +28,7 @@ The above copyright notice and this permission notice shall be included in all c
 	<link href="assets/assets_admin/css/material-dashboard.css?v=2.1.2" rel="stylesheet" />
 	<link href="assets/assets_admin/css/styles.css" rel="stylesheet" />
 	<link rel="stylesheet" href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css'>
-		<!-- Core theme JS-->
+	<!-- Core theme JS-->
 	<link rel="stylesheet" href="css/util.css">
 	<link rel="stylesheet" href="css/register.css">
 	<link rel="stylesheet" href="css/styles.css">
@@ -82,7 +82,9 @@ The above copyright notice and this permission notice shall be included in all c
 			<nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top ">
 				<div class="container-fluid">
 					<div class="navbar-wrapper">
-						<a class="navbar-brand" style="color: black;" href="javascript:;"><h3>Selamat Datang !<i class="material-icons" style="color:green;">eco</i></h3></a>
+						<a class="navbar-brand" style="color: black;" href="javascript:;">
+							<h3>Selamat Datang !<i class="material-icons" style="color:green;">eco</i></h3>
+						</a>
 					</div>
 					<button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="sr-only">Toggle navigation</span>
@@ -124,133 +126,133 @@ The above copyright notice and this permission notice shall be included in all c
 					</div>
 				</div>
 			</nav>
-			 <!-- End Navbar -->
-      <div class="content">
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-md-8">
-              <div class="card">
-                <div class="card-header card-header-success">
-                  <h4 class="card-title">Ubah Profil</h4>
-                  <p class="card-category">Lengkapi profil anda</p>
-                </div>
-                <div class="card-body">
-                  <form>
-                    <div class="wrap-input100 validate-input" data-validate="Gunakan Nama yang Valid">
-							<input class="input100" type="text" name="nama" placeholder="Nama Lengkap" required>
-							<span class="focus-input100"></span>
-							<span class="symbol-input100">
-								<i class="fa fa-address-book" aria-hidden="true"></i>
-							</span>
-						</div>
+			<!-- End Navbar -->
+			<div class="content">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-8">
+							<div class="card">
+								<div class="card-header card-header-success">
+									<h4 class="card-title">Ubah Profil</h4>
+									<p class="card-category">Lengkapi profil anda</p>
+								</div>
+								<div class="card-body">
+									<form>
+										<div class="wrap-input100 validate-input" data-validate="Gunakan Nama yang Valid">
+											<input class="input100" type="text" name="nama" placeholder="Nama Lengkap" required>
+											<span class="focus-input100"></span>
+											<span class="symbol-input100">
+												<i class="fa fa-address-book" aria-hidden="true"></i>
+											</span>
+										</div>
 
-						<div class="wrap-input100 validate-input" data-validate="Gunakan Tanggal Lahir yang Valid">
-							<input class="input100" type="date" name="date" placeholder="Tanggal Lahir" required>
-							<span class="focus-input100"></span>
-							<span class="symbol-input100">
-								<i class="fa fa-calendar" aria-hidden="true"></i>
-							</span>
-						</div>
+										<div class="wrap-input100 validate-input" data-validate="Gunakan Tanggal Lahir yang Valid">
+											<input class="input100" type="date" name="date" placeholder="Tanggal Lahir" required>
+											<span class="focus-input100"></span>
+											<span class="symbol-input100">
+												<i class="fa fa-calendar" aria-hidden="true"></i>
+											</span>
+										</div>
 
-						<div class="wrap-input100 validate-input" data-validate="Pilih Jenis Kelamin">
-							<select class="input100 required" name="jk" required>
-								<option value="" disabled selected>Pilih Jenis Kelamin</option>
-								<option value="saab">Pria</option>
-								<option value="fiat">Wanita</option>
-							</select>
-							<span class="focus-input100"></span>
-							<span class="symbol-input100">
-								<i class="fa fa-user" aria-hidden="true"></i>
-							</span>
-						</div>
+										<div class="wrap-input100 validate-input" data-validate="Pilih Jenis Kelamin">
+											<select class="input100 required" name="jk" required>
+												<option value="" disabled selected>Pilih Jenis Kelamin</option>
+												<option value="saab">Pria</option>
+												<option value="fiat">Wanita</option>
+											</select>
+											<span class="focus-input100"></span>
+											<span class="symbol-input100">
+												<i class="fa fa-user" aria-hidden="true"></i>
+											</span>
+										</div>
 
-						<div class="wrap-input100 validate-input" data-validate="Gunakan Nomor Telepon yang Valid">
-							<input class="input100" type="no_tlp" name="no_tlp" placeholder="Nomor Telepon" required>
-							<span class="focus-input100"></span>
-							<span class="symbol-input100">
-								<i class="fa fa-phone" aria-hidden="true"></i>
-							</span>
-						</div>
+										<div class="wrap-input100 validate-input" data-validate="Gunakan Nomor Telepon yang Valid">
+											<input class="input100" type="no_tlp" name="no_tlp" placeholder="Nomor Telepon" required>
+											<span class="focus-input100"></span>
+											<span class="symbol-input100">
+												<i class="fa fa-phone" aria-hidden="true"></i>
+											</span>
+										</div>
 
-						<div class="wrap-input100 validate-input" data-validate="Gunakan NIK yang Valid">
-							<input class="input100" type="nik" name="nik" placeholder="Nomor Induk Kependudukan" required>
-							<span class="focus-input100"></span>
-							<span class="symbol-input100">
-								<i class="fa fa-address-card" aria-hidden="true"></i>
-							</span>
-						</div>
+										<div class="wrap-input100 validate-input" data-validate="Gunakan NIK yang Valid">
+											<input class="input100" type="nik" name="nik" placeholder="Nomor Induk Kependudukan" required>
+											<span class="focus-input100"></span>
+											<span class="symbol-input100">
+												<i class="fa fa-address-card" aria-hidden="true"></i>
+											</span>
+										</div>
 
-						<div class="wrap-input100 validate-input" data-validate="Gunakan Email yang Valid: ez@abc.xyz">
-							<input class="input100" type="text" name="email" placeholder="Email" required>
-							<span class="focus-input100"></span>
-							<span class="symbol-input100">
-								<i class="fa fa-envelope" aria-hidden="true"></i>
-							</span>
-						</div>
+										<div class="wrap-input100 validate-input" data-validate="Gunakan Email yang Valid: ez@abc.xyz">
+											<input class="input100" type="text" name="email" placeholder="Email" required>
+											<span class="focus-input100"></span>
+											<span class="symbol-input100">
+												<i class="fa fa-envelope" aria-hidden="true"></i>
+											</span>
+										</div>
 
-						<div class="wrap-input100 validate-input" data-validate="Kata Sandi Diperlukan">
-							<input class="input100" type="password" name="password" placeholder="Kata Sandi" required>
-							<span class="focus-input100"></span>
-							<span class="symbol-input100">
-								<i class="fa fa-lock" aria-hidden="true"></i>
-							</span>
-						</div>
+										<div class="wrap-input100 validate-input" data-validate="Kata Sandi Diperlukan">
+											<input class="input100" type="password" name="password" placeholder="Kata Sandi" required>
+											<span class="focus-input100"></span>
+											<span class="symbol-input100">
+												<i class="fa fa-lock" aria-hidden="true"></i>
+											</span>
+										</div>
 
-						<div class="wrap-input100 validate-input" data-validate="Kata Sandi Tidak Cocok">
-							<input class="input100" type="password" name="password" placeholder="Konfirmasi Kata Sandi" required>
-							<span class="focus-input100"></span>
-							<span class="symbol-input100">
-								<i class="fa fa-lock" aria-hidden="true"></i>
-							</span>
-						</div>
-                    <button type="submit" class="btn btn-primary pull-right">Ubah Profil</button>
-                    <div class="clearfix"></div>
-                  </form>
-                </div>
-              </div>
-            </div>
-		<!--Avatar-->
-            <div class="col-md-4">
-              <div class="card card-profile">
-                <div class="card-avatar">
-                  <a href="javascript:;">
-                    <img class="img" src="assets/assets_admin/img/faces/marc.jpg" />
-                  </a>
-                </div>
-                <div class="card-body">
-                  <h6 class="card-category text-gray">CEO / Co-Founder</h6>
-                  <h4 class="card-title">Alec Thompson</h4>
-                  <p class="card-description">
-                    iTerra memberikan edukasi dan mengajak kita untuk bersama-sama menjaga lingkungan sekitar
-                  </p>
-				  <i class="material-icons" href="#" style="cursor:pointer;" data-toggle="modal" data-target="#myModal">edit</i>
-                </div>
-				<!-- Modal -->
-					<div class="modal fade" id="myModal" role="dialog">
-					<div class="modal-dialog">
-    
-				<!-- Modal content-->
-						<div class="modal-content">
-							<div class="modal-header">
-								<h4 class="modal-title" style="text-align: center;">Ubah Status</h4>
-							</div>
-							<div class="modal-body">
-							<div class="form-group">
-								<textarea class="form-control" rows="4"></textarea>
-							</div>				
-						</div>
-							<div class="modal-footer">
-								<button type="button" class="btn btn-default" data-dismiss="modal">Batal</button>
-								<button type="button" class="btn btn-default" data-dismiss="modal" style="background-color:#84C44E;">Simpan</button>
+										<div class="wrap-input100 validate-input" data-validate="Kata Sandi Tidak Cocok">
+											<input class="input100" type="password" name="password" placeholder="Konfirmasi Kata Sandi" required>
+											<span class="focus-input100"></span>
+											<span class="symbol-input100">
+												<i class="fa fa-lock" aria-hidden="true"></i>
+											</span>
+										</div>
+										<button type="submit" class="btn btn-primary pull-right">Ubah Profil</button>
+										<div class="clearfix"></div>
+									</form>
+								</div>
 							</div>
 						</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-	</div>
-</div>
+						<!--Avatar-->
+						<div class="col-md-4">
+							<div class="card card-profile">
+								<div class="card-avatar">
+									<a href="javascript:;">
+										<img class="img" src="assets/assets_admin/img/faces/marc.jpg" />
+									</a>
+								</div>
+								<div class="card-body">
+									<h6 class="card-category text-gray">CEO / Co-Founder</h6>
+									<h4 class="card-title">Alec Thompson</h4>
+									<p class="card-description">
+										iTerra memberikan edukasi dan mengajak kita untuk bersama-sama menjaga lingkungan sekitar
+									</p>
+									<i class="material-icons" href="#" style="cursor:pointer;" data-toggle="modal" data-target="#myModal">edit</i>
+								</div>
+								<!-- Modal -->
+								<div class="modal fade" id="myModal" role="dialog">
+									<div class="modal-dialog">
+
+										<!-- Modal content-->
+										<div class="modal-content">
+											<div class="modal-header">
+												<h4 class="modal-title" style="text-align: center;">Ubah Status</h4>
+											</div>
+											<div class="modal-body">
+												<div class="form-group">
+													<textarea class="form-control" rows="4"></textarea>
+												</div>
+											</div>
+											<div class="modal-footer">
+												<button type="button" class="btn btn-default" data-dismiss="modal">Batal</button>
+												<button type="button" class="btn btn-default" data-dismiss="modal" style="background-color:#84C44E;">Simpan</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
 			<br>
 			<!--Footer-->
 			<section id="footer">
@@ -260,7 +262,7 @@ The above copyright notice and this permission notice shall be included in all c
 							<div class="row">
 								<div class="col-lg-4 col-md-6">
 									<div class="footer-info">
-										<img src="assets/assets_admin/img/iterra-01.png" style="width: 100px;">
+										<img src="assets\images\logo\iterra-01.png" style="width: 100px;">
 										<h3>Tentang Kami</h3>
 										<p>
 											<strong>Alamat:</strong> Jalan Raya Bandung-Sumedang <br>
@@ -277,11 +279,11 @@ The above copyright notice and this permission notice shall be included in all c
 								<div class="col-lg-2 col-md-6 footer-links">
 									<h4>Kategori</h4>
 									<ul>
-										<li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-										<li><i class="bx bx-chevron-right"></i> <a href="#">Tentang Kami</a></li>
-										<li><i class="bx bx-chevron-right"></i> <a href="#">Artikel</a></li>
-										<li><i class="bx bx-chevron-right"></i> <a href="#">Kampanye</a></li>
-										<li><i class="bx bx-chevron-right"></i> <a href="#">Donasi</a></li>
+										<li><i class="bx bx-chevron-right"></i> <a href="home">Home</a></li>
+										<li><i class="bx bx-chevron-right"></i> <a href="about">Tentang Kami</a></li>
+										<li><i class="bx bx-chevron-right"></i> <a href="artikel">Artikel</a></li>
+										<li><i class="bx bx-chevron-right"></i> <a href="kampanye">Kampanye</a></li>
+										<li><i class="bx bx-chevron-right"></i> <a href="donasi">Donasi</a></li>
 									</ul>
 								</div>
 								<div class="col-lg-2 col-md-6 footer-links">
@@ -309,7 +311,7 @@ The above copyright notice and this permission notice shall be included in all c
 							&copy; 2020 Copyright. All Rights Reserved
 						</div>
 						<div class="credits">
-							Developed and Designed by <a href="#about">iTerra</a>
+							Developed and Designed by <a href="about">iTerra</a>
 						</div>
 					</div>
 				</footer>
