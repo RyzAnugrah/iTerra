@@ -12699,6 +12699,133 @@ section {
 }
 
 /*--------------------------------------------------------------
+# Detail Donasi
+--------------------------------------------------------------*/
+
+.img-detail {
+	overflow: hidden;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+.img-detail img {
+	display: flex;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+	transition: transform .5s,
+	filter .5s ease-in-out;
+	filter: grayscale(100%);
+	transform-origin: center center center center;
+  width: 100%;
+}
+
+.img-detail:hover img {
+  filter: grayscale(0);
+  transform: scale(1.2);
+}
+
+#donasi .donasi-item .donasi-caption .donasi-caption-detail {
+	font-size: 2.0rem;
+	font-family: Helvetica;
+	font-weight: 700;
+	margin-bottom: 0;
+  color: #000;
+  margin: 20px auto;
+}
+
+#donasi .donasi-item .donasi-caption .donasi-caption-detail-left {
+	font-size: 2.0rem;
+	font-family: Helvetica;
+	font-weight: 700;
+	margin-bottom: 0;
+  color: #000;
+  margin: 20px;
+  text-align: left;
+}
+
+#donasi .donasi-item .donasi-caption .donasi-caption-sub-detail {
+	font-size: 1.2rem;
+	font-family: Helvetica;
+	font-weight: 700;
+	margin-bottom: 0;
+  color: #000;
+  text-align: left;
+  margin: 20px;
+}
+
+#donasi .donasi-item .donasi-caption .donasi-caption-sub-detail-nama {
+	font-size: 1.2rem;
+	font-family: Helvetica;
+	font-weight: 700;
+	margin-bottom: 0;
+  color: #FFF;
+  text-align: left;
+  margin: 20px;
+}
+
+#donasi .donasi-item .donasi-caption .donasi-value-detail {
+  display: inline-block;
+  float: left;
+  color: #000;
+  padding-top: 10px;
+  margin: 20px;
+}
+
+#donasi .donasi-item .donasi-caption .donasi-day-detail {
+  display: inline-block;
+  float: right;
+  color: #000;
+  padding-top: 10px;
+  margin: 20px;
+}
+
+.img-sub-detail {
+  margin: 20px;
+}
+
+.img-sub-detail{
+  float: left;
+  width: 100%;
+}
+
+#donasi .donasi-item .donasi-caption .btn-donasi-detail {
+  position: relative;
+  margin: 80px auto 0px auto;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 22px 82px;
+  border-radius: 10px;
+  transition: 0.3s;
+  line-height: 1;
+  color: #FFF;
+  background-color: #E06666;
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+  border: 2px solid #E06666;
+}
+
+#donasi .donasi-item .donasi-caption .btn-donasi-page-detail:hover {
+  color: #FFF;
+  background-color: #757575;
+  text-decoration: none;
+}
+
+#donasi .donasi-item .donasi-caption .btn-donasi-detail:active {
+	color: #FFF;
+	background-color: #5b8f30;
+	text-decoration: none;
+	outline: none;
+	border: none;
+}
+
+#donasi .donasi-item .donasi-caption .btn-donasi-detail:focus {
+	box-shadow: 0 0 0 0.2rem #757575;
+}
+
+/*--------------------------------------------------------------
 # Login
 --------------------------------------------------------------*/
 

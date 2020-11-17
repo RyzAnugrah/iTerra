@@ -60,9 +60,8 @@
 				<h4 class="section-heading">From Earth to Earth</h4>
 			</div>
 
-			<!-- Contents -->
+			<!-- Content -->
 			<div class="row">
-				<!-- Content -->
 				<div class="col-10 mx-auto mb-4" data-aos="zoom-in">
 					<div class="kampanye-item">
 						<div class="img-detail">
@@ -76,7 +75,7 @@
 						</div> <br>
 						<div class="kampanye-caption">
 							<div class="kampanye-caption-detail-left">Deskripsi:</div>
-							<div class="kampanye-caption-sub-detail paragraf text-justify">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</div>
+							<div class="kampanye-caption-sub-detail text-justify">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</div>
 							<a href="" class="btn btn-whatsapp"><i class="fab fa-whatsapp" aria-hidden="true"></i> Tanyakan Tentang Kampanye Ini</a>
 							<div class="kampanye-caption-sub-detail text-center">Share kampanye ini.</div>
 							<a href="" class="btn btn-facebook"><i class="fab fa-facebook" aria-hidden="true"></i> Share Facebook</a>

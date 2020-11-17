@@ -57,139 +57,40 @@
 		<div class="container">
 			<div class="text-center section-title donasi-title" data-aos="fade-down">
 				<h2 class="section-heading">Donasi</h2>
+				<h4 class="section-heading">Bantu Donasi Kebakaran Hutan</h4>
 			</div>
 
-			<!-- Contents -->
+			<!-- Content -->
 			<div class="row">
-				<!-- Contents 1 -->
-				<div class="col-lg-4 col-12 mb-4" data-aos="zoom-in">
+				<div class="col-10 mx-auto mb-4" data-aos="zoom-in">
 					<div class="donasi-item">
-						<a class="donasi-link" data-toggle="modal" href="detail_donasi">
-							<div class="img-hover-zoom">
-								<img src="assets/images/home/artikel1.jpg" alt="" />
+						<div class="img-detail">
+							<img src="assets/images/home/artikel1.jpg" alt="" />
+						</div>
+						<div class="donasi-caption">
+							<div class="donasi-caption-detail">Rp. 150.000.000 terkumpul dari Rp. 170.000.000</div>
+							<div class="progress mt-4 mb-2">
+								<div class="progress-bar bg-secondary" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
 							</div>
-						</a>
-						<a>
-							<div class="donasi-caption">
-								<a href="detail_donasi" class="donasi-caption-heading">Donasi 1</a>
-								<div class="progress mt-4 mb-2">
-									<div class="progress-bar bg-secondary" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+							<p class="donasi-caption-sub-detail donasi-value-detail">Rp. 50.000.000</p>
+							<p class="donasi-caption-sub-detail donasi-day-detail">60 hari lagi</p>
+							<a href="" class="btn btn-donasi-detail">Donasi Sekarang!</a>
+						</div> <br>
+						<div class="donasi-caption">
+							<div class="donasi-caption-detail-left">Informasi Penggalangan Dana</div>
+							<div class="donasi-caption-sub-detail text-justify">Penggalang Dana</div>
+							<div class="row">
+								<div class="col-2">
+									<img src="assets/images/home/artikel1.jpg" class="img img-sub-detail rounded-circle" alt="">
 								</div>
-								<p class="donasi-value">Rp. 50.000.000</p>
-								<p class="donasi-day">60 hari lagi</p>
-								<a href="detail_donasi" class="btn btn-detail ">Detail ➔</a>
-							</div>
-						</a>
-					</div>
-				</div>
-
-				<!-- Contents 2 -->
-				<div class="col-lg-4 col-12 mb-4" data-aos="zoom-in">
-					<div class="donasi-item">
-						<a class="donasi-link" data-toggle="modal" href="#donasiModal1">
-							<div class="img-hover-zoom">
-								<img src="assets/images/home/artikel2.jpg" alt="" />
-							</div>
-						</a>
-						<a>
-							<div class="donasi-caption">
-								<a href="#donasiModal1" class="donasi-caption-heading">Donasi 2</a>
-								<div class="progress mt-4 mb-2">
-									<div class="progress-bar bg-secondary" role="progressbar" style="width: 35%" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"></div>
+								<div class="col-4">
+									<div class="donasi-caption-sub-detail-nama">Alvin S.</div>
+									<div class="donasi-caption-sub-detail">Identitas Terverifikasi</div>
 								</div>
-								<p class="donasi-value">Rp. 150.000.000</p>
-								<p class="donasi-day">60 hari lagi</p>
-								<a href="#donasiModal1" class="btn btn-detail">Detail ➔</a>
 							</div>
-						</a>
-					</div>
-				</div>
-
-				<!-- Contents 3 -->
-				<div class="col-lg-4 col-12 mb-4" data-aos="zoom-in">
-					<div class="donasi-item">
-						<a class="donasi-link" data-toggle="modal" href="#donasiModal1">
-							<div class="img-hover-zoom">
-								<img src="assets/images/home/artikel3.jpg" alt="" />
-							</div>
-						</a>
-						<a>
-							<div class="donasi-caption">
-								<a href="#donasiModal1" class="donasi-caption-heading">Donasi 3</a>
-								<div class="progress mt-4 mb-2">
-									<div class="progress-bar bg-secondary" role="progressbar" style="width: 45%" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100"></div>
-								</div>
-								<p class="donasi-value">Rp. 10.000.000</p>
-								<p class="donasi-day">60 hari lagi</p>
-								<a href="#donasiModal1" class="btn btn-detail">Detail ➔</a>
-							</div>
-						</a>
-					</div>
-				</div>
-
-				<!-- Contents 4 -->
-				<div class="col-lg-4 col-12 mb-4 mb-lg-0" data-aos="zoom-in">
-					<div class="donasi-item">
-						<a class="donasi-link" data-toggle="modal" href="#donasiModal1">
-							<div class="img-hover-zoom">
-								<img src="assets/images/home/artikel4.jpg" alt="" />
-							</div>
-						</a>
-						<a>
-							<div class="donasi-caption">
-								<a href="#donasiModal1" class="donasi-caption-heading">Donasi 4</a>
-								<div class="progress mt-4 mb-2">
-									<div class="progress-bar bg-secondary" role="progressbar" style="width: 55%" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
-								</div>
-								<p class="donasi-value">Rp. 50.000.000</p>
-								<p class="donasi-day">60 hari lagi</p>
-								<a href="#donasiModal1" class="btn btn-detail">Detail ➔</a>
-							</div>
-						</a>
-					</div>
-				</div>
-
-				<!-- Contents 5 -->
-				<div class="col-lg-4 col-12 mb-4 mb-sm-0" data-aos="zoom-in">
-					<div class="donasi-item">
-						<a class="donasi-link" data-toggle="modal" href="#donasiModal1">
-							<div class="img-hover-zoom">
-								<img style="width: 200%;" src="assets/images/home/artikel5.jpg" alt="" />
-							</div>
-						</a>
-						<a>
-							<div class="donasi-caption">
-								<a href="#donasiModal1" class="donasi-caption-heading">Donasi 5</a>
-								<div class="progress mt-4 mb-2">
-									<div class="progress-bar bg-secondary" role="progressbar" style="width: 65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
-								</div>
-								<p class="donasi-value">Rp. 150.000.000</p>
-								<p class="donasi-day">60 hari lagi</p>
-								<a href="#donasiModal1" class="btn btn-detail">Detail ➔</a>
-							</div>
-						</a>
-					</div>
-				</div>
-
-				<!-- Contents 6 -->
-				<div class="col-lg-4 col-sm-6" data-aos="zoom-in">
-					<div class="donasi-item">
-						<a class="donasi-link" data-toggle="modal" href="#donasiModal1">
-							<div class="img-hover-zoom">
-								<img src="assets/images/home/artikel6.jpg" alt="" />
-							</div>
-						</a>
-						<a>
-							<div class="donasi-caption">
-								<a href="#donasiModal1" class="donasi-caption-heading">Donasi 6</a>
-								<div class="progress mt-4 mb-2">
-									<div class="progress-bar bg-secondary" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-								</div>
-								<p class="donasi-value">Rp. 10.000.000</p>
-								<p class="donasi-day">60 hari lagi</p>
-								<a href="#donasiModal1" class="btn btn-detail">Detail ➔</a>
-							</div>
-						</a>
+							<div class="donasi-caption-sub-detail text-justify">Deskripsi:</div>
+							<div class="donasi-caption-sub-detail text-justify">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</div>
+						</div>
 					</div>
 				</div>
 			</div>
