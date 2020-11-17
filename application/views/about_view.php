@@ -56,16 +56,16 @@
 	<header class="masthead-about">
 		<div class="container h-100">
 			<div class="row h-100 align-items-center justify-content-center text-center">
-				<div class="col-lg-10 align-self-end">
+				<div class="col-lg-10 align-self-end" data-aos="zoom-in">
 					<h1 class="text-white font-weight-bold">SELAMAT DATANG DI iTERRA</h1>
 					<hr class="divider my-4" />
 				</div>
-				<div class="col-lg-8 align-self-baseline">
+				<div class="col-lg-8 align-self-baseline" data-aos="zoom-in">
 					<p class="text-white-about">~ When we heal the earth, we heal ourselves ~ <br>
 						“Ketika kita menyembuhkan bumi, kita menyembuhkan diri kita sendiri” <br>
 						<p class="text-white-75 font-weight-light mb-5">(David W. Orr - Profesor Studi Lingkungan dan Politik di Paul Sears di Oberlin College Emeritus)</p>
 					</p>
-					<a class="button button-light button-xl js-scroll-trigger" href="#about">Selengkapnya</a>
+					<a class="button button-light button-xl js-scroll-trigger" href="#about" >Selengkapnya</a>
 				</div>
 			</div>
 		</div>

@@ -10055,7 +10055,7 @@ hr.light {
     padding: 0 1rem;
   }
   #mainNav .navbar-nav .nav-item .nav-link:hover {
-    color: #fff;
+		text-decoration: underline;
   }
   #mainNav .navbar-nav .nav-item:last-child .nav-link {
     padding-right: 0;
