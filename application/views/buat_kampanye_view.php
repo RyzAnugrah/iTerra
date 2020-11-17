@@ -28,7 +28,7 @@ The above copyright notice and this permission notice shall be included in all c
 	<link href="assets/assets_admin/css/material-dashboard.css?v=2.1.2" rel="stylesheet" />
 	<link href="assets/assets_admin/css/styles.css" rel="stylesheet" />
 	<link rel="stylesheet" href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css'>
-		<!-- Core theme JS-->
+	<!-- Core theme JS-->
 	<link rel="stylesheet" href="css/util.css">
 	<link rel="stylesheet" href="css/register.css">
 	<link rel="stylesheet" href="css/styles.css">
@@ -82,7 +82,9 @@ The above copyright notice and this permission notice shall be included in all c
 			<nav class="navbar navbar-expand-lg navbar-transparent navbar-absolute fixed-top ">
 				<div class="container-fluid">
 					<div class="navbar-wrapper">
-						<a class="navbar-brand" style="color: black;" href="javascript:;"><h3>Selamat Datang !<i class="material-icons" style="color:green;">eco</i></h3></a>
+						<a class="navbar-brand" style="color: black;" href="javascript:;">
+							<h3>Selamat Datang !<i class="material-icons" style="color:green;">eco</i></h3>
+						</a>
 					</div>
 					<button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="sr-only">Toggle navigation</span>
@@ -124,7 +126,7 @@ The above copyright notice and this permission notice shall be included in all c
 					</div>
 				</div>
 			</nav>
-<!-- End Navbar -->
+			<!-- End Navbar -->
 			<div class="content">
 				<div class="container-fluid">
 					<div class="content">
@@ -157,110 +159,110 @@ The above copyright notice and this permission notice shall be included in all c
 												<div class="row">
 													<div class="col-md-12">
 														<div class="form-group">
-														<label>Waktu Pelaksanaan</label>
+															<label>Waktu Pelaksanaan</label>
 															<label class="bmd-label-floating"></label>
 															<input type="date" class="form-control">
 														</div>
 													</div>
 												</div>
 												<div class="row">
-												<div class="col-md-12">
-												<div class="form-group">
-												<label> Upload Gambar</label>
-													<div class="custom-file">
-														<input type="file" class="custom-file-input" id="customFile">
-														<label class="custom-file-label" for="customFile">Choose file</label>
-													</div>
-												</form>
-												</div>
-												</div>
-												</div>
-												<div class="row">
 													<div class="col-md-12">
 														<div class="form-group">
-															<label>Deskripsi Kampanye</label>
-															<div class="form-group">
-																<label class="bmd-label-floating"> Tulis deskripsi disini</label>
-																<textarea class="form-control" rows="5"></textarea>
+															<label> Upload Gambar</label>
+															<div class="custom-file">
+																<input type="file" class="custom-file-input" id="customFile">
+																<label class="custom-file-label" for="customFile">Choose file</label>
 															</div>
-														</div>
-													</div>
-												</div>
-												<button type="submit" class="btn btn-primary pull-right">Submit</button>
-												<div class="clearfix"></div>
 											</form>
 										</div>
 									</div>
 								</div>
+								<div class="row">
+									<div class="col-md-12">
+										<div class="form-group">
+											<label>Deskripsi Kampanye</label>
+											<div class="form-group">
+												<label class="bmd-label-floating"> Tulis deskripsi disini</label>
+												<textarea class="form-control" id="editor" rows="5"></textarea>
+											</div>
+										</div>
+									</div>
+								</div>
+								<button type="submit" class="btn btn-primary pull-right">Submit</button>
+								<div class="clearfix"></div>
+								</form>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			<br>
-			<!--Footer-->
-			<section id="footer">
-				<footer>
-					<div class="footer-top">
-						<div class="containers">
-							<div class="row">
-								<div class="col-lg-4 col-md-6">
-									<div class="footer-info">
-										<img src="assets/assets_admin/img/iterra-01.png" style="width: 100px;">
-										<h3>Tentang Kami</h3>
-										<p>
-											<strong>Alamat:</strong> Jalan Raya Bandung-Sumedang <br>
-											No. 239 Jatinangor <br>
-											<strong>Email:</strong> support@iterra.com<br>
-										</p>
-										<div class="social-links mt-3">
-											<a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-											<a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-											<a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-										</div>
-									</div>
-								</div>
-								<div class="col-lg-2 col-md-6 footer-links">
-									<h4>Kategori</h4>
-									<ul>
-										<li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-										<li><i class="bx bx-chevron-right"></i> <a href="#">Tentang Kami</a></li>
-										<li><i class="bx bx-chevron-right"></i> <a href="#">Artikel</a></li>
-										<li><i class="bx bx-chevron-right"></i> <a href="#">Kampanye</a></li>
-										<li><i class="bx bx-chevron-right"></i> <a href="#">Donasi</a></li>
-									</ul>
-								</div>
-								<div class="col-lg-2 col-md-6 footer-links">
-									<h4>Update Terkini</h4>
-									<ul>
-										<li><i class="bx bx-chevron-right"></i> <a href="#">Update 1</a></li>
-										<li><i class="bx bx-chevron-right"></i> <a href="#">Update 2</a></li>
-										<li><i class="bx bx-chevron-right"></i> <a href="#">Update 3</a></li>
-										<li><i class="bx bx-chevron-right"></i> <a href="#">Update 4</a></li>
-										<li><i class="bx bx-chevron-right"></i> <a href="#">Update 5</a></li>
-									</ul>
-								</div>
-								<div class="col-lg-4 col-md-6 footer-newsletter">
-									<h4>Langganan</h4>
-									<p>Dapatkan info terbaru dari Kami melalui e-mail</p>
-									<form action="" method="post">
-										<input type="email" name="email" placeholder="Email"><input type="submit" value="Subscribe">
-									</form>
+		</div>
+	</div>
+	</div>
+	<br>
+	<!--Footer-->
+	<section id="footer">
+		<footer>
+			<div class="footer-top">
+				<div class="containers">
+					<div class="row">
+						<div class="col-lg-4 col-md-6">
+							<div class="footer-info">
+								<img src="assets\images\logo\iterra-01.png" style="width: 100px;">
+								<h3>Tentang Kami</h3>
+								<p>
+									<strong>Alamat:</strong> Jalan Raya Bandung-Sumedang <br>
+									No. 239 Jatinangor <br>
+									<strong>Email:</strong> support@iterra.com<br>
+								</p>
+								<div class="social-links mt-3">
+									<a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+									<a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+									<a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
 								</div>
 							</div>
 						</div>
-					</div>
-					<div class="container">
-						<div class="copyright">
-							&copy; 2020 Copyright. All Rights Reserved
+						<div class="col-lg-2 col-md-6 footer-links">
+							<h4>Kategori</h4>
+							<ul>
+								<li><i class="bx bx-chevron-right"></i> <a href="home">Home</a></li>
+								<li><i class="bx bx-chevron-right"></i> <a href="about">Tentang Kami</a></li>
+								<li><i class="bx bx-chevron-right"></i> <a href="artikel">Artikel</a></li>
+								<li><i class="bx bx-chevron-right"></i> <a href="kampanye">Kampanye</a></li>
+								<li><i class="bx bx-chevron-right"></i> <a href="donasi">Donasi</a></li>
+							</ul>
 						</div>
-						<div class="credits">
-							Developed and Designed by <a href="#about">iTerra</a>
+						<div class="col-lg-2 col-md-6 footer-links">
+							<h4>Update Terkini</h4>
+							<ul>
+								<li><i class="bx bx-chevron-right"></i> <a href="#">Update 1</a></li>
+								<li><i class="bx bx-chevron-right"></i> <a href="#">Update 2</a></li>
+								<li><i class="bx bx-chevron-right"></i> <a href="#">Update 3</a></li>
+								<li><i class="bx bx-chevron-right"></i> <a href="#">Update 4</a></li>
+								<li><i class="bx bx-chevron-right"></i> <a href="#">Update 5</a></li>
+							</ul>
+						</div>
+						<div class="col-lg-4 col-md-6 footer-newsletter">
+							<h4>Langganan</h4>
+							<p>Dapatkan info terbaru dari Kami melalui e-mail</p>
+							<form action="" method="post">
+								<input type="email" name="email" placeholder="Email"><input type="submit" value="Subscribe">
+							</form>
 						</div>
 					</div>
-				</footer>
-			</section>
-		</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="copyright">
+					&copy; 2020 Copyright. All Rights Reserved
+				</div>
+				<div class="credits">
+					Developed and Designed by <a href="about">iTerra</a>
+				</div>
+			</div>
+		</footer>
+	</section>
+	</div>
 	</div>
 
 	<!--   Core JS Files   -->
@@ -304,7 +306,14 @@ The above copyright notice and this permission notice shall be included in all c
 	<script src="assets/assets_admin/js/material-dashboard.js?v=2.1.2" type="text/javascript"></script>
 	<!-- Material Dashboard DEMO methods, don't include it in your project! -->
 	<script src="assets/assets_admin/demo/demo.js"></script>
+	<script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
 
+	<script>
+		tinymce.init({
+			selector: 'textarea#editor',
+			menubar: false
+		});
+	</script>
 	<script>
 		$(document).ready(function() {
 			$().ready(function() {

@@ -64,20 +64,20 @@
 				<!-- Contents 1 -->
 				<div class="col-lg-4 col-12 mb-4" data-aos="zoom-in">
 					<div class="donasi-item">
-						<a class="donasi-link" data-toggle="modal" href="#donasiModal1">
+						<a class="donasi-link" data-toggle="modal" href="detail_donasi">
 							<div class="img-hover-zoom">
 								<img src="assets/images/home/artikel1.jpg" alt="" />
 							</div>
 						</a>
 						<a>
 							<div class="donasi-caption">
-								<a href="#donasiModal1" class="donasi-caption-heading">Donasi 1</a>
+								<a href="detail_donasi" class="donasi-caption-heading">Donasi 1</a>
 								<div class="progress mt-4 mb-2">
 									<div class="progress-bar bg-secondary" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
 								</div>
 								<p class="donasi-value">Rp. 50.000.000</p>
 								<p class="donasi-day">60 hari lagi</p>
-								<a href="#donasiModal1" class="btn btn-detail ">Detail ➔</a>
+								<a href="detail_donasi" class="btn btn-detail ">Detail ➔</a>
 							</div>
 						</a>
 					</div>
@@ -221,11 +221,11 @@
 						<div class="col-lg-2 col-md-6 footer-links">
 							<h4>Kategori</h4>
 							<ul>
-								<li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-								<li><i class="bx bx-chevron-right"></i> <a href="#">Tentang Kami</a></li>
-								<li><i class="bx bx-chevron-right"></i> <a href="#">Artikel</a></li>
-								<li><i class="bx bx-chevron-right"></i> <a href="#">Kampanye</a></li>
-								<li><i class="bx bx-chevron-right"></i> <a href="#">Donasi</a></li>
+								<li><i class="bx bx-chevron-right"></i> <a href="home">Home</a></li>
+								<li><i class="bx bx-chevron-right"></i> <a href="about">Tentang Kami</a></li>
+								<li><i class="bx bx-chevron-right"></i> <a href="artikel">Artikel</a></li>
+								<li><i class="bx bx-chevron-right"></i> <a href="kampanye">Kampanye</a></li>
+								<li><i class="bx bx-chevron-right"></i> <a href="donasi">Donasi</a></li>
 							</ul>
 						</div>
 						<div class="col-lg-2 col-md-6 footer-links">
@@ -253,10 +253,10 @@
 					&copy; 2020 Copyright. All Rights Reserved
 				</div>
 				<div class="credits">
-					Developed and Designed by <a href="#about">iTerra</a>
+					Developed and Designed by <a href="about">iTerra</a>
 				</div>
 			</div>
-		</footer><!-- End Footer -->
+		</footer>
 	</section>
 
 	<!-- JAVASCRIPT BUNDLE -->

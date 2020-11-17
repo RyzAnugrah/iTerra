@@ -9986,9 +9986,10 @@ html {
 }
 
 hr.divider {
-  max-width: 3.25rem;
+  max-width: 5rem;
   border-width: 0.2rem;
-  border-color: #84C44E;
+	border-color: #84C44E;
+	margin-left: 28rem;
 }
 
 hr.light {
@@ -10107,6 +10108,43 @@ header.masthead h1 {
   header.masthead h1 {
     font-size: 3.5rem;
   }
+}
+
+header.masthead-about {
+  padding-top: 10rem;
+  padding-bottom: calc(10rem - 4.5rem);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.8) 100%),  url("../assets/images/about/about.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+header.masthead-about h1 {
+	font-size: 2.25rem;
+}
+
+@media (min-width: 992px) {
+	header.masthead-about {
+		height: 100vh;
+		min-height: 40rem;
+		padding-top: 0rem;
+		padding-bottom: 0;
+	}
+
+	header.masthead-about p {
+		font-size: 1.15rem;
+	}
+
+	header.masthead-about h1 {
+		font-size: 3rem;
+	}
+}
+
+@media (min-width: 1200px) {
+	header.masthead-about h1 {
+		font-size: 3.5rem;
+	}
 }
 
 #news-home .containers-fluid, #news-home .containers-sm, #news-home .containers-md, #news-home .containers-lg, #news-home .containers-xl {
@@ -10266,6 +10304,12 @@ header.masthead h1 {
 
 .text-white-75 {
   color: rgba(255, 255, 255, 0.75);
+}
+
+.text-white-about {
+	color: rgba(255, 255, 255, 0.75);
+	font-weight: 700;
+	font-style: italic;
 }
 
 /*--------------------------------------------------------------
@@ -11035,7 +11079,7 @@ section {
 .why-us .content h3 {
 	font-weight: 400;
 	font-size: 34px;
-	color: #37517e;
+	color: #84C44E;
 }
 
 .why-us .content h4 {
@@ -11046,7 +11090,7 @@ section {
 
 .why-us .content p {
 	font-size: 15px;
-	color: #848484;
+	color: #757575;
 }
 
 .why-us .img {
@@ -11077,16 +11121,17 @@ section {
 .why-us .accordion-list a {
 	display: block;
 	position: relative;
-	font-family: "Poppins", sans-serif;
+	font-family: Helvetica;
 	font-size: 16px;
 	line-height: 24px;
-	font-weight: 500;
+		font-weight: bold;
 	padding-right: 30px;
 	outline: none;
+	color: #5b8f30;
 }
 
 .why-us .accordion-list span {
-	color: #47b2e4;
+	color: #84C44E;
 	font-weight: 600;
 	font-size: 18px;
 	padding-right: 10px;
@@ -11102,6 +11147,8 @@ section {
 .why-us .accordion-list p {
 	margin-bottom: 0;
 	padding: 10px 0 0 0;
+	color: #757575;
+
 }
 
 .why-us .accordion-list .icon-show {
@@ -11109,11 +11156,11 @@ section {
 }
 
 .why-us .accordion-list a.collapsed {
-	color: #343a40;
+	color: #84C44E;
 }
 
 .why-us .accordion-list a.collapsed:hover {
-	color: #47b2e4;
+	color:#5b8f30;
 }
 
 .why-us .accordion-list a.collapsed .icon-show {
@@ -11241,7 +11288,7 @@ section {
 }
 
 .services .icon-box h4 a {
-	color: #37517e;
+	color: #84C44E;
 	transition: ease-in-out 0.3s;
 }
 
@@ -11256,7 +11303,7 @@ section {
 }
 
 .services .icon-box:hover h4 a {
-	color: #47b2e4;
+	color: #5b8f30;
 }
 
 /*--------------------------------------------------------------
@@ -11589,98 +11636,22 @@ section {
 /*--------------------------------------------------------------
 # Team
 --------------------------------------------------------------*/
-.team .member {
-	position: relative;
-	box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-	padding: 30px;
-	border-radius: 5px;
-	background: #fff;
-	transition: 0.5s;
+.team-member {
+	margin-bottom: 3rem;
+	text-align: center;
+	background-color: #fff;
 }
 
-.team .member .pic {
-	overflow: hidden;
-	width: 180px;
-	border-radius: 50%;
+.team-member img {
+	width: 20rem;
+	height: 20rem;
+	border: 0.5rem solid;
+	color: #84C44E;
 }
 
-.team .member .pic img {
-	transition: ease-in-out 0.3s;
-}
-
-.team .member:hover {
-	transform: translateY(-10px);
-}
-
-.team .member .member-info {
-	padding-left: 30px;
-}
-
-.team .member h4 {
-	font-weight: 700;
-	margin-bottom: 5px;
-	font-size: 20px;
-	color: #37517e;
-}
-
-.team .member span {
-	display: block;
-	font-size: 15px;
-	padding-bottom: 10px;
-	position: relative;
-	font-weight: 500;
-}
-
-.team .member span::after {
-	content: '';
-	position: absolute;
-	display: block;
-	width: 50px;
-	height: 1px;
-	background: #cbd6e9;
-	bottom: 0;
-	left: 0;
-}
-
-.team .member p {
-	margin: 10px 0 0 0;
-	font-size: 14px;
-}
-
-.team .member .social {
-	margin-top: 12px;
-	display: flex;
-	align-items: center;
-	justify-content: flex-start;
-}
-
-.team .member .social a {
-	transition: ease-in-out 0.3s;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	border-radius: 50px;
-	width: 32px;
-	height: 32px;
-	background: #eff2f8;
-}
-
-.team .member .social a i {
-	color: #37517e;
-	font-size: 16px;
-	margin: 0 2px;
-}
-
-.team .member .social a:hover {
-	background: #47b2e4;
-}
-
-.team .member .social a:hover i {
-	color: #fff;
-}
-
-.team .member .social a+a {
-	margin-left: 8px;
+.team-member h4 {
+	margin-top: 1.5rem;
+	margin-bottom: 0;
 }
 
 /*--------------------------------------------------------------

@@ -255,7 +255,7 @@
 						<b>20%</b>
 						dari total masyarakat Indonesia peduli terhadap kebersihan dan kesehatan. Ini berarti, dari 262 juta jiwa di Indonesia, hanya sekitar <b>52 juta orang</b> yang memiliki kepedulian terhadap kebersihan lingkungan sekitar dan dampaknya terhadap kesehatan.
 					</p>
-					<a class="button button-light button-xl js-scroll-trigger" href="">Baca Selengkapnya</a>
+					<a class="button button-light button-xl js-scroll-trigger" href="about">Baca Selengkapnya</a>
 				</div>
 			</div>
 		</div>
@@ -286,11 +286,11 @@
 						<div class="col-lg-2 col-md-6 footer-links">
 							<h4>Kategori</h4>
 							<ul>
-								<li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-								<li><i class="bx bx-chevron-right"></i> <a href="#">Tentang Kami</a></li>
-								<li><i class="bx bx-chevron-right"></i> <a href="#">Artikel</a></li>
-								<li><i class="bx bx-chevron-right"></i> <a href="#">Kampanye</a></li>
-								<li><i class="bx bx-chevron-right"></i> <a href="#">Donasi</a></li>
+								<li><i class="bx bx-chevron-right"></i> <a href="home">Home</a></li>
+								<li><i class="bx bx-chevron-right"></i> <a href="about">Tentang Kami</a></li>
+								<li><i class="bx bx-chevron-right"></i> <a href="artikel">Artikel</a></li>
+								<li><i class="bx bx-chevron-right"></i> <a href="kampanye">Kampanye</a></li>
+								<li><i class="bx bx-chevron-right"></i> <a href="donasi">Donasi</a></li>
 							</ul>
 						</div>
 						<div class="col-lg-2 col-md-6 footer-links">
@@ -318,10 +318,10 @@
 					&copy; 2020 Copyright. All Rights Reserved
 				</div>
 				<div class="credits">
-					Developed and Designed by <a href="#about">iTerra</a>
+					Developed and Designed by <a href="about">iTerra</a>
 				</div>
 			</div>
-		</footer><!-- End Footer -->
+		</footer>
 	</section>
 
 	<!-- JAVASCRIPT BUNDLE -->
@@ -363,4 +363,5 @@
 	</div>
 
 </body>
+
 </html>
