@@ -52,115 +52,36 @@
 		</div>
 	</nav>
 
-	<!-- Kampanye-->
+	<!-- Detail Kampanye-->
 	<section class="page-section bg-light kampanye" id="kampanye">
 		<div class="container">
 			<div class="text-center section-title kampanye-title" data-aos="fade-down">
 				<h2 class="section-heading">Kampanye</h2>
+				<h4 class="section-heading">From Earth to Earth</h4>
 			</div>
 
 			<!-- Contents -->
 			<div class="row">
-				<!-- Contents 1 -->
-				<div class="col-lg-4 col-12 mb-4" data-aos="zoom-in">
+				<!-- Content -->
+				<div class="col-10 mx-auto mb-4" data-aos="zoom-in">
 					<div class="kampanye-item">
-						<a class="kampanye-link" data-toggle="modal" href="#kampanyeModal1">
-							<div class="img-hover-zoom">
-								<img src="assets/images/home/artikel1.jpg" alt="" />
-							</div>
-						</a>
-						<a href="detail_kampanye">
-							<div class="kampanye-caption">
-								<div class="kampanye-caption-heading">Kampanye 1</div>
-								<a href="detail_kampanye" class="btn btn-detail">Detail ➔</a>
-							</div>
-						</a>
-					</div>
-				</div>
-
-				<!-- Contents 2 -->
-				<div class="col-lg-4 col-12 mb-4" data-aos="zoom-in">
-					<div class="kampanye-item">
-						<a class="kampanye-link" data-toggle="modal" href="#kampanyeModal1">
-							<div class="img-hover-zoom">
-								<img src="assets/images/home/artikel2.jpg" alt="" />
-							</div>
-						</a>
-						<a href="#kampanyeModal1">
-							<div class="kampanye-caption">
-								<div class="kampanye-caption-heading">Kampanye 2</div>
-								<a href="#kampanyeModal1" class="btn btn-detail">Detail ➔</a>
-							</div>
-						</a>
-					</div>
-				</div>
-
-				<!-- Contents 3 -->
-				<div class="col-lg-4 col-12 mb-4" data-aos="zoom-in">
-					<div class="kampanye-item">
-						<a class="kampanye-link" data-toggle="modal" href="#kampanyeModal1">
-							<div class="img-hover-zoom">
-								<img src="assets/images/home/artikel3.jpg" alt="" />
-							</div>
-						</a>
-						<a href="#kampanyeModal1">
-							<div class="kampanye-caption">
-								<div class="kampanye-caption-heading">Kampanye 3</div>
-								<a href="#kampanyeModal1" class="btn btn-detail">Detail ➔</a>
-
-							</div>
-						</a>
-					</div>
-				</div>
-
-				<!-- Contents 4 -->
-				<div class="col-lg-4 col-12 mb-4 mb-lg-0" data-aos="zoom-in">
-					<div class="kampanye-item">
-						<a class="kampanye-link" data-toggle="modal" href="#kampanyeModal1">
-							<div class="img-hover-zoom">
-								<img src="assets/images/home/artikel4.jpg" alt="" />
-							</div>
-						</a>
-						<a href="#kampanyeModal1">
-							<div class="kampanye-caption">
-								<div class="kampanye-caption-heading">Kampanye 4</div>
-								<a href="#kampanyeModal1" class="btn btn-detail">Detail ➔</a>
-							</div>
-						</a>
-					</div>
-				</div>
-
-				<!-- Contents 5 -->
-				<div class="col-lg-4 col-12 mb-4 mb-sm-0" data-aos="zoom-in">
-					<div class="kampanye-item">
-						<a class="kampanye-link" data-toggle="modal" href="#kampanyeModal1">
-							<div class="img-hover-zoom">
-								<img style="width: 200%;" src="assets/images/home/artikel5.jpg" alt="" />
-							</div>
-						</a>
-						<a href="#kampanyeModal1">
-							<div class="kampanye-caption">
-								<div class="kampanye-caption-heading">Kampanye 5</div>
-								<a href="#kampanyeModal1" class="btn btn-detail">Detail ➔</a>
-							</div>
-						</a>
-					</div>
-				</div>
-
-				<!-- Contents 6 -->
-				<div class="col-lg-4 col-sm-6" data-aos="zoom-in">
-					<div class="kampanye-item">
-						<a class="kampanye-link" data-toggle="modal" href="#kampanyeModal1">
-							<div class="img-hover-zoom">
-								<img src="assets/images/home/artikel6.jpg" alt="" />
-							</div>
-						</a>
-						<a href="#kampanyeModal1">
-							<div class="kampanye-caption">
-								<div class="kampanye-caption-heading">Kampanye 6</div>
-								<a href="#kampanyeModal1" class="btn btn-detail">Detail ➔</a>
-							</div>
-						</a>
+						<div class="img-detail">
+							<img src="assets/images/home/artikel1.jpg" alt="" />
+						</div>
+						<div class="kampanye-caption">
+							<div class="kampanye-caption-detail">“Bukan hanya untuk diri, tapi juga untuk Bumi”</div>
+							<div class="kampanye-caption-sub-detail">Dibuat: Alvin S. | Okt 20, 2020 <br> Lokasi: Pantai Ombak Tujuh | Kota: Sukabumi</div>
+							<a href="" class="btn btn-aksi">Gabung Aksi!</a>
+							<a href="" class="btn btn-donasi">Gabung Donasi!</a>
+						</div> <br>
+						<div class="kampanye-caption">
+							<div class="kampanye-caption-detail-left">Deskripsi:</div>
+							<div class="kampanye-caption-sub-detail paragraf text-justify">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</div>
+							<a href="" class="btn btn-whatsapp"><i class="fab fa-whatsapp" aria-hidden="true"></i> Tanyakan Tentang Kampanye Ini</a>
+							<div class="kampanye-caption-sub-detail text-center">Share kampanye ini.</div>
+							<a href="" class="btn btn-facebook"><i class="fab fa-facebook" aria-hidden="true"></i> Share Facebook</a>
+							<a href="" class="btn btn-whatsapp"><i class="fab fa-whatsapp" aria-hidden="true"></i> Share Whatsapp</a>
+						</div>
 					</div>
 				</div>
 			</div>

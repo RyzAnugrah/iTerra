@@ -10934,6 +10934,16 @@ section {
 	margin-bottom: 0;
 }
 
+.section-title h4 {
+	font-size: 22px;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+	position: relative;
+	color: #84C44E;
+}
+
 /*--------------------------------------------------------------
 # Cliens
 --------------------------------------------------------------*/
@@ -12333,7 +12343,6 @@ section {
 #kampanye .kampanye-item .kampanye-caption:hover {
 	padding: 1.5rem;
 	text-align: center;
-
 }
 
 #kampanye .kampanye-item .kampanye-caption .kampanye-caption-heading {
@@ -12388,6 +12397,205 @@ section {
 	box-shadow: 0 0 0 0.2rem #757575;
 }
 
+/*--------------------------------------------------------------
+# Detail Kampanye
+--------------------------------------------------------------*/
+
+.img-detail {
+	overflow: hidden;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+.img-detail img {
+	display: flex;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+	transition: transform .5s,
+	filter .5s ease-in-out;
+	filter: grayscale(100%);
+	transform-origin: center center center center;
+  width: 100%;
+}
+
+.img-detail:hover img {
+  filter: grayscale(0);
+  transform: scale(1.2);
+}
+
+#kampanye .kampanye-item .kampanye-caption .kampanye-caption-detail {
+	font-size: 2.0rem;
+	font-family: Helvetica;
+	font-weight: 700;
+	margin-bottom: 0;
+  color: #000;
+  margin: 20px auto;
+}
+
+#kampanye .kampanye-item .kampanye-caption .kampanye-caption-detail-left {
+	font-size: 2.0rem;
+	font-family: Helvetica;
+	font-weight: 700;
+	margin-bottom: 0;
+  color: #000;
+  margin: 20px;
+  text-align: left;
+}
+
+#kampanye .kampanye-item .kampanye-caption .kampanye-caption-sub-detail {
+	font-size: 1.2rem;
+	font-family: Helvetica;
+	font-weight: 700;
+	margin-bottom: 0;
+  color: #000;
+  text-align: left;
+  margin: 20px;
+}
+
+#kampanye .kampanye-item .kampanye-caption .btn-aksi {
+  position: relative;
+  margin: 20px 40px;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 12px 32px;
+  border-radius: 10px;
+  transition: 0.3s;
+  line-height: 1;
+  color: #FFF;
+  background-color: #3498DB;
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+  border: 2px solid #3498DB;
+}
+
+#kampanye .kampanye-item .kampanye-caption .btn-aksi:hover {
+  color: #FFF;
+  background-color: #757575;
+  text-decoration: none;
+}
+
+#kampanye .kampanye-item .kampanye-caption .btn-aksi:active {
+	color: #FFF;
+	background-color: #5B8F30;
+	text-decoration: none;
+	outline: none;
+	border: none;
+}
+
+#kampanye .kampanye-item .kampanye-caption .btn-aksi:focus {
+	box-shadow: 0 0 0 0.2rem #757575;
+}
+
+#kampanye .kampanye-item .kampanye-caption .btn-donasi {
+  position: relative;
+  margin: 20px 60px;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 12px 32px;
+  border-radius: 10px;
+  transition: 0.3s;
+  line-height: 1;
+  color: #FFF;
+  background-color: #E06666;
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+  border: 2px solid #E06666;
+}
+
+#kampanye .kampanye-item .kampanye-caption .btn-donasi:hover {
+  color: #FFF;
+  background-color: #757575;
+  text-decoration: none;
+}
+
+#kampanye .kampanye-item .kampanye-caption .btn-donasi:active {
+	color: #FFF;
+	background-color: #5b8f30;
+	text-decoration: none;
+	outline: none;
+	border: none;
+}
+
+#kampanye .kampanye-item .kampanye-caption .btn-donasi:focus {
+	box-shadow: 0 0 0 0.2rem #757575;
+}
+
+#kampanye .kampanye-item .kampanye-caption .btn-whatsapp {
+  position: relative;
+  margin: 20px 40px;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 12px 32px;
+  border-radius: 10px;
+  transition: 0.3s;
+  line-height: 1;
+  color: #FFF;
+  background-color: #109956;
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+  border: 2px solid #109956;
+}
+
+#kampanye .kampanye-item .kampanye-caption .btn-whatsapp:hover {
+  color: #FFF;
+  background-color: #757575;
+  text-decoration: none;
+}
+
+#kampanye .kampanye-item .kampanye-caption .btn-whatsapp:active {
+	color: #FFF;
+	background-color: #5B8F30;
+	text-decoration: none;
+	outline: none;
+	border: none;
+}
+
+#kampanye .kampanye-item .kampanye-caption .btn-whatsapp:focus {
+	box-shadow: 0 0 0 0.2rem #757575;
+}
+
+#kampanye .kampanye-item .kampanye-caption .btn-facebook {
+  position: relative;
+  margin: 20px 40px;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 12px 32px;
+  border-radius: 10px;
+  transition: 0.3s;
+  line-height: 1;
+  color: #FFF;
+  background-color: #3B5998;
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+  border: 2px solid #3B5998;
+}
+
+#kampanye .kampanye-item .kampanye-caption .btn-facebook:hover {
+  color: #FFF;
+  background-color: #757575;
+  text-decoration: none;
+}
+
+#kampanye .kampanye-item .kampanye-caption .btn-facebook:active {
+	color: #FFF;
+	background-color: #5B8F30;
+	text-decoration: none;
+	outline: none;
+	border: none;
+}
+
+#kampanye .kampanye-item .kampanye-caption .btn-facebook:focus {
+	box-shadow: 0 0 0 0.2rem #757575;
+}
 
 /*--------------------------------------------------------------
 # Donasi
