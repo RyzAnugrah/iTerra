@@ -12826,6 +12826,53 @@ section {
 }
 
 /*--------------------------------------------------------------
+# About Us
+--------------------------------------------------------------*/
+
+#about .about-title {
+  margin-top: 100px;
+}
+
+#about .about-item {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#about .about-item .img-hover-zoom img {
+  border-radius: 10px;
+  width: 100%;
+}
+
+#about .about-item .about-caption {
+	padding: 1.5rem;
+  text-align: center;
+  color: #fff;
+  background-color: #84C44E;
+  border-radius: 10px;
+}
+
+#about .about-item .about-caption:hover {
+	padding: 1.5rem;
+	text-align: center;
+}
+
+#about .about-item .about-caption .about-caption-heading {
+	font-size: 1.5rem;
+	font-family: Helvetica;
+	font-weight: 700;
+	margin-bottom: 0;
+	color: #fff;
+}
+
+#about .about-item .about-caption .about-caption-subheading {
+	font-size: 1rem;
+	font-family: Helvetica;
+	font-weight: 700;
+	margin-bottom: 0;
+	color: #000;
+}
+
+/*--------------------------------------------------------------
 # Login
 --------------------------------------------------------------*/
 
