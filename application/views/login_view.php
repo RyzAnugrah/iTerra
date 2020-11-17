@@ -55,7 +55,7 @@
 						<h5>Gabung bersama Kami untuk melakukan hal-hal yang sederhana, namun bermanfaat bagi sesama.</h5>
 					</div>
 
-					<form action="<?php echo base_url();?>/Login/validation" class="login100-form validate-form">
+					<form action="<?php echo base_url();?>/Login/validation" method="post" class="login100-form validate-form">
 						<!-- Title -->
 						<h2 class="login100-form-title">
 							Member Login <br>
@@ -64,7 +64,7 @@
 
 						<!-- Form -->
 						<div class="wrap-input100 validate-input" data-validate="Gunakan Email yang Valid: ez@abc.xyz">
-							<input class="input100" type="text" name="email" value="<?php echo set_value('nama')?>" placeholder="Email">
+							<input class="input100" type="text" name="email" value="<?php echo set_value('email')?>" placeholder="Email">
 							<span class="focus-input100"></span>
 							<span class="symbol-input100">
 								<i class="fa fa-envelope" aria-hidden="true"></i>

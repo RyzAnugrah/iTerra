@@ -50,7 +50,7 @@ class Register extends CI_Controller
 					'nik' => $nik,
 					'jenis_kelamin' => $jk,
 					'nomortelepon' => $notel,
-					'password' => md5($password)
+					'password' => password_hash($password, PASSWORD_DEFAULT)
 					);
 
 			$this->db->insert('identitas', $data);
