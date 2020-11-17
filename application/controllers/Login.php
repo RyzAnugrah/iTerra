@@ -19,6 +19,13 @@ class Login extends CI_Controller {
 		$this->load->view('login_view',$data);
 	}
 	
+	public function validation() 
+	{
+		$this->form_validation->set_rules('email', 'Email', 'trim|required|valid_email');
+		$this->form_validation->set_rules('password', 'Password', 'trim|required|min_length[3]');
+	}
+
+
 	// Logout di sini
 	public function logout() {
 		$this->simple_login->logout();	

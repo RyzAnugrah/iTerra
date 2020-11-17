@@ -49,7 +49,7 @@
 		<div class="limiter">
 			<div class="container-login100">
 				<div class="wrap-login100">
-					<form class="login100-form validate-form">
+					<form action="<?php echo base_url();?>/Register/add" method="post" class="login100-form validate-form">
 						<!-- Title -->
 						<div class="login100-pic">
 							<img src="assets/images/logo/iterra-01.png">
@@ -61,7 +61,7 @@
 
 						<!-- Form -->
 						<div class="wrap-input100 validate-input" data-validate="Gunakan Nama yang Valid">
-							<input class="input100" type="text" name="nama" placeholder="Nama Lengkap" required>
+							<input class="input100" type="text" name="nama" placeholder="Nama Lengkap" value="<?php echo set_value('nama')?>" required>
 							<span class="focus-input100"></span>
 							<span class="symbol-input100">
 								<i class="fa fa-address-book" aria-hidden="true"></i>
@@ -69,7 +69,7 @@
 						</div>
 
 						<div class="wrap-input100 validate-input" data-validate="Gunakan Tanggal Lahir yang Valid">
-							<input class="input100" type="date" name="date" placeholder="Tanggal Lahir" required>
+							<input class="input100" type="date" name="date" placeholder="Tanggal Lahir" value="<?php echo set_value('tanggallahir')?>" required>
 							<span class="focus-input100"></span>
 							<span class="symbol-input100">
 								<i class="fa fa-calendar" aria-hidden="true"></i>
@@ -77,10 +77,10 @@
 						</div>
 
 						<div class="wrap-input100 validate-input" data-validate="Pilih Jenis Kelamin">
-							<select class="input100 required" name="jk" required>
+							<select class="input100 required" name="jk" type="text" value="<?php echo set_value('jenis_kelamin')?>" required>
 								<option value="" disabled selected>Pilih Jenis Kelamin</option>
-								<option value="saab">Pria</option>
-								<option value="fiat">Wanita</option>
+								<option value="pria">Pria</option>
+								<option value="wanita">Wanita</option>
 							</select>
 							<span class="focus-input100"></span>
 							<span class="symbol-input100">
@@ -89,7 +89,7 @@
 						</div>
 
 						<div class="wrap-input100 validate-input" data-validate="Gunakan Nomor Telepon yang Valid">
-							<input class="input100" type="no_tlp" name="no_tlp" placeholder="Nomor Telepon" required>
+							<input class="input100" type="text" name="no_tlp" placeholder="Nomor Telepon" value="<?php echo set_value('nomortelepon')?>" required>
 							<span class="focus-input100"></span>
 							<span class="symbol-input100">
 								<i class="fa fa-phone" aria-hidden="true"></i>
@@ -97,7 +97,7 @@
 						</div>
 
 						<div class="wrap-input100 validate-input" data-validate="Gunakan NIK yang Valid">
-							<input class="input100" type="nik" name="nik" placeholder="Nomor Induk Kependudukan" required>
+							<input class="input100" type="text" name="NIK" placeholder="Nomor Induk Kependudukan" value="<?php echo set_value('NIK')?>" required>
 							<span class="focus-input100"></span>
 							<span class="symbol-input100">
 								<i class="fa fa-address-card" aria-hidden="true"></i>
@@ -105,7 +105,7 @@
 						</div>
 
 						<div class="wrap-input100 validate-input" data-validate="Gunakan Email yang Valid: ez@abc.xyz">
-							<input class="input100" type="text" name="email" placeholder="Email" required>
+							<input class="input100" type="text" name="email" placeholder="Email" value="<?php echo set_value('email')?>" required>
 							<span class="focus-input100"></span>
 							<span class="symbol-input100">
 								<i class="fa fa-envelope" aria-hidden="true"></i>
@@ -113,7 +113,7 @@
 						</div>
 
 						<div class="wrap-input100 validate-input" data-validate="Kata Sandi Diperlukan">
-							<input class="input100" type="password" name="password" placeholder="Kata Sandi" required>
+							<input class="input100" type="password" name="password" placeholder="Kata Sandi" value="<?php echo set_value('password')?>" required>
 							<span class="focus-input100"></span>
 							<span class="symbol-input100">
 								<i class="fa fa-lock" aria-hidden="true"></i>
@@ -121,7 +121,7 @@
 						</div>
 
 						<div class="wrap-input100 validate-input" data-validate="Kata Sandi Tidak Cocok">
-							<input class="input100" type="password" name="password" placeholder="Konfirmasi Kata Sandi" required>
+							<input class="input100" type="password" name="password1" placeholder="Konfirmasi Kata Sandi" value="<?php echo set_value('password1')?>" required>
 							<span class="focus-input100"></span>
 							<span class="symbol-input100">
 								<i class="fa fa-lock" aria-hidden="true"></i>
@@ -139,7 +139,7 @@
 						</div>
 
 						<div class="container-login100-form-btn">
-							<button class="login100-form-btn">
+							<button type="submit" value="Register" class="login100-form-btn">
 								Register
 							</button>
 						</div>
