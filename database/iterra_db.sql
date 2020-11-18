@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 11, 2020 at 02:44 AM
+-- Generation Time: Nov 18, 2020 at 01:51 AM
 -- Server version: 10.1.38-MariaDB
 -- PHP Version: 7.3.4
 
@@ -61,10 +61,16 @@ CREATE TABLE `identitas` (
   `nomortelepon` varchar(15) NOT NULL,
   `fotoprofil` blob NOT NULL,
   `NIK` varchar(30) NOT NULL,
-  `kode_konten` varchar(20) NOT NULL,
-  `kode_donasi` varchar(20) NOT NULL,
-  `kode_koin` varchar(20) NOT NULL
+  `password` varchar(70) NOT NULL,
+  `tanggallahir` date NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `identitas`
+--
+
+INSERT INTO `identitas` (`email`, `nama`, `jenis_kelamin`, `nomortelepon`, `fotoprofil`, `NIK`, `password`, `tanggallahir`) VALUES
+('naufalariful16@gmail.com', 'naufal ariful', 'pria', '12313', '', '1231234', '$2y$10$Ws8ihJiYxpXBazsB8.kJE.QPRJCrsyQnNS9Vuypd7eqCxZoWPYhuW', '2020-11-02');
 
 -- --------------------------------------------------------
 
@@ -78,17 +84,6 @@ CREATE TABLE `kampanye` (
   `deskripsi` varchar(500) NOT NULL,
   `tanggal_konten` date NOT NULL,
   `kode_koin` varchar(20) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
--- --------------------------------------------------------
-
---
--- Table structure for table `login`
---
-
-CREATE TABLE `login` (
-  `email` varchar(50) NOT NULL,
-  `password` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
@@ -111,40 +106,13 @@ ALTER TABLE `donasi`
 -- Indexes for table `identitas`
 --
 ALTER TABLE `identitas`
-  ADD PRIMARY KEY (`email`),
-  ADD KEY `kode_konten` (`kode_konten`),
-  ADD KEY `kode_koin` (`kode_koin`),
-  ADD KEY `kode_donasi` (`kode_donasi`);
+  ADD PRIMARY KEY (`email`);
 
 --
 -- Indexes for table `kampanye`
 --
 ALTER TABLE `kampanye`
   ADD PRIMARY KEY (`kode_konten`);
-
---
--- Indexes for table `login`
---
-ALTER TABLE `login`
-  ADD KEY `email` (`email`);
-
---
--- Constraints for dumped tables
---
-
---
--- Constraints for table `identitas`
---
-ALTER TABLE `identitas`
-  ADD CONSTRAINT `kode_donasi` FOREIGN KEY (`kode_donasi`) REFERENCES `donasi` (`kode_donasi`),
-  ADD CONSTRAINT `kode_koin` FOREIGN KEY (`kode_koin`) REFERENCES `data_koin` (`kode_koin`),
-  ADD CONSTRAINT `kode_konten` FOREIGN KEY (`kode_konten`) REFERENCES `kampanye` (`kode_konten`);
-
---
--- Constraints for table `login`
---
-ALTER TABLE `login`
-  ADD CONSTRAINT `email` FOREIGN KEY (`email`) REFERENCES `identitas` (`email`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

@@ -42,7 +42,7 @@ class Login extends CI_Controller {
 						'email' => $user['email'],
 					];
 					$this->session->set_userdata($data);
-					$this->load->view('artikel_view');
+					redirect(base_url('dashboard_member'));
 				}
 			}
 		}
