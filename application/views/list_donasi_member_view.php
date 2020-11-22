@@ -138,37 +138,17 @@ The above copyright notice and this permission notice shall be included in all c
 											<th>No.</th>
 											<th>Nama Event</th>
 											<th>Tanggal</th>
-											<th>Penyelenggara</th>
+											<th>Jumlah Donasi</th>
 										</thead>
 										<tbody>
-											<tr>
-												<td>1</td>
-												<td>Pelestarian hutan sebagai pencegahan tanah longsor</td>
-												<td>22-11-2020</td>
-												<td>Kementerian Lingkungan Hidup Jawa Barat</td>
-
-											</tr>
-											<tr>
-												<td>2</td>
-												<td>Pelestarian hutan sebagai pencegahan tanah longsor</td>
-												<td>22-11-2020</td>
-												<td>Kementerian Lingkungan Hidup Jawa Barat</td>
-
-											</tr>
-											<tr>
-												<td>3</td>
-												<td>Pelestarian hutan sebagai pencegahan tanah longsor</td>
-												<td>22-11-2020</td>
-												<td>Kementerian Lingkungan Hidup Jawa Barat</td>
-
-											</tr>
-											<tr>
-												<td>4</td>
-												<td>Pelestarian hutan sebagai pencegahan tanah longsor</td>
-												<td>22-11-2020</td>
-												<td>Kementerian Lingkungan Hidup Jawa Barat</td>
-
-											</tr>
+											<?php foreach($donasi as $don) : ?>
+												<tr>
+													<td><?= $don['kode_donasi']; ?></td>
+													<td><?= $don['judul_donasi']; ?></td>
+													<td><?= $don['tanggal_donasi']; ?></td>
+													<td>Rp. <?= $don['jumlah_donasi']; ?></td>
+												</tr>
+											<?php endforeach; ?>
 										</tbody>
 									</table>
 								</div>

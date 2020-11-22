@@ -3,6 +3,6 @@ class list_kampanye_member_data extends CI_Model
 {
     public function show_data()
     {
-        return $this->db->get('dashboard_member');
-    }  
+        return $this->db->get('kampanye')->result_array();
+    }
 }

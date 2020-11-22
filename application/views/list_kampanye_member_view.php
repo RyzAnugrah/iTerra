@@ -141,34 +141,14 @@ The above copyright notice and this permission notice shall be included in all c
 											<th>Penyelenggara</th>
 										</thead>
 										<tbody>
-											<tr>
-												<td>1</td>
-												<td>Pelestarian hutan sebagai pencegahan tanah longsor</td>
-												<td>22-11-2020</td>
-												<td>Kementerian Lingkungan Hidup Jawa Barat</td>
-
-											</tr>
-											<tr>
-												<td>2</td>
-												<td>Pelestarian hutan sebagai pencegahan tanah longsor</td>
-												<td>22-11-2020</td>
-												<td>Kementerian Lingkungan Hidup Jawa Barat</td>
-
-											</tr>
-											<tr>
-												<td>3</td>
-												<td>Pelestarian hutan sebagai pencegahan tanah longsor</td>
-												<td>22-11-2020</td>
-												<td>Kementerian Lingkungan Hidup Jawa Barat</td>
-
-											</tr>
-											<tr>
-												<td>4</td>
-												<td>Pelestarian hutan sebagai pencegahan tanah longsor</td>
-												<td>22-11-2020</td>
-												<td>Kementerian Lingkungan Hidup Jawa Barat</td>
-
-											</tr>
+											<?php foreach($kampanye as $kam) : ?>
+												<tr>
+													<td><?= $kam['kode_konten']; ?></td>
+													<td><?= $kam['judul_konten']; ?></td>
+													<td><?= $kam['deskripsi']; ?></td>
+													<td><?= $kam['tanggal_konten']; ?></td>
+												</tr>
+											<?php endforeach; ?>
 										</tbody>
 									</table>
 								</div>

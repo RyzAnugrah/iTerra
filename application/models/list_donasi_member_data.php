@@ -3,6 +3,6 @@ class list_donasi_member_data extends CI_Model
 {
     public function show_data()
     {
-        return $this->db->get('dashboard_member');
-    }  
+        return $this->db->get('donasi')->result_array();
+    }
 }

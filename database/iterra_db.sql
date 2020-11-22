@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.8.5
+-- version 5.0.4
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 18, 2020 at 01:51 AM
--- Server version: 10.1.38-MariaDB
--- PHP Version: 7.3.4
+-- Generation Time: Nov 22, 2020 at 04:42 AM
+-- Server version: 10.4.16-MariaDB
+-- PHP Version: 7.4.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -48,6 +47,14 @@ CREATE TABLE `donasi` (
   `jumlah_donasi` bigint(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data for table `donasi`
+--
+
+INSERT INTO `donasi` (`kode_donasi`, `judul_donasi`, `deskripsi`, `tanggal_donasi`, `kode_koin`, `jumlah_donasi`) VALUES
+('1', 'Pelestarian Hutan sebagai Pencegahan Tanah Longsor', 'Pelestarian Hutan sebagai Pencegahan Tanah Longsor di Indonesia', '2020-11-22', '1', 100000000),
+('2', 'Pelestarian Hutan sebagai Pencegahan Banjir', 'Pelestarian Hutan sebagai Pencegahan Banjir di Indonesia', '2020-11-21', '2', 200000000);
+
 -- --------------------------------------------------------
 
 --
@@ -85,6 +92,14 @@ CREATE TABLE `kampanye` (
   `tanggal_konten` date NOT NULL,
   `kode_koin` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `kampanye`
+--
+
+INSERT INTO `kampanye` (`kode_konten`, `judul_konten`, `deskripsi`, `tanggal_konten`, `kode_koin`) VALUES
+('1', 'Pelestarian Hutan untuk Pencegahan Tanah Longsor', 'Pelestarian Hutan untuk Pencegahan Tanah Longsor di Indonesia', '2020-11-22', '1'),
+('2', 'Pelestarian Hutan untuk Pencegahan Banjir', 'Pelestarian Hutan untuk Pencegahan Banjir di Indonesia', '2020-11-21', '2');
 
 --
 -- Indexes for dumped tables
