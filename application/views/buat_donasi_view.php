@@ -120,12 +120,12 @@ The above copyright notice and this permission notice shall be included in all c
 											<p class="card-category">Donasi Kegiatan lingkungan </p>
 										</div>
 										<div class="card-body">
-											<form>
+											<form action="<?php echo base_url();?>/Buat_Donasi/tambah" method="post">
 												<div class="row">
 													<div class="col-md-12">
 														<div class="form-group">
-															<label class="bmd-label-floating">Nama Event</label>
-															<input type="text" class="form-control">
+															<label class="bmd-label-floating" >Nama Event</label>
+															<input type="text" name='judul_donasi' value="<?php echo set_value('judul_donasi')?>" class="form-control">
 														</div>
 													</div>
 												</div>
@@ -142,7 +142,7 @@ The above copyright notice and this permission notice shall be included in all c
 														<div class="form-group">
 															<label>Tenggat Waktu</label>
 															<label class="bmd-label-floating"></label>
-															<input type="date" class="form-control">
+															<input type="date" class="form-control" name='tanggal_donasi' value="<?php echo set_value('tanggal_donasi')?>">
 														</div>
 													</div>
 												</div>
@@ -154,7 +154,6 @@ The above copyright notice and this permission notice shall be included in all c
 																<input type="file" class="custom-file-input" id="customFile">
 																<label class="custom-file-label" for="customFile">Choose file</label>
 															</div>
-											</form>
 										</div>
 									</div>
 								</div>
@@ -164,12 +163,12 @@ The above copyright notice and this permission notice shall be included in all c
 											<label>Deskripsi Event</label>
 											<div class="form-group">
 												<label class="bmd-label-floating"> Tulis deskripsi disini</label>
-												<textarea class="form-control" id="editor" rows="5"></textarea>
+												<textarea class="form-control" id="editor" rows="5" name='deskripsi' value="<?php echo set_value('deskripsi')?>"></textarea>
 											</div>
 										</div>
 									</div>
 								</div>
-								<button type="submit" class="btn btn-primary pull-right">Submit</button>
+								<button type="submit" value="buat_donasi" class="btn btn-primary pull-right">Submit</button>
 								<div class="clearfix"></div>
 								</form>
 							</div>

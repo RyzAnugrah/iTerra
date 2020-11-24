@@ -120,12 +120,12 @@ The above copyright notice and this permission notice shall be included in all c
 											<p class="card-category">Artikel mengenai lingkungan </p>
 										</div>
 										<div class="card-body">
-											<form>
+											<form action="<?php echo base_url();?>/Buat_Artikel/tambah" method="post">
 												<div class="row">
 													<div class="col-md-12">
 														<div class="form-group">
 															<label class="bmd-label-floating">Judul Artikel</label>
-															<input type="text" class="form-control">
+															<input name='judul_artikel' value="<?php echo set_value('judul_artikel')?>" type="text" class="form-control">
 														</div>
 													</div>
 												</div>
@@ -133,7 +133,7 @@ The above copyright notice and this permission notice shall be included in all c
 													<div class="col-md-12">
 														<div class="form-group">
 															<label class="bmd-label-floating">Penulis</label>
-															<input type="text" class="form-control">
+															<input name='penulis' value="<?php echo set_value('penulis')?>" type="text" class="form-control">
 														</div>
 													</div>
 												</div>
@@ -142,7 +142,7 @@ The above copyright notice and this permission notice shall be included in all c
 														<div class="form-group">
 															<label>Tanggal Publikasi</label>
 															<label class="bmd-label-floating"></label>
-															<input type="date" class="form-control">
+															<input  name='tanggal' value="<?php echo set_value('tanggal')?>" type="date" class="form-control">
 														</div>
 													</div>
 												</div>
@@ -154,7 +154,6 @@ The above copyright notice and this permission notice shall be included in all c
 																<input type="file" class="custom-file-input" id="customFile">
 																<label class="custom-file-label" for="customFile">Choose file</label>
 															</div>
-											</form>
 										</div>
 									</div>
 								</div>
@@ -164,12 +163,12 @@ The above copyright notice and this permission notice shall be included in all c
 											<label>Deskripsi</label>
 											<div class="form-group">
 												<label class="bmd-label-floating"> Tulis deskripsi disini</label>
-												<textarea class="form-control" id="editor" rows="5"></textarea>
+												<textarea  name='deskripsi' value="<?php echo set_value('deskripsi')?>"class="form-control" id="editor" rows="5"></textarea>
 											</div>
 										</div>
 									</div>
 								</div>
-								<button type="submit" class="btn btn-primary pull-right">Submit</button>
+								<button type="submit" value="buat_artikel" class="btn btn-primary pull-right">Submit</button>
 								<div class="clearfix"></div>
 								</form>
 							</div>

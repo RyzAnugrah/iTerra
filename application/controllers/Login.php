@@ -42,7 +42,12 @@ class Login extends CI_Controller {
 						'email' => $user['email'],
 					];
 					$this->session->set_userdata($data);
-					redirect(base_url('dashboard_member'));
+					if ($user['admin'] == 1) {
+						redirect(base_url('dashboard_admin'));
+					}
+					else {
+						redirect(base_url('dashboard_member'));
+					}
 				}
 				else {
 					redirect(base_url('Login'));

@@ -144,7 +144,7 @@ The above copyright notice and this permission notice shall be included in all c
 													<div class="col-md-12">
 														<div class="form-group">
 															<label class="bmd-label-floating">Nama Kampanye</label>
-															<input type="text" class="form-control" name='judul_konten' value="<?php echo set_value('judul_konten')?>">
+															<input type="text" class="form-control" name='judul_donasi' value="<?php echo set_value('judul_donasi')?>">
 														</div>
 													</div>
 												</div>
