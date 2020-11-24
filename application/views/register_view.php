@@ -133,7 +133,7 @@
 							<a style="color: #757575;">
 								Dengan mendaftar, Saya menyutujui
 							</a>
-							<a class="txt2" href="">
+							<a class="txt2" href="<?php echo base_url('syarat_ketentuan') ?>">
 								Syarat & Ketentuan
 							</a>
 						</div>
