@@ -11,16 +11,16 @@ class Buat_Kampanye extends CI_Controller {
 	// Fungsi lain
 	public function tambah() {
 		$judul = $this->input->post('judul_konten');
-		$tgl = $this->input->post('tanggal_donasi');
+		$tgl = $this->input->post('tanggal_konten');
 		$desk = $this->input->post('deskripsi');
 		$data = array(
 			'email' => ($_SESSION['email']),
-			'judul_donasi' => $judul,
-			'tanggal_donasi' => $tgl,
+			'judul_konten' => $judul,
+			'tanggal_konten' => $tgl,
 			'deskripsi' => $desk,
 			);
-		$this->db->insert('donasi', $data);
-		redirect(base_url('Dashboard_admin'));
+		$this->db->insert('kampanye', $data);
+		redirect(base_url('Dashboard_member'));
 	}
 	
 }
