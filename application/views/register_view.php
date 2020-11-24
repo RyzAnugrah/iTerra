@@ -155,19 +155,6 @@
 								Masuk
 							</a>
 						</div>
-
-
-						<div class="text-center p-t-136">
-							<a style="color: #757575;">
-								TEMP
-							</a>
-							<a class="txt2" href="<?php echo base_url('dashboard_admin') ?>">
-								dashboard admin
-							</a>
-							<a class="txt2" href="<?php echo base_url('dashboard_member') ?>">
-								dashboard member
-							</a>
-						</div>
 					</form>
 				</div>
 			</div>
