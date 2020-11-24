@@ -134,58 +134,21 @@ The above copyright notice and this permission notice shall be included in all c
 											<th>Aksi</th>
 										</thead>
 										<tbody>
-											<tr>
-												<td>1</td>
-												<td>Donasi Perlindungan hutan hujan di Kalimantan</td>
-												<td>22-11-2020</td>
-												<td class="td-actions ">
-													<button type="button" rel="tooltip" title="Edit" class="btn btn-primary btn-link btn-sm">
-														<i class="material-icons">edit</i>
-													</button>
-													<button type="button" rel="tooltip" title="Hapus" class="btn btn-danger btn-link btn-sm">
-														<i class="material-icons">close</i>
-													</button>
-												</td>
-											</tr>
-											<tr>
-												<td>2</td>
-												<td>Donasi Perlindungan hutan hujan di Kalimantan</td>
-												<td>22-11-2020</td>
-												<td class="td-actions ">
-													<button type="button" rel="tooltip" title="Edit" class="btn btn-primary btn-link btn-sm">
-														<i class="material-icons">edit</i>
-													</button>
-													<button type="button" rel="tooltip" title="Hapus" class="btn btn-danger btn-link btn-sm">
-														<i class="material-icons">close</i>
-													</button>
-												</td>
-											</tr>
-											<tr>
-												<td>3</td>
-												<td>Donasi Perlindungan hutan hujan di Kalimantan</td>
-												<td>22-11-2020</td>
-												<td class="td-actions ">
-													<button type="button" rel="tooltip" title="Edit" class="btn btn-primary btn-link btn-sm">
-														<i class="material-icons">edit</i>
-													</button>
-													<button type="button" rel="tooltip" title="Hapus" class="btn btn-danger btn-link btn-sm">
-														<i class="material-icons">close</i>
-													</button>
-												</td>
-											</tr>
-											<tr>
-												<td>4</td>
-												<td>Donasi Perlindungan hutan hujan di Kalimantan</td>
-												<td>22-11-2020</td>
-												<td class="td-actions">
-													<button type="button" rel="tooltip" title="Edit" class="btn btn-primary btn-link btn-sm">
-														<i class="material-icons">edit</i>
-													</button>
-													<button type="button" rel="tooltip" title="Hapus" class="btn btn-danger btn-link btn-sm">
-														<i class="material-icons">close</i>
-													</button>
-												</td>
-											</tr>
+											<?php foreach($donasi as $don) : ?>
+												<tr>
+													<td><?= $don['kode_donasi']; ?></td>
+													<td><?= $don['judul_donasi']; ?></td>
+													<td><?= $don['tanggal_donasi']; ?></td>
+													<td class="td-actions">
+														<button type="button" rel="tooltip" title="Edit" class="btn btn-primary btn-link btn-sm">
+															<i class="material-icons">edit</i>
+														</button>
+														<button type="button" rel="tooltip" title="Hapus" class="btn btn-danger btn-link btn-sm">
+															<i class="material-icons">close</i>
+														</button>
+													</td>
+												</tr>
+											<?php endforeach; ?>
 										</tbody>
 									</table>
 								</div>
