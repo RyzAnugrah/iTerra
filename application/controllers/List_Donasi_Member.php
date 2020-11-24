@@ -15,6 +15,7 @@ class List_Donasi_Member extends CI_Controller {
 	public function index() 
 		{
 		$data = array('title'	=> 'Halaman Dashboard');
+		var_dump($_SESSION['email']);
 		$data['donasi'] = $this->list_donasi_member_data->show_data();
 		$this->load->view('list_donasi_member_view',$data);
 	}

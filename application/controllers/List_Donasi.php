@@ -8,6 +8,7 @@ class List_Donasi extends CI_Controller {
 		{
 		$data = array('title'	=> 'Halaman Dashboard');
 		$this->load->view('list_donasi_view',$data);
+
 	}
 	function __construct()
 	{

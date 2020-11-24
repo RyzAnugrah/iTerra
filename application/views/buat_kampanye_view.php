@@ -93,12 +93,12 @@ The above copyright notice and this permission notice shall be included in all c
 						<span class="navbar-toggler-icon icon-bar"></span>
 					</button>
 					<div class="collapse navbar-collapse justify-content-end">
-						<form class="navbar-form">
+						<div class="navbar-form">
 							<div class="input-group no-border">
 								<div class="ripple-container"></div>
 								</button>
 							</div>
-						</form>
+						</div>
 						<ul class="navbar-nav">
 							<li class="nav-item dropdown">
 								<a class="nav-link" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -139,12 +139,12 @@ The above copyright notice and this permission notice shall be included in all c
 											<p class="card-category">Buat Kampanye Anda </p>
 										</div>
 										<div class="card-body">
-											<form>
+											<form action="<?php echo base_url();?>/Buat_kampanye/tambah" method="post">
 												<div class="row">
 													<div class="col-md-12">
 														<div class="form-group">
 															<label class="bmd-label-floating">Nama Kampanye</label>
-															<input type="text" class="form-control">
+															<input type="text" class="form-control" name='judul_konten' value="<?php echo set_value('judul_konten')?>">
 														</div>
 													</div>
 												</div>
@@ -161,7 +161,7 @@ The above copyright notice and this permission notice shall be included in all c
 														<div class="form-group">
 															<label>Waktu Pelaksanaan</label>
 															<label class="bmd-label-floating"></label>
-															<input type="date" class="form-control">
+															<input type="date" class="form-control" name='tanggal_konten' value="<?php echo set_value('tanggal_konten')?>">
 														</div>
 													</div>
 												</div>
@@ -173,7 +173,7 @@ The above copyright notice and this permission notice shall be included in all c
 																<input type="file" class="custom-file-input" id="customFile">
 																<label class="custom-file-label" for="customFile">Choose file</label>
 															</div>
-											</form>
+											
 										</div>
 									</div>
 								</div>
@@ -183,12 +183,12 @@ The above copyright notice and this permission notice shall be included in all c
 											<label>Deskripsi Kampanye</label>
 											<div class="form-group">
 												<label class="bmd-label-floating"> Tulis deskripsi disini</label>
-												<textarea class="form-control" id="editor" rows="5"></textarea>
+												<textarea class="form-control" id="editor" name='deskripsi' rows="5" value="<?php echo set_value('deskripsi')?>"></textarea>
 											</div>
 										</div>
 									</div>
 								</div>
-								<button type="submit" class="btn btn-primary pull-right">Submit</button>
+								<button type="submit" class="btn btn-primary pull-right" value="buat_kampanye">Submit</button>
 								<div class="clearfix"></div>
 								</form>
 							</div>
