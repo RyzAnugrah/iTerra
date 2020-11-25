@@ -12,12 +12,18 @@ class Buat_Artikel extends CI_Controller {
 		$tgl = $this->input->post('tanggal');
 		$desk = $this->input->post('deskripsi');
 		$pen = $this->input->post('penulis');
+
+		$this->db->select("MAX(kode_artikel)+1 AS id");
+		$this->db->from("artikel");
+		$query = $this->db->get();
+
 		$data = array(
 			'email' => ($_SESSION['email']),
 			'judul_artikel' => $judul,
 			'tanggal' => $tgl,
 			'deskripsi' => $desk,
-			'penulis' => $pen
+			'penulis' => $pen,
+			'kode_artikel' => $query->row()->id
 			);
 		$this->db->insert('artikel', $data);
 		redirect(base_url('Dashboard_admin'));

@@ -89,12 +89,12 @@ The above copyright notice and this permission notice shall be included in all c
 						<span class="navbar-toggler-icon icon-bar"></span>
 					</button>
 					<div class="collapse navbar-collapse justify-content-end">
-						<form class="navbar-form">
+						<div class="navbar-form">
 							<div class="input-group no-border">
 								<div class="ripple-container"></div>
 								</button>
 							</div>
-						</form>
+						</div>
 						<ul class="navbar-nav">
 							<li class="nav-item dropdown">
 								<a class="nav-link" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -181,25 +181,26 @@ The above copyright notice and this permission notice shall be included in all c
 								<!-- Modal -->
 								<div class="modal fade" id="myModal" role="dialog">
 									<div class="modal-dialog">
-
 										<!-- Modal content-->
 										<div class="modal-content">
 											<div class="modal-header">
 												<h4 class="modal-title" style="text-align: center;">Ajukan Verifikasi</h4>
 											</div>
+
 											<div class="modal-body">
+											<?php echo form_open_multipart('Dashboard_Member/doupload')?>
 												<p>Verifikasi akun anda dengan mengirimkan foto selfie anda dengan Kartu Identitas, tulisan pada kartu identitas harus terlihat jelas</p>
 												<div class="custom-file">
-													<input type="file" class="custom-file-input" id="customFile">
+													<input type="file"  class="custom-file-input" multiple="multiple" id="userfile" name="userfile" required>
 													<label class="custom-file-label" for="customFile">Choose file</label>
 												</div>
 											</div>
 											<div class="modal-footer">
 												<button type="button" class="btn btn-default" data-dismiss="modal">Batal</button>
-												<button type="button" class="btn btn-default" data-dismiss="modal" style="background-color:#84C44E;">Simpan</button>
+												<button type="submit" value="Submit" class="btn btn-default" data-dismiss="modal" style="background-color:#84C44E;">Simpan</button>
 											</div>
+											</form>
 										</div>
-
 									</div>
 								</div>
 								</a>
@@ -272,9 +273,9 @@ The above copyright notice and this permission notice shall be included in all c
 								<div class="col-lg-4 col-md-6 footer-newsletter">
 									<h4>Langganan</h4>
 									<p>Dapatkan info terbaru dari Kami melalui e-mail</p>
-									<form action="" method="post">
+									<!-- <form action="" method="post">
 										<input type="email" name="email" placeholder="Email"><input type="submit" value="Subscribe">
-									</form>
+									</form> -->
 								</div>
 							</div>
 						</div>
