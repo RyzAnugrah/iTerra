@@ -2,13 +2,7 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 class List_Artikel extends CI_Controller {
-	
-	// Index login
-	public function index() 
-		{
-		$data = array('title'	=> 'Halaman Dashboard');
-		$this->load->view('list_artikel_view',$data);
-	}
+
 	function __construct()
 	{
 		parent::__construct();
@@ -17,7 +11,14 @@ class List_Artikel extends CI_Controller {
 		$this->load->library('form_validation');
 	}
 
-	
+	public function index()
+		{
+		$data = array('title'	=> 'Halaman Dashboard');
+		$data['artikel'] = $this->list_artikel_data->show_data();
+		$this->load->view('list_artikel_view',$data);
+	}
+
+
 	// Fungsi lain
-	
+
 }
