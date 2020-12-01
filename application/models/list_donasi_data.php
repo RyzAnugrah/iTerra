@@ -5,4 +5,16 @@ class list_donasi_data extends CI_Model
     {
         return $this->db->get('donasi')->result_array();
     }
+
+    function get_donasi_by_kode($kode)
+	{
+		$hsl = $this->db->query("SELECT * FROM donasi WHERE kode_donasi='$kode'");
+		return $hsl;
+	}
+
+	function get_all_donasi()
+	{
+		$hsl = $this->db->query("SELECT * FROM donasi ORDER BY kode_donasi DESC");
+		return $hsl;
+	}
 }
