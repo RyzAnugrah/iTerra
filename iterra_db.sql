@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.4
+-- version 5.0.2
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 01, 2020 at 02:35 PM
--- Server version: 10.4.16-MariaDB
--- PHP Version: 7.4.12
+-- Generation Time: Dec 01, 2020 at 04:31 PM
+-- Server version: 10.4.11-MariaDB
+-- PHP Version: 7.4.6
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -43,7 +43,10 @@ CREATE TABLE `artikel` (
 
 INSERT INTO `artikel` (`kode_artikel`, `judul_artikel`, `deskripsi`, `tanggal`, `email`, `penulis`, `gambar`) VALUES
 (22, 'Artikel 1', '<p>Test 1</p>\r\n', '2020-12-01 09:35:02', 'admin@gmail.com', 'Jongkook', 'aeb76f0fe38266e150cc32fd1ea863b9.jpg'),
-(23, 'Artikel 2', '', '2020-12-01 09:36:11', 'admin@gmail.com', 'Jusoo', '05316d8535d8ba10c1392c9b2b122240.jpg');
+(23, 'Artikel 2', '', '2020-12-01 09:36:11', 'admin@gmail.com', 'Jusoo', '05316d8535d8ba10c1392c9b2b122240.jpg'),
+(24, 'Jangan Coba-coba bun', '<p>wah sangat banyak sekali text editornya</p>\r\n', '2020-12-01 12:53:24', 'admin@gmail.com', 'Jennnie', 'f8a1e05d9e55d46c71c1084b118c81c6.png'),
+(25, 'ini judul', '<p>this is mulan</p>\r\n', '2020-12-01 15:05:28', 'admin@gmail.com', 'mulan', '48043079e48ad8257e4ddd30547ae7a9.png'),
+(26, 'ini judul artikel loh', '<p>hai ini adalah conoth artikel dalam iterra</p>\r\n', '2020-12-01 15:20:45', 'admin@gmail.com', 'Lisa', '412e312896c576919e0bb242da7bae71.jpg');
 
 -- --------------------------------------------------------
 
@@ -69,19 +72,21 @@ CREATE TABLE `donasi` (
   `tanggal_donasi` date NOT NULL,
   `kode_koin` varchar(20) NOT NULL,
   `jumlah_donasi` bigint(50) NOT NULL,
-  `gambar` varchar(40) NOT NULL,
-  `email` varchar(50) NOT NULL
+  `email` varchar(50) NOT NULL,
+  `gambar` varchar(40) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `donasi`
 --
 
-INSERT INTO `donasi` (`kode_donasi`, `judul_donasi`, `deskripsi`, `tanggal_donasi`, `kode_koin`, `jumlah_donasi`, `gambar`, `email`) VALUES
-('', 'dana sosial', '<p>aku sang pejuang</p>', '2020-11-21', '', 0, '', 'admin@gmail.com'),
-('1', 'Pelestarian Hutan sebagai Pencegahan Tanah Longsor', 'Pelestarian Hutan sebagai Pencegahan Tanah Longsor di Indonesia', '2020-11-22', '1', 100000000, '', 'naufalariful16@gmail.com'),
-('2', 'Pelestarian Hutan sebagai Pencegahan Banjir', 'Pelestarian Hutan sebagai Pencegahan Banjir di Indonesia', '2020-11-21', '2', 200000000, '', 'naufalariful16@gmail.com'),
-('5', 'Abc', '<p>Test</p>\r\n', '2020-12-01', '', 123, '515c5761cd7568ff3ef3bbe4e2459f97.jpg', 'admin@gmail.com');
+INSERT INTO `donasi` (`kode_donasi`, `judul_donasi`, `deskripsi`, `tanggal_donasi`, `kode_koin`, `jumlah_donasi`, `email`, `gambar`) VALUES
+('', 'dana sosial', '<p>aku sang pejuang</p>', '2020-11-21', '', 0, 'admin@gmail.com', ''),
+('1', 'Pelestarian Hutan sebagai Pencegahan Tanah Longsor', 'Pelestarian Hutan sebagai Pencegahan Tanah Longsor di Indonesia', '2020-11-22', '1', 100000000, 'naufalariful16@gmail.com', ''),
+('2', 'Pelestarian Hutan sebagai Pencegahan Banjir', 'Pelestarian Hutan sebagai Pencegahan Banjir di Indonesia', '2020-11-21', '2', 200000000, 'naufalariful16@gmail.com', ''),
+('3', 'hai', '<p>conoth lagiii</p>\r\n', '2020-12-02', '', 120, 'admin@gmail.com', 'ac1e5edcc269fa8929930943058798af.png'),
+('4', 'contoh lagiii', '<p>ini contoh saja</p>\r\n', '2020-12-03', '', 1000000000, 'admin@gmail.com', '91e5213662926f7a95ade0d3f8526b62.png'),
+('5', 'conoth lagiiiii dong', '<p>banyak amat contohnya</p>\r\n', '2020-12-05', '', 1000000, 'admin@gmail.com', '57edd14b73cd55ff000a27a259734693.png');
 
 -- --------------------------------------------------------
 
@@ -107,6 +112,7 @@ CREATE TABLE `identitas` (
 
 INSERT INTO `identitas` (`email`, `nama`, `jenis_kelamin`, `nomortelepon`, `fotoprofil`, `NIK`, `password`, `tanggallahir`, `admin`) VALUES
 ('admin@gmail.com', 'admin', 'pria', '08238585855', '', '10235629847', '$2y$10$gWFPHJD4bwkUCwzvrhgdCOEjNvMrqh4kJqsL10SfO02H/bJL1Bt36', '2020-11-01', 1),
+('alvin18001@mail.unpad.ac.id', 'Alvin', 'pria', '089698916727', '', '123', '$2y$10$D93NOX4zz2hdK8kNSLA4xuOmvnXuvRjMJK5qzBaanEqi5O9UB5uJy', '2020-12-10', 0),
 ('naufal.ariful.amri@gmail.com', 'naufal ariful', 'pria', '08238585855', '', '10235629847', '$2y$10$uRuga4qthZOOZ/HZRMmEn.mWYjsrpxETcrdJVfsKR6oOi1w9.hMc2', '2020-11-02', 0),
 ('naufalariful16@gmail.com', 'naufal ariful', 'pria', '08238585855', '', '10235629847', '$2y$10$uRuga4qthZOOZ/HZRMmEn.mWYjsrpxETcrdJVfsKR6oOi1w9.hMc2', '2020-11-02', 0);
 
@@ -117,21 +123,26 @@ INSERT INTO `identitas` (`email`, `nama`, `jenis_kelamin`, `nomortelepon`, `foto
 --
 
 CREATE TABLE `kampanye` (
-  `kode_konten` varchar(20) NOT NULL,
-  `judul_konten` varchar(150) NOT NULL,
+  `kode_kampanye` varchar(20) NOT NULL,
+  `judul_kampanye` varchar(150) NOT NULL,
   `deskripsi` varchar(500) NOT NULL,
-  `tanggal_konten` date NOT NULL,
+  `tanggal` date NOT NULL,
   `kode_koin` varchar(20) NOT NULL,
   `email` varchar(50) NOT NULL,
-  `verifikasi` int(5) NOT NULL
+  `gambar` varchar(40) NOT NULL,
+  `verifikasi` int(5) NOT NULL,
+  `penulis` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `kampanye`
 --
 
-INSERT INTO `kampanye` (`kode_konten`, `judul_konten`, `deskripsi`, `tanggal_konten`, `kode_koin`, `email`, `verifikasi`) VALUES
-('', 'hutan', '<p>Merupakan jagat raya</p>', '2020-11-02', '', 'naufal.ariful.amri@gmail.com', 0);
+INSERT INTO `kampanye` (`kode_kampanye`, `judul_kampanye`, `deskripsi`, `tanggal`, `kode_koin`, `email`, `gambar`, `verifikasi`, `penulis`) VALUES
+('', 'hutan', '<p>Merupakan jagat raya</p>', '2020-11-02', '', 'naufal.ariful.amri@gmail.com', '', 0, ''),
+('1', 'hahahha', '<p>ini contoh teks</p>\r\n', '2020-12-02', '', 'alvin18001@mail.unpad.ac.id', '10c05283961d82d948be1d66f7636611.png', 0, 'jisoo'),
+('2', 'hahahha', '<p>kwkwkwkwkwk terusus</p>\r\n', '2020-12-03', '', 'alvin18001@mail.unpad.ac.id', '6c69955f124004dd264b8215824f5479.png', 0, 'Alvin'),
+('3', 'Hari bumi se-Indonesia', '<p>ini adalah conoth kampanye dari lingkungan hidup</p>\r\n', '2020-12-03', '', 'alvin18001@mail.unpad.ac.id', 'edae6bd45d54e178723804c18202a5a0.png', 0, 'Kementerian Lingkungan Hidup');
 
 --
 -- Indexes for dumped tables
@@ -167,7 +178,7 @@ ALTER TABLE `identitas`
 -- Indexes for table `kampanye`
 --
 ALTER TABLE `kampanye`
-  ADD PRIMARY KEY (`kode_konten`),
+  ADD PRIMARY KEY (`kode_kampanye`),
   ADD KEY `email` (`email`);
 
 --

@@ -120,29 +120,31 @@ The above copyright notice and this permission notice shall be included in all c
 								<div class="card-body table-responsive">
 									<table class="table table-hover">
 										<thead style="color:#84C44E; font-weight:bolder">
-											<th>No.</th>
-											<th>Nama</th>
-											<th>Member Id</th>
-											<th>Waktu Pengajuan</th>
+											<th>Kode.</th>
+											<th>Email</th>
+											<th>Nama Kampanye</th>
+											<th>Waktu Kampanye</th>
 											<th>Deskripsi Kampanye</th>
 											<th>Aksi</th>
 										</thead>
 										<tbody>
-											<tr>
-												<td>1</td>
-												<td>Budi</td>
-												<td>123</td>
-												<td>11-21-2020</td>
-												<td>Kampanye ini merupakan bentuk dari kepedulian masyrakat di jatinangor terhadap kebersihan lingkungan, kampanye ini mempunyai tujuan untuk mewujudkan 1000 tong sampah yang diharapkan dapat menumbuhkan kesadaran masyarakat dalam menjaga kebersihan</td>
-												<td class="td-actions ">
-													<button type="button" rel="tooltip" title="Setujui" class="btn btn-primary btn-link btn-sm">
-														<i class="material-icons">done_outline</i>
-													</button>
-													<button type="button" rel="tooltip" title="Tolak" class="btn btn-danger btn-link btn-sm">
-														<i class="material-icons">close</i>
-													</button>
-												</td>
-											</tr>
+											<?php foreach($kampanye as $kampa) : ?>
+												<tr>
+													<td><?= $kampa['kode_kampanye']; ?></td>
+													<td><?= $kampa['email']; ?></td>
+													<td><?= $kampa['judul_kampanye']; ?></td>
+													<td><?= $kampa['tanggal']; ?></td>
+													<td><?= $kampa['deskripsi']; ?></td>
+													<td class="td-actions">
+														<button type="button" rel="tooltip" title="Edit" class="btn btn-primary btn-link btn-sm">
+															<i class="material-icons">edit</i>
+														</button>
+														<button type="button" rel="tooltip" title="Hapus" class="btn btn-danger btn-link btn-sm">
+															<i class="material-icons">close</i>
+														</button>
+													</td>
+												</tr>
+											<?php endforeach; ?>
 										</tbody>
 									</table>
 								</div>

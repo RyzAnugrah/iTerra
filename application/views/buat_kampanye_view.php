@@ -139,20 +139,12 @@ The above copyright notice and this permission notice shall be included in all c
 											<p class="card-category">Buat Kampanye Anda </p>
 										</div>
 										<div class="card-body">
-											<form action="<?php echo base_url();?>/Buat_kampanye/tambah" method="post">
+											<form action="<?php echo base_url(); ?>/Buat_Kampanye/simpan_post" method="post" enctype="multipart/form-data">
 												<div class="row">
 													<div class="col-md-12">
 														<div class="form-group">
-															<label class="bmd-label-floating">Nama Kampanye</label>
-															<input type="text" class="form-control" name='judul_konten' value="<?php echo set_value('judul_konten')?>">
-														</div>
-													</div>
-												</div>
-												<div class="row">
-													<div class="col-md-12">
-														<div class="form-group">
-															<label class="bmd-label-floating">Pelaksana</label>
-															<input type="text" class="form-control">
+															<label class="bmd-label-floating">Judul Kampanye</label>
+															<input name='judul_kampanye' value="<?php echo set_value('judul_kampanye') ?>" type="text" class="form-control" required>
 														</div>
 													</div>
 												</div>
@@ -161,35 +153,33 @@ The above copyright notice and this permission notice shall be included in all c
 														<div class="form-group">
 															<label>Waktu Pelaksanaan</label>
 															<label class="bmd-label-floating"></label>
-															<input type="date" class="form-control" name='tanggal_konten' value="<?php echo set_value('tanggal_konten')?>">
+															<input type='date' name='tanggal' value="<?php echo set_value('tanggal') ?>" type="text" class="form-control" required>
 														</div>
 													</div>
 												</div>
 												<div class="row">
 													<div class="col-md-12">
 														<div class="form-group">
-															<label> Upload Gambar</label>
-															<div class="custom-file">
-																<input type="file" class="custom-file-input" id="customFile">
-																<label class="custom-file-label" for="customFile">Choose file</label>
+															<label>Penggagas Kampanye</label>
+															<label class="bmd-label-floating"></label>
+															<input name='penulis' value="<?php echo set_value('penulis') ?>" type="text" class="form-control" required>
+														</div>
+													</div>
+												</div>
+												<label class="bmd-label-floating">Gambar</label><br>
+												<input type="file" name="filefoto" required><br>
+												<div class="row">
+													<div class="col-md-12">
+														<div class="form-group">
+															<label>Deskripsi</label>
+															<div class="form-group">
+																<textarea id="ckeditor" class="form-control" name='deskripsi' value="<?php echo set_value('deskripsi') ?>" rows="5" required></textarea>
 															</div>
-											
-										</div>
-									</div>
-								</div>
-								<div class="row">
-									<div class="col-md-12">
-										<div class="form-group">
-											<label>Deskripsi Kampanye</label>
-											<div class="form-group">
-												<label class="bmd-label-floating"> Tulis deskripsi disini</label>
-												<textarea class="form-control" id="editor" name='deskripsi' rows="5" value="<?php echo set_value('deskripsi')?>"></textarea>
-											</div>
-										</div>
-									</div>
-								</div>
-								<button type="submit" class="btn btn-primary pull-right" value="buat_kampanye">Submit</button>
-								<div class="clearfix"></div>
+														</div>
+													</div>
+												</div>
+												<button type="submit" value="buat_kampanye" class="btn btn-primary pull-right">Submit</button>
+												<div class="clearfix"></div>
 								</form>
 							</div>
 						</div>
@@ -306,12 +296,11 @@ The above copyright notice and this permission notice shall be included in all c
 	<script src="assets/assets_admin/js/material-dashboard.js?v=2.1.2" type="text/javascript"></script>
 	<!-- Material Dashboard DEMO methods, don't include it in your project! -->
 	<script src="assets/assets_admin/demo/demo.js"></script>
-	<script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+	<script src="//cdn.ckeditor.com/4.15.1/full/ckeditor.js"></script>
 
-	<script>
-		tinymce.init({
-			selector: 'textarea#editor',
-			menubar: false
+	<script type="text/javascript">
+		$(function() {
+			CKEDITOR.replace('ckeditor');
 		});
 	</script>
 	<script>
