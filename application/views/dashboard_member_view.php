@@ -79,7 +79,10 @@ The above copyright notice and this permission notice shall be included in all c
 				<div class="container-fluid">
 					<div class="navbar-wrapper">
 						<a class="navbar-brand" style="color: black;" href="javascript:;">
-							<h3>Selamat Datang !<i class="material-icons" style="color:green;">eco</i></h3>
+							<h3>
+								Selamat Datang !
+								<?php echo $_SESSION["email"]; ?>
+							</h3>
 						</a>
 					</div>
 					<button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
@@ -188,10 +191,10 @@ The above copyright notice and this permission notice shall be included in all c
 											</div>
 
 											<div class="modal-body">
-											<?php echo form_open_multipart('Dashboard_Member/doupload')?>
+												<?php echo form_open_multipart('Dashboard_Member/doupload') ?>
 												<p>Verifikasi akun anda dengan mengirimkan foto selfie anda dengan Kartu Identitas, tulisan pada kartu identitas harus terlihat jelas</p>
 												<div class="custom-file">
-													<input type="file"  class="custom-file-input" multiple="multiple" id="userfile" name="userfile" required>
+													<input type="file" class="custom-file-input" multiple="multiple" id="userfile" name="userfile" required>
 													<label class="custom-file-label" for="customFile">Choose file</label>
 												</div>
 											</div>
