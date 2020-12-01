@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 24, 2020 at 09:07 AM
--- Server version: 10.1.38-MariaDB
--- PHP Version: 7.3.4
+-- Waktu pembuatan: 01 Des 2020 pada 10.48
+-- Versi server: 10.1.38-MariaDB
+-- Versi PHP: 5.6.40
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -25,29 +25,31 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `artikel`
+-- Struktur dari tabel `artikel`
 --
 
 CREATE TABLE `artikel` (
-  `kode_artikel` varchar(50) NOT NULL,
-  `judul_artikel` varchar(50) NOT NULL,
-  `deskripsi` varchar(500) NOT NULL,
-  `tanggal` date NOT NULL,
-  `email` varchar(50) NOT NULL,
-  `penulis` varchar(50) NOT NULL
+  `kode_artikel` int(50) NOT NULL,
+  `judul_artikel` varchar(50) DEFAULT NULL,
+  `deskripsi` text,
+  `tanggal` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
+  `email` varchar(50) DEFAULT NULL,
+  `penulis` varchar(50) DEFAULT NULL,
+  `gambar` varchar(40) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `artikel`
+-- Dumping data untuk tabel `artikel`
 --
 
-INSERT INTO `artikel` (`kode_artikel`, `judul_artikel`, `deskripsi`, `tanggal`, `email`, `penulis`) VALUES
-('', 'Sayangi hutan', 'nani kore', '2020-11-01', 'admin@gmail.com', 'Naufal Ariful');
+INSERT INTO `artikel` (`kode_artikel`, `judul_artikel`, `deskripsi`, `tanggal`, `email`, `penulis`, `gambar`) VALUES
+(22, 'Artikel 1', '<p>Test 1</p>\r\n', '2020-12-01 09:35:02', 'admin@gmail.com', 'Jongkook', 'aeb76f0fe38266e150cc32fd1ea863b9.jpg'),
+(23, 'Artikel 2', '', '2020-12-01 09:36:11', 'admin@gmail.com', 'Jusoo', '05316d8535d8ba10c1392c9b2b122240.jpg');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `data_koin`
+-- Struktur dari tabel `data_koin`
 --
 
 CREATE TABLE `data_koin` (
@@ -58,7 +60,7 @@ CREATE TABLE `data_koin` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `donasi`
+-- Struktur dari tabel `donasi`
 --
 
 CREATE TABLE `donasi` (
@@ -72,7 +74,7 @@ CREATE TABLE `donasi` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `donasi`
+-- Dumping data untuk tabel `donasi`
 --
 
 INSERT INTO `donasi` (`kode_donasi`, `judul_donasi`, `deskripsi`, `tanggal_donasi`, `kode_koin`, `jumlah_donasi`, `email`) VALUES
@@ -83,7 +85,7 @@ INSERT INTO `donasi` (`kode_donasi`, `judul_donasi`, `deskripsi`, `tanggal_donas
 -- --------------------------------------------------------
 
 --
--- Table structure for table `identitas`
+-- Struktur dari tabel `identitas`
 --
 
 CREATE TABLE `identitas` (
@@ -99,7 +101,7 @@ CREATE TABLE `identitas` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `identitas`
+-- Dumping data untuk tabel `identitas`
 --
 
 INSERT INTO `identitas` (`email`, `nama`, `jenis_kelamin`, `nomortelepon`, `fotoprofil`, `NIK`, `password`, `tanggallahir`, `admin`) VALUES
@@ -110,7 +112,7 @@ INSERT INTO `identitas` (`email`, `nama`, `jenis_kelamin`, `nomortelepon`, `foto
 -- --------------------------------------------------------
 
 --
--- Table structure for table `kampanye`
+-- Struktur dari tabel `kampanye`
 --
 
 CREATE TABLE `kampanye` (
@@ -124,7 +126,7 @@ CREATE TABLE `kampanye` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `kampanye`
+-- Dumping data untuk tabel `kampanye`
 --
 
 INSERT INTO `kampanye` (`kode_konten`, `judul_konten`, `deskripsi`, `tanggal_konten`, `kode_koin`, `email`, `verifikasi`) VALUES
@@ -135,56 +137,66 @@ INSERT INTO `kampanye` (`kode_konten`, `judul_konten`, `deskripsi`, `tanggal_kon
 --
 
 --
--- Indexes for table `artikel`
+-- Indeks untuk tabel `artikel`
 --
 ALTER TABLE `artikel`
   ADD PRIMARY KEY (`kode_artikel`),
   ADD KEY `emailll` (`email`);
 
 --
--- Indexes for table `data_koin`
+-- Indeks untuk tabel `data_koin`
 --
 ALTER TABLE `data_koin`
   ADD PRIMARY KEY (`kode_koin`);
 
 --
--- Indexes for table `donasi`
+-- Indeks untuk tabel `donasi`
 --
 ALTER TABLE `donasi`
   ADD PRIMARY KEY (`kode_donasi`),
   ADD KEY `emaill` (`email`);
 
 --
--- Indexes for table `identitas`
+-- Indeks untuk tabel `identitas`
 --
 ALTER TABLE `identitas`
   ADD PRIMARY KEY (`email`);
 
 --
--- Indexes for table `kampanye`
+-- Indeks untuk tabel `kampanye`
 --
 ALTER TABLE `kampanye`
   ADD PRIMARY KEY (`kode_konten`),
   ADD KEY `email` (`email`);
 
 --
--- Constraints for dumped tables
+-- AUTO_INCREMENT untuk tabel yang dibuang
 --
 
 --
--- Constraints for table `artikel`
+-- AUTO_INCREMENT untuk tabel `artikel`
+--
+ALTER TABLE `artikel`
+  MODIFY `kode_artikel` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
+
+--
+-- Ketidakleluasaan untuk tabel pelimpahan (Dumped Tables)
+--
+
+--
+-- Ketidakleluasaan untuk tabel `artikel`
 --
 ALTER TABLE `artikel`
   ADD CONSTRAINT `emailll` FOREIGN KEY (`email`) REFERENCES `identitas` (`email`);
 
 --
--- Constraints for table `donasi`
+-- Ketidakleluasaan untuk tabel `donasi`
 --
 ALTER TABLE `donasi`
   ADD CONSTRAINT `emaill` FOREIGN KEY (`email`) REFERENCES `identitas` (`email`);
 
 --
--- Constraints for table `kampanye`
+-- Ketidakleluasaan untuk tabel `kampanye`
 --
 ALTER TABLE `kampanye`
   ADD CONSTRAINT `email` FOREIGN KEY (`email`) REFERENCES `identitas` (`email`);

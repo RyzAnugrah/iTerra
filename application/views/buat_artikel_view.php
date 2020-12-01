@@ -120,12 +120,12 @@ The above copyright notice and this permission notice shall be included in all c
 											<p class="card-category">Artikel mengenai lingkungan </p>
 										</div>
 										<div class="card-body">
-											<form action="<?php echo base_url();?>/Buat_Artikel/tambah" method="post">
+											<form action="<?php echo base_url(); ?>/Buat_Artikel/simpan_post" method="post" enctype="multipart/form-data">
 												<div class="row">
 													<div class="col-md-12">
 														<div class="form-group">
 															<label class="bmd-label-floating">Judul Artikel</label>
-															<input name='judul_artikel' value="<?php echo set_value('judul_artikel')?>" type="text" class="form-control">
+															<input name='judul_artikel' value="<?php echo set_value('judul_artikel') ?>" type="text" class="form-control" required>
 														</div>
 													</div>
 												</div>
@@ -133,120 +133,101 @@ The above copyright notice and this permission notice shall be included in all c
 													<div class="col-md-12">
 														<div class="form-group">
 															<label class="bmd-label-floating">Penulis</label>
-															<input name='penulis' value="<?php echo set_value('penulis')?>" type="text" class="form-control">
+															<input name='penulis' value="<?php echo set_value('penulis') ?>" type="text" class="form-control" required>
 														</div>
 													</div>
 												</div>
+												<label class="bmd-label-floating">Gambar</label><br>
+												<input type="file" name="filefoto" required><br>
 												<div class="row">
 													<div class="col-md-12">
 														<div class="form-group">
-															<label>Tanggal Publikasi</label>
-															<label class="bmd-label-floating"></label>
-															<input  name='tanggal' value="<?php echo set_value('tanggal')?>" type="date" class="form-control">
-														</div>
-													</div>
-												</div>
-												<div class="row">
-													<div class="col-md-12">
-														<div class="form-group">
-															<label> Upload Gambar</label>
-															<div class="custom-file">
-																<input type="file" class="custom-file-input" id="customFile">
-																<label class="custom-file-label" for="customFile">Choose file</label>
+															<label>Deskripsi</label>
+															<div class="form-group">
+																<textarea id="ckeditor" class="form-control" name='deskripsi' value="<?php echo set_value('deskripsi') ?>" rows="5" required></textarea>
 															</div>
+														</div>
+													</div>
+												</div>
+												<button type="submit" value="buat_artikel" class="btn btn-primary pull-right">Submit</button>
+												<div class="clearfix"></div>
+											</form>
 										</div>
 									</div>
 								</div>
-								<div class="row">
-									<div class="col-md-12">
-										<div class="form-group">
-											<label>Deskripsi</label>
-											<div class="form-group">
-												<label class="bmd-label-floating"> Tulis deskripsi disini</label>
-												<textarea  name='deskripsi' value="<?php echo set_value('deskripsi')?>"class="form-control" id="editor" rows="5"></textarea>
-											</div>
-										</div>
-									</div>
-								</div>
-								<button type="submit" value="buat_artikel" class="btn btn-primary pull-right">Submit</button>
-								<div class="clearfix"></div>
-								</form>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
+			<br>
+			<br>
+
+			<!--Footer-->
+			<section id="footer">
+				<footer>
+					<div class="footer-top">
+						<div class="containers">
+							<div class="row">
+								<div class="col-lg-4 col-md-6">
+									<div class="footer-info">
+										<img src="assets\images\logo\iterra-01.png" style="width: 100px;">
+										<h3>Tentang Kami</h3>
+										<p>
+											<strong>Alamat:</strong> Jalan Raya Bandung-Sumedang <br>
+											No. 239 Jatinangor <br>
+											<strong>Email:</strong> support@iterra.com<br>
+										</p>
+										<div class="social-links mt-3">
+											<a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+											<a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+											<a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+										</div>
+									</div>
+								</div>
+								<div class="col-lg-2 col-md-6 footer-links">
+									<h4>Kategori</h4>
+									<ul>
+										<li><i class="bx bx-chevron-right"></i> <a href="home">Home</a></li>
+										<li><i class="bx bx-chevron-right"></i> <a href="about">Tentang Kami</a></li>
+										<li><i class="bx bx-chevron-right"></i> <a href="artikel">Artikel</a></li>
+										<li><i class="bx bx-chevron-right"></i> <a href="kampanye">Kampanye</a></li>
+										<li><i class="bx bx-chevron-right"></i> <a href="donasi">Donasi</a></li>
+									</ul>
+								</div>
+								<div class="col-lg-2 col-md-6 footer-links">
+									<h4>Update Terkini</h4>
+									<ul>
+										<li><i class="bx bx-chevron-right"></i> <a href="#">Update 1</a></li>
+										<li><i class="bx bx-chevron-right"></i> <a href="#">Update 2</a></li>
+										<li><i class="bx bx-chevron-right"></i> <a href="#">Update 3</a></li>
+										<li><i class="bx bx-chevron-right"></i> <a href="#">Update 4</a></li>
+										<li><i class="bx bx-chevron-right"></i> <a href="#">Update 5</a></li>
+									</ul>
+								</div>
+								<div class="col-lg-4 col-md-6 footer-newsletter">
+									<h4>Langganan</h4>
+									<p>Dapatkan info terbaru dari Kami melalui e-mail</p>
+									<form action="" method="post">
+										<input type="email" name="email" placeholder="Email"><input type="submit" value="Subscribe">
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="container">
+						<div class="copyright">
+							&copy; 2020 Copyright. All Rights Reserved
+						</div>
+						<div class="credits">
+							Developed and Designed by <a href="about">iTerra</a>
+						</div>
+					</div>
+				</footer>
+			</section>
+
+
 		</div>
-	</div>
-	</div>
-	<br>
-	<br>
-
-	<!--Footer-->
-	<section id="footer">
-		<footer>
-			<div class="footer-top">
-				<div class="containers">
-					<div class="row">
-						<div class="col-lg-4 col-md-6">
-							<div class="footer-info">
-								<img src="assets\images\logo\iterra-01.png" style="width: 100px;">
-								<h3>Tentang Kami</h3>
-								<p>
-									<strong>Alamat:</strong> Jalan Raya Bandung-Sumedang <br>
-									No. 239 Jatinangor <br>
-									<strong>Email:</strong> support@iterra.com<br>
-								</p>
-								<div class="social-links mt-3">
-									<a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-									<a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-									<a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-2 col-md-6 footer-links">
-							<h4>Kategori</h4>
-							<ul>
-								<li><i class="bx bx-chevron-right"></i> <a href="home">Home</a></li>
-								<li><i class="bx bx-chevron-right"></i> <a href="about">Tentang Kami</a></li>
-								<li><i class="bx bx-chevron-right"></i> <a href="artikel">Artikel</a></li>
-								<li><i class="bx bx-chevron-right"></i> <a href="kampanye">Kampanye</a></li>
-								<li><i class="bx bx-chevron-right"></i> <a href="donasi">Donasi</a></li>
-							</ul>
-						</div>
-						<div class="col-lg-2 col-md-6 footer-links">
-							<h4>Update Terkini</h4>
-							<ul>
-								<li><i class="bx bx-chevron-right"></i> <a href="#">Update 1</a></li>
-								<li><i class="bx bx-chevron-right"></i> <a href="#">Update 2</a></li>
-								<li><i class="bx bx-chevron-right"></i> <a href="#">Update 3</a></li>
-								<li><i class="bx bx-chevron-right"></i> <a href="#">Update 4</a></li>
-								<li><i class="bx bx-chevron-right"></i> <a href="#">Update 5</a></li>
-							</ul>
-						</div>
-						<div class="col-lg-4 col-md-6 footer-newsletter">
-							<h4>Langganan</h4>
-							<p>Dapatkan info terbaru dari Kami melalui e-mail</p>
-							<form action="" method="post">
-								<input type="email" name="email" placeholder="Email"><input type="submit" value="Subscribe">
-							</form>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="container">
-				<div class="copyright">
-					&copy; 2020 Copyright. All Rights Reserved
-				</div>
-				<div class="credits">
-					Developed and Designed by <a href="about">iTerra</a>
-				</div>
-			</div>
-		</footer>
-	</section>
-
-
-	</div>
 	</div>
 	</div>
 
@@ -293,12 +274,11 @@ The above copyright notice and this permission notice shall be included in all c
 	<!-- Material Dashboard DEMO methods, don't include it in your project! -->
 	<script src="assets/assets_admin/demo/demo.js"></script>
 
-	<script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+	<script src="//cdn.ckeditor.com/4.15.1/full/ckeditor.js"></script>
 
-	<script>
-		tinymce.init({
-			selector: 'textarea#editor',
-			menubar: false
+	<script type="text/javascript">
+		$(function() {
+			CKEDITOR.replace('ckeditor');
 		});
 	</script>
 

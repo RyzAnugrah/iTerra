@@ -102,70 +102,33 @@
 					</div>
 				</div>
 
-				<!-- artikel 1 -->
 				<div class="row content">
-					<div class="artikel-item artikel-hover-zoom">
-						<a href="">
-							<img src="assets\images\home\artikel3.jpg">
-						</a>
-					</div>
-					<div class="col-lg-6 artikel-item">
-						<div class="artikel-caption">
-							<a href="">
-								<h3>
-									Upaya Seniman Tari dan Wayang Orang Memanfaatkan Teknologi untuk Bertahan di Tengah Pagebluk
-								</h3>
+					<?php
+					foreach ($data->result_array() as $i) : 
+						$id = $i['kode_artikel'];
+						$judul = $i['judul_artikel'];
+						$gambar = $i['gambar'];
+						$tanggal = $i['tanggal']
+					?>
+						<div class="artikel-item artikel-hover-zoom">
+							<a >
+								<img src="<?php echo base_url() . 'assets/images/artikel/' . $gambar; ?>">
 							</a>
-							<h5>1 Januari 2021</h5>
 						</div>
-					</div>
-					<div class="artikel-item">
-						<p style="color: #757575;">_______________________________________________________________________________________________________________________________________________________________________________________</p>
-					</div>
-				</div>
-
-				<!-- artikel 2 -->
-				<div class="row content">
-					<div class="artikel-item artikel-hover-zoom">
-						<a href="">
-							<img src="assets\images\home\artikel3.jpg">
-						</a>
-					</div>
-					<div class="col-lg-6 artikel-item">
-						<div class="artikel-caption">
-							<a href="">
-								<h3>
-									Upaya Seniman Tari dan Wayang Orang Memanfaatkan Teknologi untuk Bertahan di Tengah Pagebluk
-								</h3>
-							</a>
-							<h5>1 Januari 2021</h5>
+						<div class="col-lg-6 artikel-item">
+							<div class="artikel-caption">
+								<a href="">
+									<h3>
+										<?php echo $judul; ?>
+									</h3>
+								</a>
+								<h5><?php echo $tanggal; ?></h5>
+							</div>
 						</div>
-					</div>
-					<div class="artikel-item">
-						<p style="color: #757575;">_______________________________________________________________________________________________________________________________________________________________________________________</p>
-					</div>
-				</div>
-
-				<!-- artikel 3 -->
-				<div class="row content">
-					<div class="artikel-item artikel-hover-zoom">
-						<a href="">
-							<img src="assets\images\home\artikel3.jpg">
-						</a>
-					</div>
-					<div class="col-lg-6 artikel-item">
-						<div class="artikel-caption">
-							<a href="">
-								<h3>
-									Upaya Seniman Tari dan Wayang Orang Memanfaatkan Teknologi untuk Bertahan di Tengah Pagebluk
-								</h3>
-							</a>
-							<h5>1 Januari 2021</h5>
+						<div class="artikel-item">
+							<p style="color: #757575;">_______________________________________________________________________________________________________________________________________________________________________________________</p>
 						</div>
-					</div>
-					<div class="artikel-item">
-						<p style="color: #757575;">_______________________________________________________________________________________________________________________________________________________________________________________</p>
-					</div>
+					<?php endforeach; ?>
 				</div>
 			</div>
 		</div>
