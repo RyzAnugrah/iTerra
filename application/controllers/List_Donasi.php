@@ -12,7 +12,7 @@ class List_Donasi extends CI_Controller {
 	}
 
 	// Index login
-	public function index() 
+	public function index()
 		{
 		$data = array('title'	=> 'Halaman Dashboard');
 		$data['donasi'] = $this->list_donasi_data->show_data();
