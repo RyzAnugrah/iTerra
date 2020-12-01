@@ -20,6 +20,15 @@ class List_Donasi extends CI_Controller {
 
 	}
 
-	// Fungsi lain
+	public function view()
+	{
+		$kode = $this->uri->segment(3);
+		$x['data'] = $this->list_donasi_data->get_donasi_by_kode($kode);
+		// $this->load->view('templates/header_view');
+		$this->load->view('donasi_list_view', $x);
+		// $this->load->view('templates/footer_view');
+	}
+
+
 
 }

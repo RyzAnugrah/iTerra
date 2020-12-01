@@ -14,26 +14,30 @@
 					$tgl = $i['tanggal_donasi'];
 					$jml = $i['jumlah_donasi'];
 				?>
-				<div class="col-lg-4 mb-4" data-aos="zoom-in">
-					<div class="donasi-item">
-						<a class="donasi-link" data-toggle="modal" href="detail_donasi">
+					<div class="col-lg-4 mb-4" data-aos="zoom-in">
+						<div class="donasi-item">
+
 							<div class="img-hover-zoom">
 								<img src="<?= base_url() . 'assets/images/donasi/' . $gambar; ?>">
 							</div>
-						</a>
-						<a>
-							<div class="donasi-caption">
-								<a href="detail_donasi" class="donasi-caption-heading"><?= $judul; ?></a>
-								<div class="progress mt-4 mb-2">
-									<div class="progress-bar bg-secondary" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+
+							<a>
+								<div class="donasi-caption">
+									<a href="<?php echo base_url() . 'List_donasi/view/' . $id; ?>">
+										<h3>
+											<?php echo $judul; ?>
+										</h3>
+									</a>
+									<div class="progress mt-4 mb-2">
+										<div class="progress-bar bg-secondary" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+									<p class="donasi-value"><?= $jml; ?></p>
+									<p class="donasi-day"><?= $tgl; ?></p>
+									<a href="<?php echo base_url() . 'List_donasi/view/' . $id; ?>" class="btn btn-detail">Detail ➔</a>
 								</div>
-								<p class="donasi-value"><?= $jml; ?></p>
-								<p class="donasi-day"><?= $tgl; ?></p>
-								<a href="detail_donasi" class="btn btn-detail">Detail ➔</a>
-							</div>
-						</a>
+							</a>
+						</div>
 					</div>
-				</div>
 				<?php endforeach; ?>
 			</div>
 		</div>
