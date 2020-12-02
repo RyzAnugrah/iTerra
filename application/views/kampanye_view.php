@@ -14,23 +14,28 @@
 					$tgl = $i['tanggal'];
 					$desk = $i['deskripsi'];
 				?>
-				<!-- Contents 1 -->
-				<div class="col-lg-4 col-12 mb-4" data-aos="zoom-in">
-					<div class="kampanye-item">
-						<a class="kampanye-link" data-toggle="modal" href="#kampanyeModal1">
+				<div class="col-lg-4 mb-4" data-aos="zoom-in">
+						<div class="kampanye-item">
+
 							<div class="img-hover-zoom">
 								<img src="<?= base_url() . 'assets/images/kampanye/' . $gambar; ?>">
 							</div>
-						</a>
-						<a href="detail_kampanye">
-						
-							<div class="kampanye-caption">
-								<div class="kampanye-caption-heading"><?php echo $judul; ?></div>
-								<a href="detail_kampanye" class="btn btn-detail">Detail ➔</a>
-							</div>
-						</a>
+
+							<a>
+								<div class="kampanye-caption">
+									<a href="<?php echo base_url() . 'list_kampanye/view/' . $id; ?>">
+										<h3>
+											<?php echo $judul; ?>
+										</h3>
+									</a>
+									<div class="progress mt-4 mb-2">
+										<div class="progress-bar bg-secondary" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+									</div>
+									<a href="<?php echo base_url() . 'list_kampanye/view/' . $id; ?>" class="btn btn-detail">Detail ➔</a>
+								</div>
+							</a>
+						</div>
 					</div>
-				</div>
 
 				<?php endforeach; ?>
 			</div>

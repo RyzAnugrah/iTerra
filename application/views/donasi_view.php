@@ -23,7 +23,7 @@
 
 							<a>
 								<div class="donasi-caption">
-									<a href="<?php echo base_url() . 'List_donasi/view/' . $id; ?>">
+									<a href="<?php echo base_url() . 'list_donasi/view/' . $id; ?>">
 										<h3>
 											<?php echo $judul; ?>
 										</h3>
@@ -33,7 +33,7 @@
 									</div>
 									<p class="donasi-value"><?= $jml; ?></p>
 									<p class="donasi-day"><?= $tgl; ?></p>
-									<a href="<?php echo base_url() . 'List_donasi/view/' . $id; ?>" class="btn btn-detail">Detail ➔</a>
+									<a href="<?php echo base_url() . 'list_donasi/view/' . $id; ?>" class="btn btn-detail">Detail ➔</a>
 								</div>
 							</a>
 						</div>
