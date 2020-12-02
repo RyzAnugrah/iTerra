@@ -122,26 +122,28 @@ The above copyright notice and this permission notice shall be included in all c
 										<thead style="color:#84C44E; font-weight:bolder">
 											<th>No.</th>
 											<th>Nama</th>
-											<th>Member Id</th>
-											<th>Waktu Pengajuan</th>
+											<th>Email</th>
 											<th>Bukti Verifikasi</th>
 											<th>Aksi</th>
 										</thead>
 										<tbody>
+										<?php 
+											$no = 1;
+											foreach($identitas as $u){ 
+										?>
 											<tr>
-												<td>1</td>
-												<td>Budi</td>
-												<td>123</td>
-												<td>11-21-2020</td>
+												<td><?php echo $no++ ?></td>
+												<td><?php echo $u->nama?></td>
+												<td><?php echo $u->email?></td>
 												<td><img src="assets/assets_admin/img/verifikasi1.png"></td>
 												<td class="td-actions ">
 													<button type="button" rel="tooltip" title="Setujui" class="btn btn-primary btn-link btn-sm">
-														<i class="material-icons">done_outline</i>
+														<i class="material-icons">done_outline <?php echo anchor('Cek_Verifikasi/edit/'.$u->email,'Edit');?></i>
 													</button>
 													<button type="button" rel="tooltip" title="Tolak" class="btn btn-danger btn-link btn-sm">
 														<i class="material-icons">close</i>
 													</button>
-												</td>
+												</td><?php } ?>
 											</tr>
 										</tbody>
 									</table>

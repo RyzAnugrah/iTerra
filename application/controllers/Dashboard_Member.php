@@ -3,42 +3,63 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 class Dashboard_Member extends CI_Controller {
 	
+	function __construct()
+	{
+		parent::__construct();
+		$this->load->library('upload');
+		$this->load->model('j_data');
+		$this->load->helper('form','url');
+		$this->load->library('form_validation');
+	}
 	// Index login
 	public function index() 
 		{
 		$data = array('title'	=> 'Halaman Dashboard');
 		$this->load->view('dashboard_member_view',$data);
 	}
-	function __construct()
-	{
-		parent::__construct();
-		$this->load->model('dashboard_member_data');
-		$this->load->helper('form','url');
-		$this->load->library('form_validation');
-	}
 	
-	function doupload() {
-		$this->load->helper('form','url');
+	function tambah() {
+		$config['upload_path'] = 'assets/images/profil'; //path folder
+		$config['allowed_types'] = 'gif|jpg|png|jpeg|bmp'; //type yang dapat diakses bisa anda sesuaikan
+		$config['encrypt_name'] = TRUE; //nama yang terupload nantinya
+		$this->upload->initialize($config);
+		if (!empty($_FILES['filefoto']['name'])) {			
+			if ($this->upload->do_upload('filefoto')) {
+				$gbr = $this->upload->data();
+				//Compress Image
+				$config['image_library'] = 'gd2';
+				$config['source_image'] = 'assets/images/profil' . $gbr['file_name'];
+				$config['create_thumb'] = FALSE;
+				$config['maintain_ratio'] = FALSE;
+				$config['quality'] = '60%';
+				$config['width'] = 710;
+				$config['height'] = 420;
+				$config['new_image'] = 'assets/images/profil' . $gbr['file_name'];
 
-		$config['upload_path']          = './uploads/';
-		$config['allowed_types']        = 'gif|jpg|png';
-		$config['max_size']             = 10000;
-		$config['max_width']            = 10000;
-		$config['max_height']           = 10000;
+				$this->load->library('image_lib', $config);
+				$this->image_lib->resize();
 
-		$this->load->library('upload', $config);
-		
-		if ( $this->upload->do_upload('userfile'))
-		{
-			$this->load->view(',SD');
+
+				$gambar = $gbr['file_name'];
+
+				$data = array(
+					'fotoktp' => $gambar,
+				);	
+			 
+				$where = array(
+					'email' => $_SESSION['email']
+				);
+			 
+				$this->j_data->update_data($where,$data,'identitas');
+
+				redirect(base_url('Dashboard_member'));
+			} else {
+				redirect(base_url('buat_artikel'));
+			}
+		} else {
+			redirect(base_url('buat_artikel'));
 		}
-		else
-		{
-				$data = array('upload_data' => $this->upload->data());
-				return $this->upload->data('fotoktp');
 		}
 	}
 	
 	// Fungsi lain
-	
-}

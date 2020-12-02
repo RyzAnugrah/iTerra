@@ -179,28 +179,27 @@ The above copyright notice and this permission notice shall be included in all c
 									</div>
 								</div>
 								<!-- Modal -->
-								<div class="modal fade" id="myModal" role="dialog">
+								<div id="myModal" class="modal fade"  role="dialog">
 									<div class="modal-dialog">
 										<!-- Modal content-->
+										<form action="<?php echo base_url();?>/Dashboard_Member/tambah" method="post" enctype="multipart/form-data">
 										<div class="modal-content">
 											<div class="modal-header">
 												<h4 class="modal-title" style="text-align: center;">Ajukan Verifikasi</h4>
 											</div>
 
 											<div class="modal-body">
-											<?php echo form_open_multipart('Dashboard_Member/doupload')?>
 												<p>Verifikasi akun anda dengan mengirimkan foto selfie anda dengan Kartu Identitas, tulisan pada kartu identitas harus terlihat jelas</p>
-												<div class="custom-file">
-													<input type="file"  class="custom-file-input" multiple="multiple" id="userfile" name="userfile" required>
-													<label class="custom-file-label" for="customFile">Choose file</label>
-												</div>
+												<label class="bmd-label-floating">Gambar</label><br>
+												<input type="file" name="filefoto" id="filefoto" required><br>
 											</div>
 											<div class="modal-footer">
-												<button type="button" class="btn btn-default" data-dismiss="modal">Batal</button>
-												<button type="submit" value="Submit" class="btn btn-default" data-dismiss="modal" style="background-color:#84C44E;">Simpan</button>
+												<!-- <button type="button" class="btn btn-default" data-dismiss="modal">Batal</button>
+												<button type="submit" value="Submit" class="btn btn-default" data-dismiss="modal"  style="background-color:#84C44E;">Simpan</button> -->
+												<button type="submit" value="upload ktp" class="btn btn-primary pull-right">Submit</button>
 											</div>
-											</form>
 										</div>
+									</form>
 									</div>
 								</div>
 								</a>
