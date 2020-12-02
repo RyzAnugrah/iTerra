@@ -59,14 +59,16 @@ $b = $data->row_array();
 	<section id="about" class="about" style="background-color: #f3f5fa;">
 		<div class="container">
 			<div class="content">
-				<div class="col-md-8 col-md-offset-2">
-					<h2 style="padding-top:100px;"><?php echo $b['judul_donasi']; ?></h2>
-					<hr />
-					<img src="<?php echo base_url() . 'assets/images/donasi/' . $b['gambar']; ?>">
-					<div class="artikel-caption">
-						<h5>Donasi hingga tanggal: <?php echo $b['tanggal_donasi']; ?></h5>
+				<div class="row">
+					<div class="col-md-8 mx-auto text-center">
+						<h2 style="padding-top:100px;"><?php echo $b['judul_donasi']; ?></h2>
+						<hr />
+						<img src="<?php echo base_url() . 'assets/images/donasi/' . $b['gambar']; ?>" style=" width: 100%; border-radius:10px;">
+						<div class="artikel-caption mt-4">
+							<h5>Donasi hingga tanggal: <?php echo $b['tanggal_donasi']; ?></h5>
+						</div>
+						<?php echo $b['deskripsi']; ?>
 					</div>
-					<?php echo $b['deskripsi']; ?>
 				</div>
 			</div>
 		</div>
