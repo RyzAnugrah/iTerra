@@ -59,11 +59,11 @@ $b = $data->row_array();
 	<section id="about" class="about" style="background-color: #f3f5fa;">
 		<div class="container">
 			<div class="content">
-				<div class="col-md-8 col-md-offset-2">
+				<div class="col-md-8 mx-auto text-center">
 					<h2 style="padding-top:100px;"><?php echo $b['judul_artikel']; ?></h2>
 					<hr />
-					<img src="<?php echo base_url() . 'assets/images/artikel/' . $b['gambar']; ?>">
-					<div class="artikel-caption">
+					<img src="<?php echo base_url() . 'assets/images/artikel/' . $b['gambar']; ?>" style="width: 100%; border-radius:10px;">
+					<div class="artikel-caption mt-4">
 						<h5><?php echo $b['tanggal']; ?></h5>
 					</div>
 					<?php echo $b['deskripsi']; ?>
