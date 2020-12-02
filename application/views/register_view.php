@@ -49,7 +49,7 @@
 		<div class="limiter">
 			<div class="container-login100">
 				<div class="wrap-login100">
-					<form action="<?php echo base_url();?>/Register/add" method="post" class="login100-form validate-form">
+					<form action="<?php echo base_url();?>Register/add" method="post" class="login100-form validate-form">
 						<!-- Title -->
 						<div class="login100-pic">
 							<img src="assets/images/logo/iterra-01.png">

@@ -86,16 +86,16 @@ class Buat_Artikel extends CI_Controller {
 		}
 	}
 
-	function lists()
-	{
-		$x['data'] = $this->list_artikel_data->get_all_berita();
-		$this->load->view('artikel_view', $x);
-	}
+	// function lists()
+	// {
+	// 	$x['data'] = $this->list_artikel_data->get_all_berita();
+	// 	$this->load->view('artikel_view', $x);
+	// }
 
-	function view()
-	{
-		$kode = $this->uri->segment(3);
-		$x['data'] = $this->list_artikel_data->get_berita_by_kode($kode);
-		$this->load->view('artikel_view', $x);
-	}
+	// function view()
+	// {
+	// 	$kode = $this->uri->segment(3);
+	// 	$x['data'] = $this->list_artikel_data->get_berita_by_kode($kode);
+	// 	$this->load->view('artikel_view', $x);
+	// }
 }

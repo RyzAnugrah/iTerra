@@ -73,7 +73,7 @@
 							</div>
 							<div class="col-lg-6 artikel-item">
 								<div class="artikel-caption">
-									<a href="">
+									<a href="artikel_list_view">
 										<h5>1 Januari 2021</h5>
 										<h4>
 											Vaksin Virus Korona Telah Ditemukan
@@ -104,20 +104,20 @@
 
 				<div class="row content">
 					<?php
-					foreach ($data->result_array() as $i) : 
+					foreach ($data->result_array() as $i) :
 						$id = $i['kode_artikel'];
 						$judul = $i['judul_artikel'];
 						$gambar = $i['gambar'];
 						$tanggal = $i['tanggal']
 					?>
 						<div class="artikel-item artikel-hover-zoom">
-							<a >
+							<a>
 								<img src="<?php echo base_url() . 'assets/images/artikel/' . $gambar; ?>">
 							</a>
 						</div>
 						<div class="col-lg-6 artikel-item">
 							<div class="artikel-caption">
-								<a href="">
+								<a href="<?php echo base_url() . 'artikel_list/view/' . $id; ?>">
 									<h3>
 										<?php echo $judul; ?>
 									</h3>

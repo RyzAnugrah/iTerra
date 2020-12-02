@@ -79,7 +79,10 @@ The above copyright notice and this permission notice shall be included in all c
 				<div class="container-fluid">
 					<div class="navbar-wrapper">
 						<a class="navbar-brand" style="color: black;" href="javascript:;">
-							<h3>Selamat Datang !<i class="material-icons" style="color:green;">eco</i></h3>
+							<h3>
+								Selamat Datang !
+								<?php echo $_SESSION["email"]; ?>
+							</h3>
 						</a>
 					</div>
 					<button class="navbar-toggler" type="button" data-toggle="collapse" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">

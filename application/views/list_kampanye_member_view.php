@@ -130,23 +130,32 @@ The above copyright notice and this permission notice shall be included in all c
 							<div class="card">
 								<div class="card-header card-header-success kartu">
 									<h4 class="card-title">List Kampanye</h4>
-									<p class="card-category">Daftar Kampanye yang sudah anda ikuti</p>
+									<p class="card-category">Daftar Kampanye yang sudah anda buat dan ikuti</p>
 								</div>
 								<div class="card-body table-responsive">
 									<table class="table table-hover">
 										<thead style="color:#84C44E; font-weight:bolder">
-											<th>No.</th>
+											<th>Kode Kampanye.</th>
 											<th>Nama Kegiatan</th>
 											<th>Tanggal</th>
-											<th>Penyelenggara</th>
+											<th>Deskripsi</th>
+											<th>Aksi</th>
 										</thead>
 										<tbody>
 											<?php foreach($kampanye as $kam) : ?>
 												<tr>
-													<td><?= $kam['kode_konten']; ?></td>
-													<td><?= $kam['judul_konten']; ?></td>
+													<td><?= $kam['kode_kampanye']; ?></td>
+													<td><?= $kam['judul_kampanye']; ?></td>
+													<td><?= $kam['tanggal']; ?></td>
 													<td><?= $kam['deskripsi']; ?></td>
-													<td><?= $kam['tanggal_konten']; ?></td>
+													<td class="td-actions">
+														<button type="button" rel="tooltip" title="Edit" class="btn btn-primary btn-link btn-sm">
+															<i class="material-icons">edit</i>
+														</button>
+														<button type="button" rel="tooltip" title="Hapus" class="btn btn-danger btn-link btn-sm">
+															<i class="material-icons">close</i>
+														</button>
+													</td>
 												</tr>
 											<?php endforeach; ?>
 										</tbody>

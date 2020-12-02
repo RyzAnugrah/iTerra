@@ -133,7 +133,7 @@ The above copyright notice and this permission notice shall be included in all c
 											<th>Aksi</th>
 										</thead>
 										<tbody>
-											<?php foreach($artikel as $arti) : ?>
+											<?php foreach ($artikel as $arti) : ?>
 												<tr>
 													<td><?= $arti['kode_artikel']; ?></td>
 													<td><?= $arti['judul_artikel']; ?></td>
@@ -143,7 +143,8 @@ The above copyright notice and this permission notice shall be included in all c
 															<i class="material-icons">edit</i>
 														</button>
 														<button type="button" rel="tooltip" title="Hapus" class="btn btn-danger btn-link btn-sm">
-															<i class="material-icons">close</i>
+															<!-- <a href="<?php echo base_url() . 'List_artikel/delete/' . $kode_artikel; ?>"> -->
+																<i class="material-icons">close</i>
 														</button>
 													</td>
 												</tr>

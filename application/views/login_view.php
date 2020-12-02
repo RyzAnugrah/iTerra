@@ -28,10 +28,7 @@
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
-	<!-- <link href="<?php echo base_url() ?>assets/css/style2.css" rel="stylesheet"> -->
-	<!-- <script>
-		window.alert("Selamat Datang di Web Alvin, Fauzan, dan Rizky");
-	</script> -->
+	
 </head>
 
 <body>
@@ -64,7 +61,7 @@
 
 						<!-- Form -->
 						<div class="wrap-input100 validate-input" data-validate="Gunakan Email yang Valid: ez@abc.xyz">
-							<input class="input100" type="text" name="email" value="<?php echo set_value('email')?>" placeholder="Email">
+							<input class="input100" type="text" name="email" value="<?php echo set_value('email')?>" placeholder="Email" >
 							<span class="focus-input100"></span>
 							<span class="symbol-input100">
 								<i class="fa fa-envelope" aria-hidden="true"></i>
