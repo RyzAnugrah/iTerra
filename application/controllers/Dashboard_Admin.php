@@ -16,7 +16,7 @@ class Dashboard_Admin extends CI_Controller {
 		$this->load->helper('url');
 		$this->load->library('form_validation');
 	}
-
+	
 	
 	// Fungsi lain
 	

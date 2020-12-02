@@ -79,10 +79,10 @@ class Buat_Artikel extends CI_Controller {
 				// $this->list_artikel_data->simpan_berita($judul, $desk, $gambar, $pen);
 				redirect(base_url('Dashboard_admin'));
 			} else {
-				redirect('buat_artikel');
+				redirect(base_url('buat_artikel'));
 			}
 		} else {
-			redirect('buat_artikel');
+			redirect(base_url('buat_artikel'));
 		}
 	}
 
