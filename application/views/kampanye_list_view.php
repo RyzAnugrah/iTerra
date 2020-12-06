@@ -56,10 +56,10 @@ $b = $data->row_array();
 		</div>
 	</nav>
 
-	<section id="about" class="about" style="background-color: #f3f5fa;">
+	<section id="kampanye" class="kampanye" style="background-color: #f3f5fa;">
 		<div class="container">
 			<div class="content">
-				<div class="col-md-8 mx-auto text-center">
+				<div class="col-md-8 mx-auto text-center kampanye-item">
 					<h2 style="padding-top:100px;"><?php echo $b['judul_kampanye']; ?></h2>
 					<hr />
 					<img src="<?php echo base_url() . 'assets/images/kampanye/' . $b['gambar']; ?>" style=" width: 100%; border-radius:10px;">
@@ -68,7 +68,7 @@ $b = $data->row_array();
 					</div>
 					<div class="kampanye-caption text-justify">
 					<?php echo $b['deskripsi']; ?>
-					<div class="kampanye-caption">
+					</div>
 				</div>
 			</div>
 		</div>

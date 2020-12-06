@@ -56,18 +56,18 @@ $b = $data->row_array();
 		</div>
 	</nav>
 
-	<section id="about" class="about" style="background-color: #f3f5fa;">
+	<section id="donasi" class="donasi" style="background-color: #f3f5fa;">
 		<div class="container">
 			<div class="content">
 				<div class="row">
-					<div class="col-md-8 mx-auto text-center">
+					<div class="col-md-8 mx-auto text-center donasi-item">
 						<h2 style="padding-top:100px;"><?php echo $b['judul_donasi']; ?></h2>
 						<hr />
 						<img src="<?php echo base_url() . 'assets/images/donasi/' . $b['gambar']; ?>" style=" width: 100%; border-radius:10px;">
-						<div class="artikel-caption mt-4 text-center">
+						<div class="donasi-caption mt-4 text-center">
 							<h5>Donasi hingga tanggal: <?php echo $b['tanggal_donasi']; ?></h5>
 						</div>
-						<div class="artikel-caption text-justify">
+						<div class="donasi-caption text-justify">
 							<?php echo $b['deskripsi']; ?>
 						</div>
 					</div>
