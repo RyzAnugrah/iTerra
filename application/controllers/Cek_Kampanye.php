@@ -14,8 +14,20 @@ class Cek_Kampanye extends CI_Controller {
 	public function index()
 		{
 		$data = array('title'	=> 'Halaman Dashboard');
-		$data['kampanye'] = $this->cek_kampanye_data->show_data();
+		$data['kampanye'] = $this->cek_kampanye_data->get_data_kampanye()->result();
 		$this->load->view('cek_kampanye_view',$data);
 	}
 
+	public function edit($email){		
+		$data = array(
+			'verifikasi' => 1
+		);
+	 
+		$where = array(
+			'email' => $email
+		);
+	 
+		$this->cek_kampanye_data->update_data($where,$data,'kampanye');
+		redirect(base_url('cek_kampanye'));
+	}
 }

@@ -138,7 +138,7 @@ The above copyright notice and this permission notice shall be included in all c
 												<td><img src="assets/assets_admin/img/verifikasi1.png"></td>
 												<td class="td-actions ">
 													<button type="button" rel="tooltip" title="Setujui" class="btn btn-primary btn-link btn-sm">
-														<i class="material-icons">done_outline <?php echo anchor('Cek_Verifikasi/edit/'.$u->email,'Edit');?></i>
+														<i class="material-icons">done_outline <?php echo anchor('Cek_Verifikasi/edit/'.$u->email,'edit');?></i>
 													</button>
 													<button type="button" rel="tooltip" title="Tolak" class="btn btn-danger btn-link btn-sm">
 														<i class="material-icons">close</i>

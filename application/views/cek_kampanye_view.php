@@ -128,23 +128,25 @@ The above copyright notice and this permission notice shall be included in all c
 											<th>Aksi</th>
 										</thead>
 										<tbody>
-											<?php foreach($kampanye as $kampa) : ?>
-												<tr>
-													<td><?= $kampa['kode_kampanye']; ?></td>
-													<td><?= $kampa['email']; ?></td>
-													<td><?= $kampa['judul_kampanye']; ?></td>
-													<td><?= $kampa['tanggal']; ?></td>
-													<td><?= $kampa['deskripsi']; ?></td>
-													<td class="td-actions">
-														<button type="button" rel="tooltip" title="Edit" class="btn btn-primary btn-link btn-sm">
-															<i class="material-icons">edit</i>
-														</button>
-														<button type="button" rel="tooltip" title="Hapus" class="btn btn-danger btn-link btn-sm">
-															<i class="material-icons">close</i>
-														</button>
-													</td>
+											<?php 
+												$no = 1;
+												foreach($kampanye as $kampa){ 
+											?>
+											<tr>
+												<td><?php echo $no++ ?></td>
+												<td><?php echo $kampa->email?></td>
+												<td><?php echo $kampa->judul_kampanye?></td>
+												<td><?php echo $kampa->tanggal?></td>
+												<td><?php echo $kampa->deskripsi?></td>
+												<td class="td-actions">
+													<button type="button" rel="tooltip" title="Setujui" class="btn btn-primary btn-link btn-sm">
+														<i class="material-icons">done_outline <?php echo anchor('Cek_Kampanye/edit/'.$kampa->email,'edit');?></i>
+													</button>
+													<button type="button" rel="tooltip" title="Hapus" class="btn btn-danger btn-link btn-sm">
+														<i class="material-icons">close</i>
+													</button>
+												</td><?php } ?>
 												</tr>
-											<?php endforeach; ?>
 										</tbody>
 									</table>
 								</div>
