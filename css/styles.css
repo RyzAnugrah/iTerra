@@ -12304,7 +12304,11 @@ section {
 #kampanye .kampanye-item .kampanye-caption:hover {
 	padding: 1.5rem;
 	text-align: center;
+}
 
+#kampanye .kampanye-item a .kampanye-caption a h3:hover {
+	text-decoration: underline;
+	color: #fff;
 }
 
 #kampanye .kampanye-item .kampanye-caption .kampanye-caption-heading {

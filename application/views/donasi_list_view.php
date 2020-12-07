@@ -57,21 +57,45 @@ $b = $data->row_array();
 	</nav>
 
 	<section id="donasi" class="donasi" style="background-color: #f3f5fa;">
-		<div class="container">
+		<div class="containers">
 			<div class="content">
 				<div class="row">
-					<div class="col-md-8 mx-auto text-center donasi-item">
+					<div class="col-md-8 mx-auto text-center">
 						<h2 style="padding-top:100px;"><?php echo $b['judul_donasi']; ?></h2>
 						<hr />
 						<img src="<?php echo base_url() . 'assets/images/donasi/' . $b['gambar']; ?>" style=" width: 100%; border-radius:10px;">
-						<div class="donasi-caption mt-4 text-center">
-							<h5>Donasi hingga tanggal: <?php echo $b['tanggal_donasi']; ?></h5>
-						</div>
-						<div class="donasi-caption text-justify">
-							<?php echo $b['deskripsi']; ?>
+						<div class="donasi-caption mt-4">
+							<h5 style="color:#757575">Donasi hingga tanggal: <?php echo $b['tanggal_donasi']; ?></h5><br>
 						</div>
 					</div>
+					<div class="col-md-8 mx-auto">
+						<?php echo $b['deskripsi']; ?>
+					</div>
 				</div>
+			</div>
+			<div class="card-body table-responsive text-center">
+				<h3 style="color:#757575">Rekening Donasi <?php echo $b['judul_donasi']; ?></h3><br>
+				<table class=" table table-hover container">
+					<thead style="color:#757575; font-weight:bolder">
+						<th>Bank</th>
+						<th>Info Transfer</th>
+					</thead>
+					<tbody style="color:#757575; font-size:25px">
+						<tr>
+							<td><img src=" ..\..\assets\images\donasi\bca.png" style="width: 300px;">
+							</td>
+							<td><b>5235175509</b><br>a.n. Alvin Sukesa</td>
+						</tr>
+						<tr>
+							<td><img src="..\..\assets\images\donasi\bri.png" style="width: 300px;"></td>
+							<td><b>1003849964</b><br>a.n. Alvin Sukesa</td>
+						</tr>
+						<tr>
+							<td><img src="..\..\assets\images\donasi\mandiri.png" style="width: 300px;"></td>
+							<td><b>1320387628942</b><br>a.n. Alvin Sukesa</td>
+						</tr>
+					</tbody>
+					</table>
 			</div>
 		</div>
 	</section>
@@ -83,7 +107,7 @@ $b = $data->row_array();
 					<div class="row">
 						<div class="col-lg-4 col-md-6">
 							<div class="footer-info">
-								<img src="../../assets\images\logo\iterra-01.png" style="width: 100px;">
+								<img src="..\..\assets\images\logo\iterra-01.png" style="width: 100px;">
 								<h3>Tentang Kami</h3>
 								<p>
 									<strong>Alamat:</strong> Jalan Raya Bandung-Sumedang <br>
@@ -91,36 +115,32 @@ $b = $data->row_array();
 									<strong>Email:</strong> support@iterra.com<br>
 								</p>
 								<div class="social-links mt-3">
-									<a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-									<a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-									<a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+									<a href="https://www.twitter.com/" class="twitter"><i class="bx bxl-twitter"></i></a>
+									<a href="https://www.facebook.com/" class="facebook"><i class="bx bxl-facebook"></i></a>
+									<a href="https://www.instagram.com" class="instagram"><i class="bx bxl-instagram"></i></a>
 								</div>
 							</div>
 						</div>
 						<div class="col-lg-2 col-md-6 footer-links">
 							<h4>Kategori</h4>
 							<ul>
-								<li><i class="bx bx-chevron-right"></i> <a href="home">Home</a></li>
-								<li><i class="bx bx-chevron-right"></i> <a href="about">Tentang Kami</a></li>
-								<li><i class="bx bx-chevron-right"></i> <a href="artikel">Artikel</a></li>
-								<li><i class="bx bx-chevron-right"></i> <a href="kampanye">Kampanye</a></li>
-								<li><i class="bx bx-chevron-right"></i> <a href="donasi">Donasi</a></li>
+								<li><i class="bx bx-chevron-right"></i> <a href="<?php echo base_url('home') ?>">Home</a></li>
+								<li><i class="bx bx-chevron-right"></i> <a href="<?php echo base_url('about') ?>">Tentang Kami</a></li>
+								<li><i class="bx bx-chevron-right"></i> <a href="<?php echo base_url('artikel') ?>">Artikel</a></li>
+								<li><i class="bx bx-chevron-right"></i> <a href="<?php echo base_url('kampanye') ?>">Kampanye</a></li>
+								<li><i class="bx bx-chevron-right"></i> <a href="<?php echo base_url('donasi') ?>">Donasi</a></li>
 							</ul>
 						</div>
 						<div class="col-lg-2 col-md-6 footer-links">
-							<h4>Update Terkini</h4>
+							<h4>Kebijakan</h4>
 							<ul>
-								<li><i class="bx bx-chevron-right"></i> <a href="#">Update 1</a></li>
-								<li><i class="bx bx-chevron-right"></i> <a href="#">Update 2</a></li>
-								<li><i class="bx bx-chevron-right"></i> <a href="#">Update 3</a></li>
-								<li><i class="bx bx-chevron-right"></i> <a href="#">Update 4</a></li>
-								<li><i class="bx bx-chevron-right"></i> <a href="#">Update 5</a></li>
+								<li><i class="bx bx-chevron-right"></i> <a href="<?php echo base_url('syarat_ketentuan') ?>">Syarat & Ketentuan</a></li>
 							</ul>
 						</div>
 						<div class="col-lg-4 col-md-6 footer-newsletter">
 							<h4>Langganan</h4>
 							<p>Dapatkan info terbaru dari Kami melalui e-mail</p>
-							<form action="" method="post">
+							<form action="home" method="post">
 								<input type="email" name="email" placeholder="Email"><input type="submit" value="Subscribe">
 							</form>
 						</div>
@@ -132,7 +152,7 @@ $b = $data->row_array();
 					&copy; 2020 Copyright. All Rights Reserved
 				</div>
 				<div class="credits">
-					Developed and Designed by <a href="about">iTerra</a>
+					Developed and Designed by <a href="<?php echo base_url('about') ?>">iTerra</a>
 				</div>
 			</div>
 		</footer>

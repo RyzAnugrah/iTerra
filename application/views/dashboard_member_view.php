@@ -172,27 +172,27 @@ The above copyright notice and this permission notice shall be included in all c
 									</div>
 								</div>
 								<!-- Modal -->
-								<div id="myModal" class="modal fade"  role="dialog">
+								<div id="myModal" class="modal fade" role="dialog">
 									<div class="modal-dialog">
 										<!-- Modal content-->
-										<form action="<?php echo base_url();?>/Dashboard_Member/tambah" method="post" enctype="multipart/form-data">
-										<div class="modal-content">
-											<div class="modal-header">
-												<h4 class="modal-title" style="text-align: center;">Ajukan Verifikasi</h4>
-											</div>
+										<form action="<?php echo base_url(); ?>/Dashboard_Member/tambah" method="post" enctype="multipart/form-data">
+											<div class="modal-content">
+												<div class="modal-header">
+													<h4 class="modal-title" style="text-align: center;">Ajukan Verifikasi</h4>
+												</div>
 
-											<div class="modal-body">
-												<p>Verifikasi akun anda dengan mengirimkan foto selfie anda dengan Kartu Identitas, tulisan pada kartu identitas harus terlihat jelas</p>
-												<label class="bmd-label-floating">Gambar</label><br>
-												<input type="file" name="filefoto" id="filefoto" required><br>
-											</div>
-											<div class="modal-footer">
-												<!-- <button type="button" class="btn btn-default" data-dismiss="modal">Batal</button>
+												<div class="modal-body">
+													<p>Verifikasi akun anda dengan mengirimkan foto selfie anda dengan Kartu Identitas, tulisan pada kartu identitas harus terlihat jelas</p>
+													<label class="bmd-label-floating">Gambar</label><br>
+													<input type="file" name="filefoto" id="filefoto" required><br>
+												</div>
+												<div class="modal-footer">
+													<!-- <button type="button" class="btn btn-default" data-dismiss="modal">Batal</button>
 												<button type="submit" value="Submit" class="btn btn-default" data-dismiss="modal"  style="background-color:#84C44E;">Simpan</button> -->
-												<button type="submit" value="upload ktp" class="btn btn-primary pull-right">Submit</button>
+													<button type="submit" value="upload ktp" class="btn btn-primary pull-right">Submit</button>
+												</div>
 											</div>
-										</div>
-									</form>
+										</form>
 									</div>
 								</div>
 								</a>
@@ -236,9 +236,9 @@ The above copyright notice and this permission notice shall be included in all c
 											<strong>Email:</strong> support@iterra.com<br>
 										</p>
 										<div class="social-links mt-3">
-											<a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-											<a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-											<a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+											<a href="https://www.twitter.com/" class="twitter"><i class="bx bxl-twitter"></i></a>
+											<a href="https://www.facebook.com/" class="facebook"><i class="bx bxl-facebook"></i></a>
+											<a href="https://www.instagram.com" class="instagram"><i class="bx bxl-instagram"></i></a>
 										</div>
 									</div>
 								</div>
@@ -253,21 +253,17 @@ The above copyright notice and this permission notice shall be included in all c
 									</ul>
 								</div>
 								<div class="col-lg-2 col-md-6 footer-links">
-									<h4>Update Terkini</h4>
+									<h4>Kebijakan</h4>
 									<ul>
-										<li><i class="bx bx-chevron-right"></i> <a href="#">Update 1</a></li>
-										<li><i class="bx bx-chevron-right"></i> <a href="#">Update 2</a></li>
-										<li><i class="bx bx-chevron-right"></i> <a href="#">Update 3</a></li>
-										<li><i class="bx bx-chevron-right"></i> <a href="#">Update 4</a></li>
-										<li><i class="bx bx-chevron-right"></i> <a href="#">Update 5</a></li>
+										<li><i class="bx bx-chevron-right"></i> <a href="<?php echo base_url('syarat_ketentuan') ?>">Syarat & Ketentuan</a></li>
 									</ul>
 								</div>
 								<div class="col-lg-4 col-md-6 footer-newsletter">
 									<h4>Langganan</h4>
 									<p>Dapatkan info terbaru dari Kami melalui e-mail</p>
-									<!-- <form action="" method="post">
+									<form action="home" method="post">
 										<input type="email" name="email" placeholder="Email"><input type="submit" value="Subscribe">
-									</form> -->
+									</form>
 								</div>
 							</div>
 						</div>

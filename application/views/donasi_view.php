@@ -28,11 +28,11 @@
 											<?php echo $judul; ?>
 										</h3>
 									</a>
-									<div class="progress mt-4 mb-2">
+									<!-- <div class="progress mt-4 mb-2">
 										<div class="progress-bar bg-secondary" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-									</div>
-									<p class="donasi-value"><?= $jml; ?></p>
-									<p class="donasi-day"><?= $tgl; ?></p>
+									</div> -->
+									<p class="donasi-value">Rp.<?= $jml; ?></p>
+									<p class="donasi-day">hingga <?= $tgl; ?></p>
 									<a href="<?php echo base_url() . 'list_donasi/view/' . $id; ?>" class="btn btn-detail">Detail ➔</a>
 								</div>
 							</a>
