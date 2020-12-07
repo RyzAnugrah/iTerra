@@ -93,20 +93,7 @@ The above copyright notice and this permission notice shall be included in all c
 							</div>
 						</form>
 						<ul class="navbar-nav">
-							<li class="nav-item dropdown">
-								<a class="nav-link" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-									<i class="material-icons" style="color: whitesmoke;">notifications</i>
-									<span class="notification">3</span>
-									<p class="d-lg-none d-md-block">
-										Notifikasi
-									</p>
-								</a>
-								<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
-									<a class="dropdown-item" href="#">Donasi telah ditambahkan.</a>
-									<a class="dropdown-item" href="#">Another Notification</a>
-									<a class="dropdown-item" href="#">Another One</a>
-								</div>
-							</li>
+							
 							<li class="nav-item dropdown">
 								<a class="nav-link" href="javascript:;" id="navbarDropdownProfile" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 									<i class="material-icons" style="color: whitesmoke;">exit_to_app</i>
@@ -139,15 +126,17 @@ The above copyright notice and this permission notice shall be included in all c
 											<th>Nama Kegiatan</th>
 											<th>Tanggal</th>
 											<th>Deskripsi</th>
-											<th>Aksi</th>
+											<!--<th>Aksi</th>-->
 										</thead>
 										<tbody>
 											<?php foreach($kampanye as $kam) : ?>
+
 												<tr>
 													<td><?= $kam['kode_kampanye']; ?></td>
 													<td><?= $kam['judul_kampanye']; ?></td>
 													<td><?= $kam['tanggal']; ?></td>
 													<td><?= $kam['deskripsi']; ?></td>
+													<!--
 													<td class="td-actions">
 														<button type="button" rel="tooltip" title="Edit" class="btn btn-primary btn-link btn-sm">
 															<i class="material-icons">edit</i>
@@ -155,7 +144,7 @@ The above copyright notice and this permission notice shall be included in all c
 														<button type="button" rel="tooltip" title="Hapus" class="btn btn-danger btn-link btn-sm">
 															<i class="material-icons">close</i>
 														</button>
-													</td>
+													</td>-->
 												</tr>
 											<?php endforeach; ?>
 										</tbody>

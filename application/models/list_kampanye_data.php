@@ -13,7 +13,7 @@ class list_kampanye_data extends CI_Model
 
 	function get_all_kampanye()
 	{
-		$hsl = $this->db->query("SELECT * FROM kampanye ORDER BY kode_kampanye DESC");
+		$hsl = $this->db->query("SELECT * FROM kampanye where verifikasi=1 ORDER BY kode_kampanye DESC");
 		return $hsl;
 	}
 }

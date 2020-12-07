@@ -23,4 +23,8 @@ class list_artikel_data extends CI_Model
 		$hsl = $this->db->query("SELECT * FROM artikel ORDER BY kode_artikel DESC");
 		return $hsl;
 	}
+	function hapus_data($where,$table){
+		$this->db->where($where);
+		$this->db->delete($table);
+	}
 }

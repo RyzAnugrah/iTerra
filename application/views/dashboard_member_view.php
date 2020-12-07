@@ -99,17 +99,7 @@ The above copyright notice and this permission notice shall be included in all c
 							</div>
 						</div>
 						<ul class="navbar-nav">
-							<li class="nav-item dropdown">
-								<a class="nav-link" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-									<i class="material-icons" style="color: whitesmoke;">assignment_ind</i>
-									<p class="d-lg-none d-md-block">
-										Profil
-									</p>
-								</a>
-								<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
-									<a class="dropdown-item" href="ubah_profil">Ubah Profil</a>
-								</div>
-							</li>
+							
 							<li class="nav-item dropdown">
 								<a class="nav-link" href="javascript:;" id="navbarDropdownProfile" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 									<i class="material-icons" style="color: whitesmoke;">exit_to_app</i>

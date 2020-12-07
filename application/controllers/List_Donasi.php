@@ -28,6 +28,17 @@ class List_Donasi extends CI_Controller {
 		$this->load->view('donasi_list_view', $x);
 		// $this->load->view('templates/footer_view');
 	}
+	function delete($kode_donasi)
+	{
+
+		$where = array('kode_donasi' => $kode_donasi);
+		$this->list_donasi_data->hapus_data($where,'donasi');
+
+		$this->session->set_flashdata('message', ' <div class="alert alert-success" style="margin-top: 0px">
+			Successfully deleted.</div>');
+
+		redirect(base_url('list_donasi'));
+	}
 
 
 

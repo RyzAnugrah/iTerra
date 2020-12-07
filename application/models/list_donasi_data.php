@@ -17,4 +17,8 @@ class list_donasi_data extends CI_Model
 		$hsl = $this->db->query("SELECT * FROM donasi ORDER BY kode_donasi DESC");
 		return $hsl;
 	}
+	function hapus_data($where,$table){
+		$this->db->where($where);
+		$this->db->delete($table);
+	}
 }

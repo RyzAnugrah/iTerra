@@ -76,22 +76,7 @@ The above copyright notice and this permission notice shall be included in all c
 							</div>
 						</form>
 						<ul class="navbar-nav">
-							<li class="nav-item dropdown">
-								<a class="nav-link" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-									<i class="material-icons" style="color: whitesmoke;">notifications</i>
-									<span class="notification">5</span>
-									<p class="d-lg-none d-md-block">
-										Notifikasi
-									</p>
-								</a>
-								<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
-									<a class="dropdown-item" href="#">Mike John responded to your email</a>
-									<a class="dropdown-item" href="#">You have 5 new tasks</a>
-									<a class="dropdown-item" href="#">You're now friend with Andrew</a>
-									<a class="dropdown-item" href="#">Another Notification</a>
-									<a class="dropdown-item" href="#">Another One</a>
-								</div>
-							</li>
+							
 							<li class="nav-item dropdown">
 								<a class="nav-link" href="javascript:;" id="navbarDropdownProfile" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 									<i class="material-icons" style="color: whitesmoke;">exit_to_app</i>
@@ -140,7 +125,7 @@ The above copyright notice and this permission notice shall be included in all c
 												<td><?php echo $kampa->deskripsi?></td>
 												<td class="td-actions">
 													<button type="button" rel="tooltip" title="Setujui" class="btn btn-primary btn-link btn-sm">
-														<i class="material-icons">done_outline <?php echo anchor('Cek_Kampanye/edit/'.$kampa->email,'edit');?></i>
+														<i class="material-icons"> <?php echo anchor('Cek_Kampanye/edit/'.$kampa->email,'done_outline');?></i>
 													</button>
 													<button type="button" rel="tooltip" title="Hapus" class="btn btn-danger btn-link btn-sm">
 														<i class="material-icons">close</i>

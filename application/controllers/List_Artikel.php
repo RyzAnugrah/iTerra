@@ -21,13 +21,15 @@ class List_Artikel extends CI_Controller {
 	function delete($kode_artikel)
 	{
 
-		$this->db->delete('kode_artikel', array('kode_artikel' => $kode_artikel));
+		$where = array('kode_artikel' => $kode_artikel);
+		$this->list_artikel_data->hapus_data($where,'artikel');
 
 		$this->session->set_flashdata('message', ' <div class="alert alert-success" style="margin-top: 0px">
 			Successfully deleted.</div>');
 
-		redirect(base_url('list_artikel_view'));
+		redirect(base_url('list_artikel'));
 	}
+	
 
 
 	// Fungsi lain
