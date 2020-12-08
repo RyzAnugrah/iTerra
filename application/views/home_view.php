@@ -71,120 +71,6 @@
 		</div>
 	</header>
 
-	<!--Highlight-->
-	<section class="page-section bg-light" id="highlight">
-		<div class="container">
-			<div class="text-center section-title" data-aos="fade-down">
-				<h2 class="section-heading text-uppercase">populer</h2>
-			</div>
-
-			<!-- Contents -->
-			<div class="row">
-				<!-- Contents 1 -->
-				<div class="col-lg-4 col-sm-6 mb-4" data-aos="zoom-in">
-					<div class="highlight-item">
-						<a class="highlight-link" data-toggle="modal" href="#highlightModal1">
-							<div class="img-hover-zoom">
-								<img src="assets/images/home/artikel1.jpg" alt="" />
-							</div>
-						</a>
-						<a href="#highlightModal1">
-							<div class="highlight-caption">
-								<div class="highlight-caption-heading">Category 1</div>
-								<div class="highlight-caption-subheading text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eget pellentesque tortor. Nullam imperdiet sodales ipsum vel consectetur. Etiam non sodales justo, non volutpat lacus.</div>
-							</div>
-						</a>
-					</div>
-				</div>
-
-				<!-- Contents 2 -->
-				<div class="col-lg-4 col-sm-6 mb-4" data-aos="zoom-in">
-					<div class="highlight-item">
-						<a class="highlight-link" data-toggle="modal" href="#highlightModal1">
-							<div class="img-hover-zoom">
-								<img src="assets/images/home/artikel2.jpg" alt="" />
-							</div>
-						</a>
-						<a href="#highlightModal1">
-							<div class="highlight-caption">
-								<div class="highlight-caption-heading">Category 2</div>
-								<div class="highlight-caption-subheading text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eget pellentesque tortor. Nullam imperdiet sodales ipsum vel consectetur. Etiam non sodales justo, non volutpat lacus.</div>
-							</div>
-						</a>
-					</div>
-				</div>
-
-				<!-- Contents 3 -->
-				<div class="col-lg-4 col-sm-6 mb-4" data-aos="zoom-in">
-					<div class="highlight-item">
-						<a class="highlight-link" data-toggle="modal" href="#highlightModal1">
-							<div class="img-hover-zoom">
-								<img src="assets/images/home/artikel3.jpg" alt="" />
-							</div>
-						</a>
-						<a href="#highlightModal1">
-							<div class="highlight-caption">
-								<div class="highlight-caption-heading">Category 3</div>
-								<div class="highlight-caption-subheading text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eget pellentesque tortor. Nullam imperdiet sodales ipsum vel consectetur. Etiam non sodales justo, non volutpat lacus.</div>
-							</div>
-						</a>
-					</div>
-				</div>
-
-				<!-- Contents 4 -->
-				<div class="col-lg-4 col-sm-6 mb-4 mb-lg-0" data-aos="zoom-in">
-					<div class="highlight-item">
-						<a class="highlight-link" data-toggle="modal" href="#highlightModal1">
-							<div class="img-hover-zoom">
-								<img src="assets/images/home/artikel4.jpg" alt="" />
-							</div>
-						</a>
-						<a href="#highlightModal1">
-							<div class="highlight-caption">
-								<div class="highlight-caption-heading">Category 4</div>
-								<div class="highlight-caption-subheading text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eget pellentesque tortor. Nullam imperdiet sodales ipsum vel consectetur. Etiam non sodales justo, non volutpat lacus.</div>
-							</div>
-						</a>
-					</div>
-				</div>
-
-				<!-- Contents 5 -->
-				<div class="col-lg-4 col-sm-6 mb-4 mb-sm-0" data-aos="zoom-in">
-					<div class="highlight-item">
-						<a class="highlight-link" data-toggle="modal" href="#highlightModal1">
-							<div class="img-hover-zoom">
-								<img style="width: 200%;" src="assets/images/home/artikel5.jpg" alt="" />
-							</div>
-						</a>
-						<a href="#highlightModal1">
-							<div class="highlight-caption">
-								<div class="highlight-caption-heading">Category 5</div>
-								<div class="highlight-caption-subheading text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eget pellentesque tortor. Nullam imperdiet sodales ipsum vel consectetur. Etiam non sodales justo, non volutpat lacus.</div>
-							</div>
-						</a>
-					</div>
-				</div>
-
-				<!-- Contents 6 -->
-				<div class="col-lg-4 col-sm-6" data-aos="zoom-in">
-					<div class="highlight-item">
-						<a class="highlight-link" data-toggle="modal" href="#highlightModal1">
-							<div class="img-hover-zoom">
-								<img src="assets/images/home/artikel6.jpg" alt="" />
-							</div>
-						</a>
-						<a href="#highlightModal1">
-							<div class="highlight-caption">
-								<div class="highlight-caption-heading">Category 6</div>
-								<div class="highlight-caption-subheading text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras eget pellentesque tortor. Nullam imperdiet sodales ipsum vel consectetur. Etiam non sodales justo, non volutpat lacus.</div>
-							</div>
-						</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
 	<!-- About Us-->
 	<section id="about" class="about">
 		<div class="container">
@@ -202,6 +88,82 @@
 						dari total masyarakat Indonesia peduli terhadap kebersihan dan kesehatan. Ini berarti, dari 262 juta jiwa di Indonesia, hanya sekitar <b>52 juta orang</b> yang memiliki kepedulian terhadap kebersihan lingkungan sekitar dan dampaknya terhadap kesehatan.
 					</p>
 					<a class="button button-light button-xl js-scroll-trigger" href="about">Baca Selengkapnya</a>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+	<!-- Artikel -->
+	<section id="artikel" class="artikel">
+		<div class="container">
+			<div class="text-center section-title-artikel">
+				<h2 style="color: #fff;">terbaru</h2>
+			</div>
+			<div>
+				<div class="row content">
+
+					<div class="col-lg-6">
+						<?php foreach ($list_kampanye_data->result_array() as $i) :
+							$id = $i['kode_kampanye'];
+							$judul = $i['judul_kampanye'];
+							$gambar = $i['gambar'];
+							$tgl = $i['tanggal'];
+							$desk = $i['deskripsi'];
+						?>
+							<div class="artikel-item artikel-hover-zoom">
+								<a href="<?php echo base_url() . 'list_kampanye/view/' . $id; ?>">
+									<img src="<?= base_url() . 'assets/images/kampanye/' . $gambar; ?>">
+								</a>
+							</div>
+							<div data-aos="fade-in" class="artikel-item artikel-caption">
+								<h5 style="color:#fff">Kampanye</h5>
+								<a href="<?php echo base_url() . 'list_kampanye/view/' . $id; ?>">
+
+									<h3>
+										<?php echo $judul; ?>
+									</h3>
+								</a>
+							</div>
+						<?php endforeach; ?>
+					</div>
+
+					<!-- Mini -->
+					<div class="col-lg-6 pt-4 pt-lg-0 artikel-item">
+						<div class="artikel-item">
+							<div class="section-title-artikel">
+								<h3 style="font-size:x-large;">artikel</h3>
+							</div>
+						</div>
+						<?php
+						foreach ($list_artikel_data->result_array() as $i) :
+							$id = $i['kode_artikel'];
+							$judul = $i['judul_artikel'];
+							$gambar = $i['gambar'];
+							$tanggal = $i['tanggal']
+						?>
+
+							<div class="row content">
+								<!-- mini 1 -->
+								<div class="col-lg-6 artikel-item artikel-hover-zoom-mini">
+									<a href="<?php echo base_url() . 'artikel_list/view/' . $id; ?>">
+										<img src="<?php echo base_url() . 'assets/images/artikel/' . $gambar; ?>" style="width: 280px; padding:1rem">
+									</a>
+								</div>
+								<div class="col-lg-6 artikel-item">
+									<div class="artikel-caption">
+
+										<a href="<?php echo base_url() . 'artikel_list/view/' . $id; ?>">
+											<h4>
+												<?php echo $judul; ?>
+											</h4>
+										</a>
+										<h5 style="color:#fff;"><?php echo $tanggal; ?></h5>
+									</div>
+								</div>
+							</div>
+						<?php endforeach; ?>
+					</div>
 				</div>
 			</div>
 		</div>

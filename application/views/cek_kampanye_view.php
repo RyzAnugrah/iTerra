@@ -113,24 +113,24 @@ The above copyright notice and this permission notice shall be included in all c
 											<th>Aksi</th>
 										</thead>
 										<tbody>
-											<?php 
-												$no = 1;
-												foreach($kampanye as $kampa){ 
+											<?php
+											$no = 1;
+											foreach ($kampanye as $kampa) {
 											?>
-											<tr>
-												<td><?php echo $no++ ?></td>
-												<td><?php echo $kampa->email?></td>
-												<td><?php echo $kampa->judul_kampanye?></td>
-												<td><?php echo $kampa->tanggal?></td>
-												<td><?php echo $kampa->deskripsi?></td>
-												<td class="td-actions">
-													<button type="button" rel="tooltip" title="Setujui" class="btn btn-primary btn-link btn-sm">
-														<i class="material-icons"> <?php echo anchor('Cek_Kampanye/edit/'.$kampa->email,'done_outline');?></i>
-													</button>
-													<button type="button" rel="tooltip" title="Hapus" class="btn btn-danger btn-link btn-sm">
-														<i class="material-icons">close</i>
-													</button>
-												</td><?php } ?>
+												<tr>
+													<td><?php echo $no++ ?></td>
+													<td><?php echo $kampa->email ?></td>
+													<td><?php echo $kampa->judul_kampanye ?></td>
+													<td><?php echo $kampa->tanggal ?></td>
+													<td><?php echo $kampa->deskripsi ?></td>
+													<td class="td-actions">
+														<button type="button" rel="tooltip" title="Setujui" class="btn btn-primary btn-link btn-sm">
+															<i class="material-icons">done_outline <?php echo anchor('Cek_Kampanye/edit/' . $kampa->email, 'edit'); ?></i>
+														</button>
+														<button type="button" rel="tooltip" title="Hapus" class="btn btn-danger btn-link btn-sm">
+															<i class="material-icons">close</i>
+														</button>
+													</td><?php } ?>
 												</tr>
 										</tbody>
 									</table>
@@ -142,7 +142,7 @@ The above copyright notice and this permission notice shall be included in all c
 			</div>
 			<br>
 			<br>
-			
+
 			<!--Footer-->
 			<section id="footer">
 				<footer>
@@ -159,9 +159,9 @@ The above copyright notice and this permission notice shall be included in all c
 											<strong>Email:</strong> support@iterra.com<br>
 										</p>
 										<div class="social-links mt-3">
-											<a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-											<a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-											<a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+											<a href="https://www.twitter.com/" class="twitter"><i class="bx bxl-twitter"></i></a>
+											<a href="https://www.facebook.com/" class="facebook"><i class="bx bxl-facebook"></i></a>
+											<a href="https://www.instagram.com" class="instagram"><i class="bx bxl-instagram"></i></a>
 										</div>
 									</div>
 								</div>
@@ -176,19 +176,15 @@ The above copyright notice and this permission notice shall be included in all c
 									</ul>
 								</div>
 								<div class="col-lg-2 col-md-6 footer-links">
-									<h4>Update Terkini</h4>
+									<h4>Kebijakan</h4>
 									<ul>
-										<li><i class="bx bx-chevron-right"></i> <a href="#">Update 1</a></li>
-										<li><i class="bx bx-chevron-right"></i> <a href="#">Update 2</a></li>
-										<li><i class="bx bx-chevron-right"></i> <a href="#">Update 3</a></li>
-										<li><i class="bx bx-chevron-right"></i> <a href="#">Update 4</a></li>
-										<li><i class="bx bx-chevron-right"></i> <a href="#">Update 5</a></li>
+										<li><i class="bx bx-chevron-right"></i> <a href="<?php echo base_url('syarat_ketentuan') ?>">Syarat & Ketentuan</a></li>
 									</ul>
 								</div>
 								<div class="col-lg-4 col-md-6 footer-newsletter">
 									<h4>Langganan</h4>
 									<p>Dapatkan info terbaru dari Kami melalui e-mail</p>
-									<form action="" method="post">
+									<form action="home" method="post">
 										<input type="email" name="email" placeholder="Email"><input type="submit" value="Subscribe">
 									</form>
 								</div>

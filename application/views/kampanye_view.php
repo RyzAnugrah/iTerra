@@ -20,17 +20,13 @@
 							<div class="img-hover-zoom">
 								<img src="<?= base_url() . 'assets/images/kampanye/' . $gambar; ?>">
 							</div>
-
 							<a>
 								<div class="kampanye-caption">
 									<a href="<?php echo base_url() . 'list_kampanye/view/' . $id; ?>">
-										<h3>
+										<h3 style="color:#fff;">
 											<?php echo $judul; ?>
 										</h3>
 									</a>
-									<div class="progress mt-4 mb-2">
-										<div class="progress-bar bg-secondary" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-									</div>
 									<a href="<?php echo base_url() . 'list_kampanye/view/' . $id; ?>" class="btn btn-detail">Detail ➔</a>
 								</div>
 							</a>

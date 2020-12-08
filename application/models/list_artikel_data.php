@@ -23,7 +23,15 @@ class list_artikel_data extends CI_Model
 		$hsl = $this->db->query("SELECT * FROM artikel ORDER BY kode_artikel DESC");
 		return $hsl;
 	}
-	function hapus_data($where,$table){
+
+	function get_all_berita_limit()
+	{
+		$hsl = $this->db->query("SELECT * FROM artikel ORDER BY kode_artikel DESC LIMIT 3");
+		return $hsl;
+	}
+
+	function hapus_data($where, $table)
+	{
 		$this->db->where($where);
 		$this->db->delete($table);
 	}

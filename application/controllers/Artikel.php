@@ -17,4 +17,6 @@ class Artikel extends CI_Controller {
 	}
 
 	
+
+	
 }

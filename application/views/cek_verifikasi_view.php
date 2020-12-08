@@ -76,7 +76,6 @@ The above copyright notice and this permission notice shall be included in all c
 							</div>
 						</form>
 						<ul class="navbar-nav">
-							
 							<li class="nav-item dropdown">
 								<a class="nav-link" href="javascript:;" id="navbarDropdownProfile" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 									<i class="material-icons" style="color: whitesmoke;">exit_to_app</i>
@@ -112,7 +111,7 @@ The above copyright notice and this permission notice shall be included in all c
 											<th>Aksi</th>
 										</thead>
 										<tbody>
-										<?php 
+											<?php
 											$no = 1;
 											foreach($identitas as $u){ 
 										?>
@@ -156,9 +155,9 @@ The above copyright notice and this permission notice shall be included in all c
 											<strong>Email:</strong> support@iterra.com<br>
 										</p>
 										<div class="social-links mt-3">
-											<a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-											<a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-											<a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+											<a href="https://www.twitter.com/" class="twitter"><i class="bx bxl-twitter"></i></a>
+											<a href="https://www.facebook.com/" class="facebook"><i class="bx bxl-facebook"></i></a>
+											<a href="https://www.instagram.com" class="instagram"><i class="bx bxl-instagram"></i></a>
 										</div>
 									</div>
 								</div>
@@ -173,19 +172,15 @@ The above copyright notice and this permission notice shall be included in all c
 									</ul>
 								</div>
 								<div class="col-lg-2 col-md-6 footer-links">
-									<h4>Update Terkini</h4>
+									<h4>Kebijakan</h4>
 									<ul>
-										<li><i class="bx bx-chevron-right"></i> <a href="#">Update 1</a></li>
-										<li><i class="bx bx-chevron-right"></i> <a href="#">Update 2</a></li>
-										<li><i class="bx bx-chevron-right"></i> <a href="#">Update 3</a></li>
-										<li><i class="bx bx-chevron-right"></i> <a href="#">Update 4</a></li>
-										<li><i class="bx bx-chevron-right"></i> <a href="#">Update 5</a></li>
+										<li><i class="bx bx-chevron-right"></i> <a href="<?php echo base_url('syarat_ketentuan') ?>">Syarat & Ketentuan</a></li>
 									</ul>
 								</div>
 								<div class="col-lg-4 col-md-6 footer-newsletter">
 									<h4>Langganan</h4>
 									<p>Dapatkan info terbaru dari Kami melalui e-mail</p>
-									<form action="" method="post">
+									<form action="home" method="post">
 										<input type="email" name="email" placeholder="Email"><input type="submit" value="Subscribe">
 									</form>
 								</div>
