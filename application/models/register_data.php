@@ -10,10 +10,4 @@ class register_data extends CI_Model
     {
         return $this->db->insert($table, $data);
     }
-
-    public function can_login($email,$password) 
-    {
-
-    }
-    
 }

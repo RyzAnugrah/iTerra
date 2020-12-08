@@ -97,7 +97,7 @@ The above copyright notice and this permission notice shall be included in all c
 							</div>
 						</div>
 						<ul class="navbar-nav">
-							
+
 							<li class="nav-item dropdown">
 								<a class="nav-link" href="javascript:;" id="navbarDropdownProfile" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 									<i class="material-icons" style="color: whitesmoke;">exit_to_app</i>
@@ -106,7 +106,7 @@ The above copyright notice and this permission notice shall be included in all c
 									</p>
 								</a>
 								<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownProfile">
-									<a class="dropdown-item" href="home">Log out</a>
+									<a class="dropdown-item" href="<?php echo base_url('login/logout'); ?>">Log out</a>
 								</div>
 							</li>
 						</ul>
@@ -170,45 +170,46 @@ The above copyright notice and this permission notice shall be included in all c
 									</div>
 								</div>
 								<!-- Modal -->
-						<?php if ($validasi == 0): ?>
-								<div id="myModal" class="modal fade" role="dialog">
-									<div class="modal-dialog">
-										<!-- Modal content-->
-										<form action="<?php echo base_url(); ?>/Dashboard_Member/tambah" method="post" enctype="multipart/form-data">
-											<div class="modal-content">
-												<div class="modal-header">
-													<h4 class="modal-title" style="text-align: center;">Ajukan Verifikasi</h4>
-												</div>
+								<?php if ($validasi == 0) : ?>
+									<div id="myModal" class="modal fade" role="dialog">
+										<div class="modal-dialog">
+											<!-- Modal content-->
+											<form action="<?php echo base_url(); ?>/Dashboard_Member/tambah" method="post" enctype="multipart/form-data">
+												<div class="modal-content">
+													<div class="modal-header">
+														<h4 class="modal-title" style="text-align: center;">Ajukan Verifikasi</h4>
+													</div>
 
-												<div class="modal-body">
-													<p>Verifikasi akun anda dengan mengirimkan foto selfie anda dengan Kartu Identitas, tulisan pada kartu identitas harus terlihat jelas</p>
-													<label class="bmd-label-floating">Gambar</label><br>
-													<input type="file" name="filefoto" id="filefoto" required><br>
-												</div>
-												<div class="modal-footer">
-													<!-- <button type="button" class="btn btn-default" data-dismiss="modal">Batal</button>
+													<div class="modal-body">
+														<p>Verifikasi akun anda dengan mengirimkan foto selfie anda dengan Kartu Identitas, tulisan pada kartu identitas harus terlihat jelas</p>
+														<label class="bmd-label-floating">Gambar</label><br>
+														<input type="file" name="filefoto" id="filefoto" required><br>
+													</div>
+													<div class="modal-footer">
+														<!-- <button type="button" class="btn btn-default" data-dismiss="modal">Batal</button>
 												<button type="submit" value="Submit" class="btn btn-default" data-dismiss="modal"  style="background-color:#84C44E;">Simpan</button> -->
-													<button type="submit" value="upload ktp" class="btn btn-primary pull-right">Submit</button>
+														<button type="submit" value="upload ktp" class="btn btn-primary pull-right">Submit</button>
+													</div>
 												</div>
-											</div>
-										</form>
+											</form>
+										</div>
 									</div>
-								</div>
-						<?php else: ?>
-							<div id="myModal" class="modal fade" role="dialog">
-									<div class="modal-dialog">
-										<!-- Modal content-->
+								<?php else : ?>
+									<div id="myModal" class="modal fade" role="dialog">
+										<div class="modal-dialog">
+											<!-- Modal content-->
 											<div class="modal-content">
 												<div class="modal-header">
 													<h4 class="modal-title" style="text-align: center;">Sudah Terverifikasi</h4>
 												</div>
 											</div>
+										</div>
 									</div>
-								</div>
-								</a>
+									</a>
+								<?php endif; ?>
 							</div>
 						</div>
-						<?php endif; ?>
+
 						<div class="col-lg-3 col-md-6 col-sm-6">
 							<div class="card card-stats">
 								<div class="card-header card-header-success card-header-icon kartu">

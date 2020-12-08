@@ -28,7 +28,7 @@
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
-	
+
 </head>
 
 <body>
@@ -47,28 +47,29 @@
 			<div class="container-login100">
 				<div class="wrap-login100">
 					<div class="login100-pic">
-						<img src="assets/images/logo/iterra-01.png">
+						<a href="home"> <img src="assets/images/logo/iterra-01.png"></a>
 						<h2>SELAMAT DATANG <br>DI iTERRA</h2>
 						<h5>Gabung bersama Kami untuk melakukan hal-hal yang sederhana, namun bermanfaat bagi sesama.</h5>
 					</div>
 
-					<form action="<?php echo base_url();?>/Login/validation" method="post" class="login100-form validate-form">
+					<form action="<?php echo base_url(); ?>/Login/validation" method="post" class="login100-form validate-form">
 						<!-- Title -->
 						<h2 class="login100-form-title">
 							Member Login <br>
 							<p>_______</p>
 						</h2>
-
+						<?php echo $this->session->flashdata('msg'); ?>
+						<?php echo $this->session->flashdata('reg'); ?>
 						<!-- Form -->
 						<div class="wrap-input100 validate-input" data-validate="Gunakan Email yang Valid: ez@abc.xyz">
-							<input class="input100" type="text" name="email" value="<?php echo set_value('email')?>" placeholder="Email" >
+							<input class="input100" type="text" name="email" value="<?php echo set_value('email') ?>" placeholder="Email">
 							<span class="focus-input100"></span>
 							<span class="symbol-input100">
 								<i class="fa fa-envelope" aria-hidden="true"></i>
 							</span>
 						</div>
 						<div class="wrap-input100 validate-input" data-validate="Kata Sandi Diperlukan">
-							<input class="input100" type="password" name="password" value="<?php echo set_value('password')?>" placeholder="Kata Sandi">
+							<input class="input100" type="password" name="password" value="<?php echo set_value('password') ?>" placeholder="Kata Sandi">
 							<span class="focus-input100"></span>
 							<span class="symbol-input100">
 								<i class="fa fa-lock" aria-hidden="true"></i>
@@ -78,13 +79,6 @@
 							<button type="submit" class="login100-form-btn">
 								Login
 							</button>
-						</div>
-
-						<!-- Lupa Password -->
-						<div class="text-center p-t-12">
-							<a class="txt2" href="#">
-								Lupa Password?
-							</a>
 						</div>
 
 						<!-- Buat akun -->

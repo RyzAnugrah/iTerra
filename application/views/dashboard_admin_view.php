@@ -96,7 +96,7 @@ The above copyright notice and this permission notice shall be included in all c
 									</p>
 								</a>
 								<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownProfile">
-									<a class="dropdown-item" href="home">Log out</a>
+									<a class="dropdown-item" href="<?php echo base_url('login/logout'); ?>">Log out</a>
 								</div>
 							</li>
 						</ul>
@@ -151,7 +151,7 @@ The above copyright notice and this permission notice shall be included in all c
 										<i class="material-icons">add_task</i>
 									</div>
 									<a class="nav-link" href="cek_verifikasi">
-										<p class="card-category">verifikasi</p>
+										<p class="card-category">Verifikasi</p>
 										<h5 class="card-title">Cek Verifikasi</h5>
 								</div>
 								<div class="card-footer">

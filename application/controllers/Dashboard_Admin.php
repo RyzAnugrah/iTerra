@@ -12,9 +12,15 @@ class Dashboard_Admin extends CI_Controller {
 	function __construct()
 	{
 		parent::__construct();
-		$this->load->model('dashboard_admin_data');
-		$this->load->helper('url');
-		$this->load->library('form_validation');
+		if ($this->session->userdata('akses') != "1") {
+			redirect(base_url("login"));
+		}
+		else {
+			$this->load->model('dashboard_admin_data');
+			$this->load->helper('url');
+			$this->load->library('form_validation');
+		}
+		
 	}
 	
 	

@@ -26,7 +26,18 @@ class Cek_Verifikasi extends CI_Controller {
 		$this->j_data->update_data($where,$data,'identitas');
 		redirect(base_url('cek_verifikasi'));
 	}
-	// Fungsi lain
+
+	function delete($email)
+	{
+
+		$where = array('email' => $email);
+		$this->list_artikel_data->hapus_data($where, 'identitas');
+
+		$this->session->set_flashdata('message', ' <div class="alert alert-success" style="margin-top: 0px">
+			Successfully deleted.</div>');
+
+		redirect(base_url('cek_verifikasi'));
+	}
 
 	
 }

@@ -46,7 +46,13 @@
 						<li class="nav-item"><a style="font-size:large;" class="nav-link js-scroll-trigger" href="<?= base_url(); ?>kampanye">KAMPANYE</a></li>
 						<li class="nav-item"><a style="font-size:large;" class="nav-link js-scroll-trigger" href="<?= base_url(); ?>about">TENTANG KAMI</a></li>
 						<li class="nav-item"><a style="font-size:large;" class="nav-link js-scroll-trigger" href="<?= base_url(); ?>donasi">DONASI</a></li>
-						<li class="nav-item"><a style="font-size:large;" class="nav-link js-scroll-trigger" href="<?= base_url(); ?>login">MASUK</a></li>
+						<?php if ($this->session->userdata('akses') == "1") { ?>
+							<li class="nav-item"><a style="font-size:large;" class="nav-link js-scroll-trigger" href="<?= base_url(); ?>dashboard_admin">DASHBOARD</a></li>
+						<?php } elseif ($this->session->userdata('akses') == "0") { ?>
+							<li class="nav-item"><a style="font-size:large;" class="nav-link js-scroll-trigger" href="<?= base_url(); ?>dashboard_member">AKUN SAYA</a></li>
+						<?php } else { ?>
+							<li class="nav-item"><a style="font-size:large;" class="nav-link js-scroll-trigger" href="<?= base_url(); ?>login">MASUK</a></li>
+						<?php } ?>
 					</ul>
 				</div>
 		</div>

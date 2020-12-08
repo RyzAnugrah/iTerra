@@ -76,7 +76,7 @@ The above copyright notice and this permission notice shall be included in all c
 							</div>
 						</form>
 						<ul class="navbar-nav">
-							
+
 							<li class="nav-item dropdown">
 								<a class="nav-link" href="javascript:;" id="navbarDropdownProfile" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 									<i class="material-icons" style="color: whitesmoke;">exit_to_app</i>
@@ -85,7 +85,7 @@ The above copyright notice and this permission notice shall be included in all c
 									</p>
 								</a>
 								<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownProfile">
-									<a class="dropdown-item" href="home">Log out</a>
+									<a class="dropdown-item" href="<?php echo base_url('login/logout'); ?>">Log out</a>
 								</div>
 							</li>
 						</ul>
@@ -127,8 +127,8 @@ The above copyright notice and this permission notice shall be included in all c
 														<button type="button" rel="tooltip" title="Setujui" class="btn btn-primary btn-link btn-sm">
 															<i class="material-icons"><?php echo anchor('Cek_Kampanye/edit/' . $kampa->email, 'done_outline'); ?></i>
 														</button>
-														<button type="button" rel="tooltip" title="Hapus" class="btn btn-danger btn-link btn-sm">
-															<i class="material-icons">close</i>
+														<button type="button" rel="tooltip" title="Tolak" class="btn btn-danger btn-link btn-sm">
+															<i class="material-icons"><?php echo anchor('Cek_Kampanye/delete/' . $kampa->email, 'close_outline'); ?></i>
 														</button>
 													</td><?php } ?>
 												</tr>

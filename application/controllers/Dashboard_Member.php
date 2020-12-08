@@ -6,10 +6,15 @@ class Dashboard_Member extends CI_Controller {
 	function __construct()
 	{
 		parent::__construct();
-		$this->load->library('upload');
-		$this->load->model('j_data');
-		$this->load->helper('form','url');
-		$this->load->library('form_validation');
+		if ($this->session->userdata('akses') != "0") {
+			redirect(base_url("login"));
+		}
+		else{
+			$this->load->library('upload');
+			$this->load->model('j_data');
+			$this->load->helper('form', 'url');
+			$this->load->library('form_validation');
+		}
 	}
 	// Index login
 	public function index() {

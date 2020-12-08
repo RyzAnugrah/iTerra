@@ -38,14 +38,24 @@ class Login extends CI_Controller {
 			if ($user) 
 			{
 				if (password_verify(($password), $user['password'])) {
-					$data = [
-						'email' => $user['email'],
-					];
-					$this->session->set_userdata($data);
+					
+					
 					if ($user['admin'] == 1) {
+						$this->session->set_userdata('akses', '1');
+						$data = [
+							'email' => $user['email'],
+							'status' => "login"
+						];
+						$this->session->set_userdata($data);
 						redirect(base_url('dashboard_admin'));
 					}
 					else {
+						$this->session->set_userdata('akses', '0');
+						$data = [
+							'email' => $user['email'],
+							'status' => "login"
+						];
+						$this->session->set_userdata($data);
 						redirect(base_url('dashboard_member'));
 					}
 				}
@@ -54,7 +64,8 @@ class Login extends CI_Controller {
 				}
 			}
 			else {
-				redirect(base_url('Login'));
+				$this->session->set_flashdata('msg', '<div class="alert alert-danger text-center">Email atau Password yang dimasukkan salah.</div>');
+				redirect(base_url() . 'login');
 			}
 		}
 	}
@@ -62,6 +73,7 @@ class Login extends CI_Controller {
 
 	// Logout di sini
 	public function logout() {
-		$this->simple_login->logout();	
+		$this->session->sess_destroy();
+		redirect(base_url('login'));
 	}	
 }

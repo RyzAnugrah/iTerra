@@ -43,7 +43,7 @@ $b = $data->row_array();
 	<!-- Navigation-->
 	<nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
 		<div class="containers">
-			<a class="navbar-brand js-scroll-trigger" href="<?= base_url(); ?>home"><img src="../../assets\images\logo\iterra-01.png" style="width: 100px;" </a> <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+			<a class="navbar-brand js-scroll-trigger" href="<?= base_url(); ?>home"><img src="<?php echo base_url() ?>assets\images\logo\iterra-01.png" style="width: 100px;" </a> <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
 				<div class="collapse navbar-collapse" id="navbarResponsive">
 					<ul class="navbar-nav ml-auto my-2 my-lg-0">
 						<li class="nav-item"><a class="nav-link js-scroll-trigger"></a></li>
@@ -51,7 +51,13 @@ $b = $data->row_array();
 						<li class="nav-item"><a style="font-size:large;" class="nav-link js-scroll-trigger" href="<?= base_url(); ?>kampanye">KAMPANYE</a></li>
 						<li class="nav-item"><a style="font-size:large;" class="nav-link js-scroll-trigger" href="<?= base_url(); ?>about">TENTANG KAMI</a></li>
 						<li class="nav-item"><a style="font-size:large;" class="nav-link js-scroll-trigger" href="<?= base_url(); ?>donasi">DONASI</a></li>
-						<li class="nav-item"><a style="font-size:large;" class="nav-link js-scroll-trigger" href="<?= base_url(); ?>login">MASUK</a></li>
+						<?php if ($this->session->userdata('akses') == "1") { ?>
+							<li class="nav-item"><a style="font-size:large;" class="nav-link js-scroll-trigger" href="<?= base_url(); ?>dashboard_admin">DASHBOARD</a></li>
+						<?php } elseif ($this->session->userdata('akses') == "0") { ?>
+							<li class="nav-item"><a style="font-size:large;" class="nav-link js-scroll-trigger" href="<?= base_url(); ?>dashboard_member">AKUN SAYA</a></li>
+						<?php } else { ?>
+							<li class="nav-item"><a style="font-size:large;" class="nav-link js-scroll-trigger" href="<?= base_url(); ?>login">MASUK</a></li>
+						<?php } ?>
 					</ul>
 				</div>
 		</div>
@@ -75,36 +81,41 @@ $b = $data->row_array();
 				</div>
 			</div>
 			<div class="card-body table-responsive text-center">
-			<?php
-			
-			foreach ($data as $don) { ?><?php } ?>
-			<button type="button" rel="tooltip" title="ikuti" class="btn btn-outline-success btn-sm">
-			<i class="material-icons" style="color: white;"><?php echo anchor('List_Donasi_Member/ikut/' . $b['email'], 'done_outline'); ?></i>
-			</button>
-			
-		
-				<h3 style="color:#757575">Rekening Donasi <?php echo $b['judul_donasi']; ?></h3><br>	
-				<table class=" table table-hover container">
-					<thead style="color:#757575; font-weight:bolder">
-						<th>Bank</th>
-						<th>Info Transfer</th>
-					</thead>
-					<tbody style="color:#757575; font-size:25px">
-						<tr>
-							<td><img src=" ..\..\assets\images\donasi\bca.png" style="width: 300px;">
-							</td>
-							<td><b>5235175509</b><br>a.n. Alvin Sukesa</td>
-						</tr>
-						<tr>
-							<td><img src="..\..\assets\images\donasi\bri.png" style="width: 300px;"></td>
-							<td><b>1003849964</b><br>a.n. Alvin Sukesa</td>
-						</tr>
-						<tr>
-							<td><img src="..\..\assets\images\donasi\mandiri.png" style="width: 300px;"></td>
-							<td><b>1320387628942</b><br>a.n. Alvin Sukesa</td>
-						</tr>
-					</tbody>
+				<?php if ($this->session->userdata('akses') == "0") { ?>
+					<?php if ($b['nilai'] == 0) : ?>
+						<?php
+						foreach ($data as $don) { ?><?php } ?>
+						Ikut Donasi
+						<button type="button" rel="tooltip" title="ikuti" class="btn btn-outline-success btn-sm">
+							<i class="material-icons" style="color: white;"><?php echo anchor('List_Donasi_Member/ikut/' . $b['email'], 'done_outline'); ?></i>
+						</button>
+					<?php endif; ?>
+				<?php } ?>
+
+				<?php if ($b['nilai'] == 1) : ?>
+					<h3 style="color:#757575">Rekening Donasi <?php echo $b['judul_donasi']; ?></h3><br>
+					<table class=" table table-hover container">
+						<thead style="color:#757575; font-weight:bolder">
+							<th>Bank</th>
+							<th>Info Transfer</th>
+						</thead>
+						<tbody style="color:#757575; font-size:25px">
+							<tr>
+								<td><img src=" ..\..\assets\images\donasi\bca.png" style="width: 300px;">
+								</td>
+								<td><b>5235175509</b><br>a.n. Alvin Sukesa</td>
+							</tr>
+							<tr>
+								<td><img src="..\..\assets\images\donasi\bri.png" style="width: 300px;"></td>
+								<td><b>1003849964</b><br>a.n. Alvin Sukesa</td>
+							</tr>
+							<tr>
+								<td><img src="..\..\assets\images\donasi\mandiri.png" style="width: 300px;"></td>
+								<td><b>1320387628942</b><br>a.n. Alvin Sukesa</td>
+							</tr>
+						</tbody>
 					</table>
+				<?php endif; ?>
 			</div>
 		</div>
 	</section>

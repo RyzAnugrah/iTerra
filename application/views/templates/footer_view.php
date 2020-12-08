@@ -39,9 +39,15 @@
 					<div class="col-lg-4 col-md-6 footer-newsletter">
 						<h4>Langganan</h4>
 						<p>Dapatkan info terbaru dari Kami melalui e-mail</p>
-						<form action="home" method="post">
-							<input type="email" name="email" placeholder="Email"><input type="submit" value="Subscribe">
+						<form action="" method="post">
+							<input type="email" name="email" placeholder="Email" required><input id="modalButton" type="submit" value="Subscribe">
 						</form>
+						<div class="alert alert-success alert-dismissible fade" role="alert" id="buttonAlert">
+							Terimakasih sudah berlangganan.
+							<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+								<span aria-hidden="true">&times;</span>
+							</button>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -84,6 +90,13 @@
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
 	AOS.init();
+</script>
+
+<!-- Subscribe -->
+<script>
+	$("#modalButton").click(function() {
+		$("#buttonAlert").addClass('show') //Shows Bootstrap alert
+	})
 </script>
 
 <!-- Preloader -->

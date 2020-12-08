@@ -30,4 +30,16 @@ class Cek_Kampanye extends CI_Controller {
 		$this->cek_kampanye_data->update_data($where,$data,'kampanye');
 		redirect(base_url('cek_kampanye'));
 	}
+
+	function delete($email)
+	{
+
+		$where = array('email' => $email);
+		$this->list_artikel_data->hapus_data($where, 'kampanye');
+
+		$this->session->set_flashdata('message', ' <div class="alert alert-success" style="margin-top: 0px">
+			Successfully deleted.</div>');
+
+		redirect(base_url('cek_kampanye'));
+	}
 }
