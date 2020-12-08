@@ -113,6 +113,7 @@ The above copyright notice and this permission notice shall be included in all c
 										<tbody>
 											<?php
 											$no = 1;
+<<<<<<< HEAD
 											foreach ($identitas as $u) {
 											?>
 												<tr>
@@ -129,6 +130,24 @@ The above copyright notice and this permission notice shall be included in all c
 														</button>
 													</td><?php } ?>
 												</tr>
+=======
+											foreach($identitas as $u){ 
+										?>
+											<tr>
+												<td><?php echo $no++ ?></td>
+												<td><?php echo $u->nama?></td>
+												<td><?php echo $u->email?></td>
+												<td><img src="<?php echo base_url() . 'assets/images/profil/' . $u->fotoktp; ?>" style=" width: 100%; border-radius:10px;"></td>
+												<td class="td-actions ">
+													<button type="button" rel="tooltip" title="Setujui" class="btn btn-primary btn-link btn-sm">
+														<i class="material-icons"> <?php echo anchor('Cek_Verifikasi/edit/'.$u->email,'done_outline');?></i>
+													</button>
+													<button type="button" rel="tooltip" title="Tolak" class="btn btn-danger btn-link btn-sm">
+														<i class="material-icons">close</i>
+													</button>
+												</td><?php } ?>
+											</tr>
+>>>>>>> e43e3c369afe3d40bf320292fd0af3940472c0ad
 										</tbody>
 									</table>
 								</div>
