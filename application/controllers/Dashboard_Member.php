@@ -12,10 +12,13 @@ class Dashboard_Member extends CI_Controller {
 		$this->load->library('form_validation');
 	}
 	// Index login
-	public function index() 
-		{
-		$data = array('title'	=> 'Halaman Dashboard');
-		$this->load->view('dashboard_member_view',$data);
+	public function index() {
+		$identitas = $this->db->get_where('identitas',['email' => $_SESSION['email']])->row_array();
+		$data = array(
+			'title'	=> 'Halaman Dashboard',
+			'validasi' => $identitas["validasi"] 
+		);
+		$this->load->view('dashboard_member_view',$data,$identitas);
 	}
 	
 	function tambah() {
