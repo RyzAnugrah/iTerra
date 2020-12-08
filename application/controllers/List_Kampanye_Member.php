@@ -15,7 +15,7 @@ class List_Kampanye_Member extends CI_Controller {
 	public function index() 
 	{
 		$data = array('title'	=> 'Halaman Dashboard');
-		$data['kampanye'] = $this->list_kampanye_member_data->show_data();
+		$data['kampanye'] = $this->list_kampanye_member_data->get_data_kampanye()->result();
 		$this->load->view('list_kampanye_member_view',$data);
 	}
 

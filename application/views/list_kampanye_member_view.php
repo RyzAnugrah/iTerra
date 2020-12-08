@@ -129,12 +129,17 @@ The above copyright notice and this permission notice shall be included in all c
 											<!--<th>Aksi</th>-->
 										</thead>
 										<tbody>
-											<?php foreach ($kampanye as $kam) : ?>
+										<?php
+											
+											foreach ($kampanye as $kam) {
+											?>
 												<tr>
-													<td><?= $kam['kode_kampanye']; ?></td>
-													<td><?= $kam['judul_kampanye']; ?></td>
-													<td><?= $kam['tanggal']; ?></td>
-													<td><?= $kam['deskripsi']; ?></td>
+													
+													<td><?php echo $kam->kode_kampanye ?></td>
+													<td><?php echo $kam->judul_kampanye ?></td>
+													<td><?php echo $kam->tanggal ?></td>
+													<td><?php echo $kam->deskripsi ?></td>
+													<?php } ?>
 													<!--
 													<td class="td-actions">
 														<button type="button" rel="tooltip" title="Edit" class="btn btn-primary btn-link btn-sm">
@@ -145,7 +150,7 @@ The above copyright notice and this permission notice shall be included in all c
 														</button>
 													</td>-->
 												</tr>
-											<?php endforeach; ?>
+											
 										</tbody>
 									</table>
 								</div>
