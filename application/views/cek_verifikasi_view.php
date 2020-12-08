@@ -120,7 +120,7 @@ The above copyright notice and this permission notice shall be included in all c
 												<td><?php echo $no++ ?></td>
 												<td><?php echo $u->nama?></td>
 												<td><?php echo $u->email?></td>
-												<td><img src="assets/assets_admin/img/verifikasi1.png"></td>
+												<td><img src="<?php echo base_url() . 'assets/images/profil/' . $u->fotoktp; ?>" style=" width: 100%; border-radius:10px;"></td>
 												<td class="td-actions ">
 													<button type="button" rel="tooltip" title="Setujui" class="btn btn-primary btn-link btn-sm">
 														<i class="material-icons"> <?php echo anchor('Cek_Verifikasi/edit/'.$u->email,'done_outline');?></i>
