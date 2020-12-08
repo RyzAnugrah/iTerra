@@ -125,7 +125,7 @@ The above copyright notice and this permission notice shall be included in all c
 													<td><?php echo $kampa->deskripsi ?></td>
 													<td class="td-actions">
 														<button type="button" rel="tooltip" title="Setujui" class="btn btn-primary btn-link btn-sm">
-															<i class="material-icons">done_outline <?php echo anchor('Cek_Kampanye/edit/' . $kampa->email, 'edit'); ?></i>
+															<i class="material-icons"><?php echo anchor('Cek_Kampanye/edit/' . $kampa->email, 'done_outline'); ?></i>
 														</button>
 														<button type="button" rel="tooltip" title="Hapus" class="btn btn-danger btn-link btn-sm">
 															<i class="material-icons">close</i>

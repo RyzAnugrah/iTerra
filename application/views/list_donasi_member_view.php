@@ -128,14 +128,20 @@ The above copyright notice and this permission notice shall be included in all c
 											<th>Jumlah Donasi</th>
 										</thead>
 										<tbody>
-											<?php foreach ($donasi as $don) : ?>
+										<?php
+											
+											foreach ($donasi as $don) {
+											?>
 												<tr>
-													<td><?= $don['kode_donasi']; ?></td>
-													<td><?= $don['judul_donasi']; ?></td>
-													<td><?= $don['tanggal_donasi']; ?></td>
-													<td>Rp. <?= $don['jumlah_donasi']; ?></td>
+													
+													<td><?php echo $don->kode_donasi ?></td>
+													<td><?php echo $don->judul_donasi ?></td>
+													<td><?php echo $don->tanggal_donasi ?></td>
+													<td><?php echo $don->jumlah_donasi ?></td>
+													<?php } ?>
+											
 												</tr>
-											<?php endforeach; ?>
+											
 										</tbody>
 									</table>
 								</div>

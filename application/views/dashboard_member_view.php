@@ -2,11 +2,9 @@
 =========================================================
 Material Dashboard - v2.1.2
 =========================================================
-
 Product Page: https://www.creative-tim.com/product/material-dashboard
 Copyright 2020 Creative Tim (https://www.creative-tim.com)
 Coded by Creative Tim
-
 =========================================================
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. -->
 <!DOCTYPE html>
@@ -172,6 +170,7 @@ The above copyright notice and this permission notice shall be included in all c
 									</div>
 								</div>
 								<!-- Modal -->
+						<?php if ($validasi == 0): ?>
 								<div id="myModal" class="modal fade" role="dialog">
 									<div class="modal-dialog">
 										<!-- Modal content-->
@@ -195,9 +194,21 @@ The above copyright notice and this permission notice shall be included in all c
 										</form>
 									</div>
 								</div>
+						<?php else: ?>
+							<div id="myModal" class="modal fade" role="dialog">
+									<div class="modal-dialog">
+										<!-- Modal content-->
+											<div class="modal-content">
+												<div class="modal-header">
+													<h4 class="modal-title" style="text-align: center;">Sudah Terverifikasi</h4>
+												</div>
+											</div>
+									</div>
+								</div>
 								</a>
 							</div>
 						</div>
+						<?php endif; ?>
 						<div class="col-lg-3 col-md-6 col-sm-6">
 							<div class="card card-stats">
 								<div class="card-header card-header-success card-header-icon kartu">

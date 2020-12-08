@@ -16,10 +16,21 @@ class List_Donasi_Member extends CI_Controller {
 		{
 		$data = array('title'	=> 'Halaman Dashboard');
 		// var_dump($_SESSION['email']);
-		$data['donasi'] = $this->list_donasi_member_data->show_data();
+		$data['donasi'] = $this->list_donasi_member_data->get_data_donasi()->result();
 		$this->load->view('list_donasi_member_view',$data);
 	}
-
+	public function ikut($email){		
+		$data = array(
+			'nilai' => 1
+		);
+	 
+		$where = array(
+			'email' => $email
+		);
+	 
+		$this->list_donasi_member_data->update_data($where,$data,'donasi');
+		redirect(base_url('donasi'));
+	}
 	// Fungsi lain
 	
 }

@@ -15,7 +15,8 @@ $b = $data->row_array();
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" type="text/css">
-
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
 	<!-- CSS BUNDLE -->
 
 	<!--Third party plugin CSS-->
@@ -74,7 +75,15 @@ $b = $data->row_array();
 				</div>
 			</div>
 			<div class="card-body table-responsive text-center">
-				<h3 style="color:#757575">Rekening Donasi <?php echo $b['judul_donasi']; ?></h3><br>
+			<?php
+			
+			foreach ($data as $don) { ?><?php } ?>
+			<button type="button" rel="tooltip" title="ikuti" class="btn btn-outline-success btn-sm">
+			<i class="material-icons" style="color: white;"><?php echo anchor('List_Donasi_Member/ikut/' . $b['email'], 'done_outline'); ?></i>
+			</button>
+			
+		
+				<h3 style="color:#757575">Rekening Donasi <?php echo $b['judul_donasi']; ?></h3><br>	
 				<table class=" table table-hover container">
 					<thead style="color:#757575; font-weight:bolder">
 						<th>Bank</th>
