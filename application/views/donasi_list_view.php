@@ -92,6 +92,7 @@ $b = $data->row_array();
 					<?php endif; ?>
 				<?php } ?>
 
+				<?php if ( $this->session->userdata('akses') == "1") { ?>
 				<?php if ($b['nilai'] == 1) : ?>
 					<h3 style="color:#757575">Rekening Donasi <?php echo $b['judul_donasi']; ?></h3><br>
 					<table class=" table table-hover container">
@@ -115,7 +116,34 @@ $b = $data->row_array();
 							</tr>
 						</tbody>
 					</table>
+					
 				<?php endif; ?>
+				<?php } elseif ($this->session->userdata('akses') == "0") { ?>
+				<?php if ($b['nilai'] == 1) : ?>
+					<h3 style="color:#757575">Rekening Donasi <?php echo $b['judul_donasi']; ?></h3><br>
+					<table class=" table table-hover container">
+						<thead style="color:#757575; font-weight:bolder">
+							<th>Bank</th>
+							<th>Info Transfer</th>
+						</thead>
+						<tbody style="color:#757575; font-size:25px">
+							<tr>
+								<td><img src=" ..\..\assets\images\donasi\bca.png" style="width: 300px;">
+								</td>
+								<td><b>5235175509</b><br>a.n. Alvin Sukesa</td>
+							</tr>
+							<tr>
+								<td><img src="..\..\assets\images\donasi\bri.png" style="width: 300px;"></td>
+								<td><b>1003849964</b><br>a.n. Alvin Sukesa</td>
+							</tr>
+							<tr>
+								<td><img src="..\..\assets\images\donasi\mandiri.png" style="width: 300px;"></td>
+								<td><b>1320387628942</b><br>a.n. Alvin Sukesa</td>
+							</tr>
+						</tbody>
+					</table>
+					
+				<?php endif; }?>
 			</div>
 		</div>
 	</section>
