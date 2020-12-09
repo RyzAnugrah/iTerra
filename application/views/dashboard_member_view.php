@@ -205,8 +205,8 @@ The above copyright notice and this permission notice shall be included in all c
 											</div>
 										</div>
 									</div>
-									</a>
 								<?php endif; ?>
+									</a>
 							</div>
 						</div>
 

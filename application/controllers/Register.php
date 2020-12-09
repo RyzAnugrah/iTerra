@@ -27,7 +27,7 @@ class Register extends CI_Controller
 	
 	function add()
 	{
-		$this->form_validation->set_rules('nama', 'Nama', 'trim|required|min_length[3]|alpha');
+		$this->form_validation->set_rules('nama', 'Nama', 'trim|required|min_length[3]');
 		$this->form_validation->set_rules('email', 'Email', 'trim|required|valid_email');
 		$this->form_validation->set_rules('NIK', 'NIK', 'trim|required|exact_length[16]|numeric');
 		$this->form_validation->set_rules('nomortelepon', 'No Telp', 'trim|required|min_length[11]|numeric');
